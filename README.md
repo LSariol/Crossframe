@@ -55,6 +55,7 @@ Requires Node.js 18+.
 npm install
 npm run dev      # esbuild in watch mode
 npm run build    # production build into dist/
+npm run package  # zips dist/ into release/crossframe-<version>.zip
 npm test         # vitest
 npm run lint     # eslint
 npm run typecheck
@@ -73,6 +74,15 @@ npm run typecheck
 `manifest.json`/`icons/`/`options.html` - re-run `npm run build` after
 changing any of those, and click the reload icon on `chrome://extensions`
 after any change (Chrome doesn't hot-reload unpacked extensions).
+
+### Publishing
+
+No developer-mode install is required once published through an actual
+extension store - see [docs/publishing.md](docs/publishing.md) for the
+full Chrome Web Store submission checklist and
+[store/listing.md](store/listing.md) for ready-to-paste listing copy.
+[PRIVACY.md](PRIVACY.md) is Crossframe's privacy policy (short version:
+it collects nothing).
 
 ## Architecture
 
@@ -197,15 +207,22 @@ not do.
   confirmed** against the live wiki (whose `robots.txt` also disallows
   automated access) - see [docs/data-sources.md](docs/data-sources.md)
   for the specific transform and how to correct one if it's wrong.
-- **Market and Overframe injection anchors use a text-matching
-  heuristic**, not a specific selector, since both render their item
-  content client-side with no stable id to anchor on (and Overframe's
-  couldn't be verified against live markup at all - see
-  [docs/architecture.md](docs/architecture.md)). This was verified
-  end-to-end against local fixtures standing in for each site's real
-  behavior (a MediaWiki-style static page, a client-rendered React mount
-  point, and a plain heading) loaded into a real browser, but hasn't been
-  checked against the live sites' current markup.
+- **Overframe's injection anchor is unverified against the live site, and
+  may not currently work there.** Wiki and Market's injection strategies
+  (see [docs/architecture.md](docs/architecture.md)) have been confirmed
+  end-to-end against their real, live pages - a real Edge browser loading
+  the built extension against the actual `wiki.warframe.com/w/Protea/Prime`
+  and `warframe.market/items/protea_prime_set` pages, both injecting the
+  correct buttons with the correct URLs. Overframe's `robots.txt`
+  disallows automated access, so - after one live check that came back
+  negative (either a real gap in the heading-matching heuristic, or
+  Overframe's bot-protection intercepting the automated request with a
+  challenge page instead of real content; the check couldn't distinguish
+  between the two, and wasn't repeated) - its adapter should be treated as
+  unverified rather than confirmed. If you hit this while testing (no
+  buttons on a real Overframe item page), check
+  `src/adapters/overframe.ts`'s injection strategy against what the page
+  actually renders in your own browser's DevTools.
 - **Firefox is not yet packaged.** The codebase avoids
   Chrome-specific APIs beyond `chrome.storage` and Manifest V3's
   `content_scripts`/`options_ui`, both of which Firefox also supports, but

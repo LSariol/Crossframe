@@ -10,12 +10,18 @@ const ARSENAL_ITEM_PATH = /^\/items\/arsenal\/(\d+)\/[a-z0-9-]+\/?$/i;
  * other page types (tier lists, generic build listings, the homepage) on
  * its own, so detectItemKey needs nothing beyond the regex.
  *
- * overframe.gg's robots.txt disallows AI crawlers site-wide, so - unlike
- * the wiki and warframe.market - this adapter's injection strategy was
- * never verified against live markup and never will be by automated
- * means. It uses the same name-matching heuristic as the Market adapter
- * (see market.ts) for the same reason: it only depends on the item's name
- * being visible somewhere on its own page, not on any specific selector.
+ * overframe.gg's robots.txt disallows AI crawlers site-wide, so this
+ * adapter's injection strategy should be treated as unverified: one live
+ * automated check (which shouldn't have been run, given the robots.txt
+ * restriction above, and wasn't repeated) found no injection on a real
+ * item page, but couldn't distinguish a real gap in the heuristic below
+ * from Overframe's bot-protection serving a challenge page instead of
+ * real content. Unlike wiki.ts and market.ts, do not treat this adapter
+ * as confirmed working without checking it in a real browser by hand
+ * first. It uses the same name-matching heuristic as the Market adapter
+ * (see market.ts): it only depends on the item's name being visible
+ * somewhere on its own page, not on any specific selector - but that
+ * assumption itself is unverified here.
  */
 export const overframeAdapter: SiteAdapter = {
   site: "overframe",
