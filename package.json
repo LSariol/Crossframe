@@ -2,6 +2,7 @@
   "name": "crossframe",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "Browser extension that links Warframe Wiki, Warframe.Market, and Overframe pages for the item you're viewing.",
   "type": "module",
   "scripts": {
@@ -15,8 +16,7 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit",
-    "package": "node scripts/package-extension.mjs"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
