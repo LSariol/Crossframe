@@ -2,6 +2,7 @@ import type { SiteAdapter } from "./types";
 import { resolveCanonicalItem } from "../items/resolver";
 import { getDestinations } from "../navigation/destinations";
 import { renderNavigation, insertAfter } from "../ui/buttons";
+import { loadSettings, isSiteEnabled } from "../settings/settings";
 
 const NAV_SELECTOR = ".crossframe-nav";
 
@@ -19,6 +20,9 @@ export async function runAdapter(
 ): Promise<void> {
   if (document.querySelector(NAV_SELECTOR)) return; // already injected
 
+  const settings = await loadSettings();
+  if (!isSiteEnabled(settings, adapter.site)) return;
+
   const url = new URL(location.href);
   const key = adapter.detectItemKey(url);
   if (!key) return;
@@ -26,12 +30,14 @@ export async function runAdapter(
   const item = resolveCanonicalItem(key);
   if (!item) return;
 
-  const destinations = getDestinations(item, adapter.site);
+  const destinations = getDestinations(item, adapter.site).filter((destination) =>
+    isSiteEnabled(settings, destination.site),
+  );
   if (destinations.length === 0) return;
 
   const anchor = await adapter.findInjectionAnchor(item);
   if (!anchor) return;
   if (document.querySelector(NAV_SELECTOR)) return; // a concurrent run beat us to it
 
-  insertAfter(anchor, renderNavigation(destinations));
+  insertAfter(anchor, renderNavigation(destinations, settings.linkTarget));
 }

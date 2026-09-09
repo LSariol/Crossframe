@@ -5,8 +5,47 @@
     <title>Crossframe Settings</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div id="app"></div>
-    <script src="options.js"></script>
+  <body class="crossframe-options">
+    <main class="crossframe-options__panel">
+      <h1>Crossframe</h1>
+      <p class="crossframe-options__intro">
+        Navigation buttons connect Warframe Wiki, Warframe.Market, and Overframe. Changes save
+        automatically.
+      </p>
+
+      <section>
+        <h2>Enabled sites</h2>
+        <p class="crossframe-options__hint">
+          Turning a site off stops Crossframe from activating there, and hides it as a destination
+          everywhere else.
+        </p>
+        <label class="crossframe-options__row">
+          <input type="checkbox" data-site="wiki" />
+          Warframe Wiki
+        </label>
+        <label class="crossframe-options__row">
+          <input type="checkbox" data-site="market" />
+          Warframe.Market
+        </label>
+        <label class="crossframe-options__row">
+          <input type="checkbox" data-site="overframe" />
+          Overframe
+        </label>
+      </section>
+
+      <section>
+        <h2>Link behavior</h2>
+        <label class="crossframe-options__row">
+          <input type="radio" name="linkTarget" value="new-tab" />
+          Open in a new tab
+        </label>
+        <label class="crossframe-options__row">
+          <input type="radio" name="linkTarget" value="same-tab" />
+          Open in the current tab
+        </label>
+      </section>
+
+      <p class="crossframe-options__status" role="status"></p>
+    </main>
   </body>
 </html>

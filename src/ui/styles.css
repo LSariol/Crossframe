@@ -68,3 +68,58 @@
 .crossframe-nav__link[data-crossframe-site="overframe"] {
   color: #d8c4ff;
 }
+
+/* Options page (its own document, so full-page styling is fine here). */
+
+.crossframe-options {
+  margin: 0;
+  padding: 24px;
+  min-width: 320px;
+  background: #10181b;
+  color: #eafbfa;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+.crossframe-options__panel h1 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.crossframe-options__intro,
+.crossframe-options__hint {
+  margin: 0 0 12px;
+  color: #9fb8bb;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.crossframe-options section {
+  margin: 20px 0;
+}
+
+.crossframe-options h2 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #7fd8d0;
+}
+
+.crossframe-options__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.crossframe-options__status {
+  min-height: 1em;
+  font-size: 12px;
+  color: #7fd8d0;
+}
