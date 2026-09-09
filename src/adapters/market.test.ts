@@ -34,17 +34,26 @@ describe("marketAdapter.detectItemKey", () => {
 });
 
 describe("marketAdapter.findInjectionAnchor", () => {
+  // The canonical name is "Protea Prime" (see data/items.json), not
+  // "Protea Prime Set" - warframe.market's own heading for a Prime item is
+  // expected to say "Set" even though the resolved item's name doesn't.
   const item = {
     id: "protea_prime",
-    name: "Protea Prime Set",
+    name: "Protea Prime",
     category: "warframe" as const,
     isPrime: true,
   };
 
-  it("finds a heading matching the item name inside the React mount point", async () => {
+  it("finds a heading reading '<Name> Set', not just the bare canonical name", async () => {
     document.body.innerHTML = `<section id="warframe_react"><h1>Protea Prime Set</h1></section>`;
     const anchor = await marketAdapter.findInjectionAnchor(item);
     expect(anchor?.textContent).toBe("Protea Prime Set");
+  });
+
+  it("also matches a heading using the bare canonical name (non-Prime items)", async () => {
+    document.body.innerHTML = `<section id="warframe_react"><h1>Protea Prime</h1></section>`;
+    const anchor = await marketAdapter.findInjectionAnchor(item);
+    expect(anchor?.textContent).toBe("Protea Prime");
   });
 
   it("waits for the heading to render client-side", async () => {

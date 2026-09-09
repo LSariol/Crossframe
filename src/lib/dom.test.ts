@@ -27,6 +27,17 @@ describe("findHeadingByText", () => {
     document.body.innerHTML = `<h1>Something Else</h1>`;
     expect(findHeadingByText(document.body, "Protea Prime")).toBeUndefined();
   });
+
+  it("matches any one of several exact candidate strings", () => {
+    document.body.innerHTML = `<h1>Protea Prime Set</h1>`;
+    expect(findHeadingByText(document.body, "Protea Prime", "Protea Prime Set")).toBeDefined();
+    expect(findHeadingByText(document.body, "Something Else", "Protea Prime Set")).toBeDefined();
+  });
+
+  it("still requires an exact match against every candidate, not a prefix", () => {
+    document.body.innerHTML = `<h1>Protea Prime Set Bonus</h1>`;
+    expect(findHeadingByText(document.body, "Protea Prime", "Protea Prime Set")).toBeUndefined();
+  });
 });
 
 describe("waitForElement", () => {
