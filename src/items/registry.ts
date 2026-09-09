@@ -26,7 +26,19 @@ export function createRegistry(items: readonly CanonicalItem[]): ItemRegistry {
   const byOverframeId = new Map<number, CanonicalItem>();
 
   for (const item of items) {
-    if (item.wiki) byWikiPath.set(normalizeWikiPath(item.wiki.path), item);
+    // Prime components deliberately reuse their parent item's wiki path
+    // (a component has no wiki page of its own - see
+    // scripts/lib/build-items.mjs) but must never win a reverse lookup for
+    // that path: a visitor on that page is looking at the parent, not one
+    // specific component. Regardless of item order, the parent always wins.
+    if (item.wiki) {
+      const key = normalizeWikiPath(item.wiki.path);
+      const existing = byWikiPath.get(key);
+      const existingIsComponent = existing?.category === "primeComponent";
+      if (!existing || (existingIsComponent && item.category !== "primeComponent")) {
+        byWikiPath.set(key, item);
+      }
+    }
     if (item.market) byMarketSlug.set(item.market.slug, item);
     if (item.overframe) byOverframeId.set(item.overframe.id, item);
   }
