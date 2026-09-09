@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Crossframe",
+  "short_name": "Crossframe",
+  "version": "0.1.0",
+  "description": "Jump between Warframe Wiki, Warframe.Market, and Overframe pages for the item you're viewing.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://wiki.warframe.com/*"],
+      "js": ["content-wiki.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://warframe.market/*"],
+      "js": ["content-market.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://overframe.gg/*"],
+      "js": ["content-overframe.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["storage"]
+}
