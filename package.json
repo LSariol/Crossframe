@@ -1,13 +1,20 @@
 {
   "name": "crossframe",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "description": "Browser extension that links Warframe Wiki, Warframe.Market, and Overframe pages for the item you're viewing.",
+  "homepage": "https://github.com/LSariol/Crossframe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LSariol/Crossframe.git"
+  },
+  "bugs": "https://github.com/LSariol/Crossframe/issues",
   "type": "module",
   "scripts": {
     "dev": "node scripts/build.mjs --watch",
     "build": "node scripts/build.mjs",
+    "package": "node scripts/package-extension.mjs",
     "generate-data": "node scripts/generate-data.mjs",
     "check-data": "node scripts/generate-data.mjs --check",
     "test": "vitest run",
