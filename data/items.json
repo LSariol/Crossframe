@@ -1,0 +1,42 @@
+[
+  {
+    "id": "protea_prime",
+    "name": "Protea Prime",
+    "category": "warframe",
+    "isPrime": true,
+    "wiki": { "path": "/w/Protea/Prime" },
+    "market": { "slug": "protea_prime_set" },
+    "overframe": { "id": 6534, "slug": "protea-prime" }
+  },
+  {
+    "id": "protea",
+    "name": "Protea",
+    "category": "warframe",
+    "isPrime": false,
+    "wiki": { "path": "/w/Protea" },
+    "overframe": { "id": 4633, "slug": "protea" }
+  },
+  {
+    "id": "primed_continuity",
+    "name": "Primed Continuity",
+    "category": "mod",
+    "isPrime": false,
+    "wiki": { "path": "/w/Primed_Continuity" },
+    "market": { "slug": "primed_continuity" }
+  },
+  {
+    "id": "arcane_energize",
+    "name": "Arcane Energize",
+    "category": "arcane",
+    "isPrime": false,
+    "wiki": { "path": "/w/Arcane_Energize" },
+    "market": { "slug": "arcane_energize" }
+  },
+  {
+    "id": "orokin_cell",
+    "name": "Orokin Cell",
+    "category": "resource",
+    "isPrime": false,
+    "wiki": { "path": "/w/Orokin_Cell" }
+  }
+]
