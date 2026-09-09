@@ -1,1 +1,70 @@
-/* Styles for Crossframe's injected navigation controls and options page. */
+/*
+ * Crossframe's injected navigation controls. Deliberately self-contained
+ * (explicit colors/sizes rather than inheriting the host page's CSS
+ * variables) so the button group looks the same, and stays legible, on
+ * all three sites regardless of their own theme - this is what "a
+ * consistent Crossframe identity across all three websites" means in
+ * practice. Font family is the one thing allowed to inherit, so the
+ * buttons still feel like part of the page rather than a foreign widget.
+ */
+
+.crossframe-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+  font-family: inherit;
+  line-height: 1;
+}
+
+.crossframe-nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(120, 200, 200, 0.5);
+  background: rgba(26, 58, 66, 0.92);
+  color: #eafbfa;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition:
+    background-color 120ms ease,
+    transform 120ms ease;
+}
+
+.crossframe-nav__link:hover,
+.crossframe-nav__link:focus-visible {
+  background: rgba(37, 82, 92, 0.98);
+  transform: translateY(-1px);
+}
+
+.crossframe-nav__link:active {
+  transform: translateY(0);
+}
+
+.crossframe-nav__link::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.crossframe-nav__link[data-crossframe-site="wiki"] {
+  color: #bfe9ff;
+}
+
+.crossframe-nav__link[data-crossframe-site="market"] {
+  color: #ffe3a3;
+}
+
+.crossframe-nav__link[data-crossframe-site="overframe"] {
+  color: #d8c4ff;
+}
