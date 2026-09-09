@@ -49,4 +49,22 @@ describe("createRegistry", () => {
     const reg = createRegistry([proteaPrime, wikiOnly]);
     expect(reg.items).toHaveLength(2);
   });
+
+  it("resolves a shared wiki path to the parent item, never a prime component, regardless of order", () => {
+    const component: CanonicalItem = {
+      id: "protea_prime_systems_blueprint",
+      name: "Protea Prime Systems Blueprint",
+      category: "primeComponent",
+      isPrime: true,
+      wiki: { path: "/w/Protea/Prime" },
+      market: { slug: "protea_prime_systems_blueprint" },
+    };
+
+    expect(createRegistry([proteaPrime, component]).findByWikiPath("/w/Protea/Prime")).toBe(
+      proteaPrime,
+    );
+    expect(createRegistry([component, proteaPrime]).findByWikiPath("/w/Protea/Prime")).toBe(
+      proteaPrime,
+    );
+  });
 });

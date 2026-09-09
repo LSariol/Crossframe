@@ -1,0 +1,6 @@
+{
+  "unfused_artifact": {
+    "exclude": true,
+    "reason": "WFCD lists ~40 distinct Railjack artifact mods that all share the generic pre-identification display name \"Unfused Artifact\" - the name alone can't tell them apart, so Crossframe can't safely link to any one of them."
+  }
+}
