@@ -11,18 +11,27 @@ function normalizeText(text: string): string {
 const HEADING_SELECTOR = 'h1, h2, h3, h4, [role="heading"]';
 
 /**
- * Finds a heading-like element (or ARIA heading) whose text matches
- * `targetText` exactly, ignoring case and incidental whitespace. Used as
- * a resilience fallback when a site has no stable id/class to anchor on:
- * matching against the item's own canonical name - data Crossframe
+ * Finds a heading-like element (or ARIA heading) whose text exactly
+ * matches one of `targetTexts`, ignoring case and incidental whitespace.
+ * Takes multiple candidates rather than doing a substring/prefix match so
+ * callers stay precise about what they'll accept (e.g. a Prime item's
+ * canonical name plus warframe.market's "<Name> Set" listing name) instead
+ * of risking a match against some unrelated heading elsewhere on the page
+ * that merely starts with the same text.
+ *
+ * Used as a resilience fallback when a site has no stable id/class to
+ * anchor on: matching against the item's own name - data Crossframe
  * already trusts - survives CSS/markup churn that a specific selector
  * wouldn't.
  */
-export function findHeadingByText(root: ParentNode, targetText: string): HTMLElement | undefined {
-  const target = normalizeText(targetText);
+export function findHeadingByText(
+  root: ParentNode,
+  ...targetTexts: [string, ...string[]]
+): HTMLElement | undefined {
+  const targets = new Set(targetTexts.map(normalizeText));
   const candidates = root.querySelectorAll<HTMLElement>(HEADING_SELECTOR);
   for (const element of candidates) {
-    if (normalizeText(element.textContent ?? "") === target) {
+    if (targets.has(normalizeText(element.textContent ?? ""))) {
       return element;
     }
   }
