@@ -10,10 +10,16 @@ const ITEM_PATH = /^\/items\/([a-z0-9_]+)\/?$/i;
  * there is no stable server-rendered selector to anchor on the way there
  * is for the wiki. Instead of guessing at whatever CSS-module class names
  * their React build happens to emit, findInjectionAnchor waits for a
- * heading whose text matches the resolved item's own canonical name,
- * which only depends on the item's name being visible on its own page -
- * about as safe an assumption as a detail page can make - not on any
- * particular markup shape.
+ * heading whose text matches the resolved item's own name, which only
+ * depends on the item's name being visible on its own page - about as
+ * safe an assumption as a detail page can make - not on any particular
+ * markup shape.
+ *
+ * For a Prime set, the listing (and its heading) is named "<Name> Set" -
+ * e.g. "Protea Prime Set" - not the bare canonical name, so both are
+ * tried; a Prime component's canonical name already includes "Blueprint"
+ * etc. because it was generated to match its market listing exactly (see
+ * scripts/lib/build-items.mjs), so it needs no such variant.
  */
 export const marketAdapter: SiteAdapter = {
   site: "market",
@@ -26,6 +32,9 @@ export const marketAdapter: SiteAdapter = {
 
   async findInjectionAnchor(item) {
     const root = document.getElementById("warframe_react") ?? document.body;
-    return waitForElement(() => findHeadingByText(root, item.name), { root, timeoutMs: 5000 });
+    return waitForElement(() => findHeadingByText(root, item.name, `${item.name} Set`), {
+      root,
+      timeoutMs: 5000,
+    });
   },
 };
