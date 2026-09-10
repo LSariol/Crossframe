@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { marketAdapter } from "./market";
+import type { Destination } from "../navigation/destinations";
 
 describe("marketAdapter.detectItemKey", () => {
   it("extracts the item slug from an item page", () => {
@@ -44,21 +45,39 @@ describe("marketAdapter.findInjectionAnchor", () => {
     isPrime: true,
   };
 
+  const withWiki: Destination[] = [
+    { site: "wiki", url: "https://wiki.warframe.com/w/Protea/Prime" },
+  ];
+  const withoutWiki: Destination[] = [
+    { site: "overframe", url: "https://overframe.gg/items/arsenal/6534/protea-prime/" },
+  ];
+
   it("finds a heading reading '<Name> Set', not just the bare canonical name", async () => {
     document.body.innerHTML = `<section id="warframe_react"><h1>Protea Prime Set</h1></section>`;
-    const anchor = await marketAdapter.findInjectionAnchor(item);
+    const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
     expect(anchor?.textContent).toBe("Protea Prime Set");
+  });
+
+  it('finds the real heading shape: "Set" in its own adjacent span, no space in between', async () => {
+    // Confirmed from real warframe.market markup - this is not a
+    // hypothetical: <h1><span>Acceltra Prime</span><span>Set</span></h1>
+    // renders as "Acceltra Prime Set" but textContent comes back as
+    // "Acceltra PrimeSet", with no space between the two words. This
+    // silently broke every Prime set on warframe.market until fixed.
+    document.body.innerHTML = `<section id="warframe_react"><h1><span>Protea Prime</span><span class="item__name-highlight">Set</span></h1></section>`;
+    const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
+    expect(anchor?.textContent).toBe("Protea PrimeSet");
   });
 
   it("also matches a heading using the bare canonical name (non-Prime items)", async () => {
     document.body.innerHTML = `<section id="warframe_react"><h1>Protea Prime</h1></section>`;
-    const anchor = await marketAdapter.findInjectionAnchor(item);
+    const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
     expect(anchor?.textContent).toBe("Protea Prime");
   });
 
   it("waits for the heading to render client-side", async () => {
     document.body.innerHTML = `<section id="warframe_react"></section>`;
-    const promise = marketAdapter.findInjectionAnchor(item);
+    const promise = marketAdapter.findInjectionAnchor(item, withWiki);
 
     setTimeout(() => {
       const section = document.getElementById("warframe_react")!;
@@ -71,7 +90,62 @@ describe("marketAdapter.findInjectionAnchor", () => {
 
   it("resolves to undefined when the mount point never renders a matching heading", async () => {
     document.body.innerHTML = `<section id="warframe_react"><p>loading...</p></section>`;
-    const anchor = await marketAdapter.findInjectionAnchor(item);
+    const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
     expect(anchor).toBeUndefined();
   }, 7000);
+
+  describe("repositioning around the host page's own Wiki link", () => {
+    // Real structure from a live warframe.market page, per user-provided
+    // DevTools output:
+    //   <section class="name-container">
+    //     <div class="name"><h1>...</h1></div>
+    //     <div class="inlined-attrs">
+    //       <div class="tooltip">Description</div>
+    //       <div><a href="https://wiki.warframe.com/...">Wiki</a></div>
+    //     </div>
+    //   </section>
+    function realMarkup() {
+      return `
+        <section id="warframe_react">
+          <section class="name-container">
+            <div class="name"><h1>Protea Prime Set</h1></div>
+            <div class="inlined-attrs">
+              <div class="tooltip"><div class="tooltip__trigger">Description</div></div>
+              <div><a href="https://wiki.warframe.com/w/Protea/Prime" target="_blank">Wiki</a></div>
+            </div>
+          </section>
+        </section>
+      `;
+    }
+
+    it("removes the native Wiki link and centers what's left, anchoring after the name instead of the heading itself", async () => {
+      document.body.innerHTML = realMarkup();
+      const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
+
+      expect(document.querySelector('a[href^="https://wiki.warframe.com/"]')).toBeNull();
+      expect(anchor).toBe(document.querySelector(".name"));
+      const attrsRow = document.querySelector(".inlined-attrs") as HTMLElement;
+      expect(attrsRow.style.justifyContent).toBe("center");
+      expect(attrsRow.textContent).toContain("Description");
+    });
+
+    it("leaves the native Wiki link alone when Crossframe isn't showing its own Wiki button", async () => {
+      // e.g. the user disabled Wiki as a destination in settings - removing
+      // the only way to reach the wiki page would be worse than the
+      // duplicate link this is otherwise meant to clean up.
+      document.body.innerHTML = realMarkup();
+      const anchor = await marketAdapter.findInjectionAnchor(item, withoutWiki);
+
+      expect(document.querySelector('a[href^="https://wiki.warframe.com/"]')).not.toBeNull();
+      expect(anchor).toBe(document.querySelector("h1"));
+    });
+
+    it("falls back to the plain heading anchor when the expected structure isn't there", async () => {
+      // No .inlined-attrs sibling, no Wiki link at all - a future
+      // redesign, an A/B test, or just a different page layout.
+      document.body.innerHTML = `<section id="warframe_react"><h1>Protea Prime Set</h1></section>`;
+      const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
+      expect(anchor).toBe(document.querySelector("h1"));
+    });
+  });
 });

@@ -96,7 +96,7 @@ describe("overframeAdapter.findInjectionAnchor", () => {
 
   it("finds a heading matching the item name (arsenal item pages)", async () => {
     document.body.innerHTML = `<main><h1>Protea Prime</h1></main>`;
-    const anchor = await overframeAdapter.findInjectionAnchor(item);
+    const anchor = await overframeAdapter.findInjectionAnchor(item, []);
     expect(anchor?.textContent).toBe("Protea Prime");
   });
 
@@ -120,7 +120,7 @@ describe("overframeAdapter.findInjectionAnchor", () => {
         <header><h1>Some Player's Arbitrary Build Title</h1></header>
       </div>
     `;
-    const anchor = await overframeAdapter.findInjectionAnchor(item);
+    const anchor = await overframeAdapter.findInjectionAnchor(item, []);
     // The wrapper, not the nav itself - so Crossframe's buttons land in
     // their own row below the breadcrumb+ad, not squeezed inside that row.
     expect(anchor?.id).toBe("breadcrumbsWrapper");
@@ -130,13 +130,13 @@ describe("overframeAdapter.findInjectionAnchor", () => {
     // e.g. a "related builds" link elsewhere on the page that happens to
     // share the item's name as its link text.
     document.body.innerHTML = `<a href="/build/12345/protea-prime/some-other-build/">Protea Prime</a>`;
-    const anchor = await overframeAdapter.findInjectionAnchor(item);
+    const anchor = await overframeAdapter.findInjectionAnchor(item, []);
     expect(anchor).toBeUndefined();
   }, 7000);
 
   it("resolves to undefined when neither a heading nor a breadcrumb link ever appears", async () => {
     document.body.innerHTML = `<main><h1>Some Other Page</h1></main>`;
-    const anchor = await overframeAdapter.findInjectionAnchor(item);
+    const anchor = await overframeAdapter.findInjectionAnchor(item, []);
     expect(anchor).toBeUndefined();
   }, 7000);
 });

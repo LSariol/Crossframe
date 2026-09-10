@@ -31,7 +31,7 @@ getDestinations(item, currentSite)      src/navigation/destinations.ts
 Destination[]
       |
       v
-adapter.findInjectionAnchor(item)       src/adapters/{wiki,market,overframe}.ts
+adapter.findInjectionAnchor(item, destinations)  src/adapters/{wiki,market,overframe}.ts
       |  Element | undefined
       v
 renderNavigation + insertAfter          src/ui/buttons.ts

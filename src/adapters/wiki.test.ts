@@ -35,19 +35,19 @@ describe("wikiAdapter.findInjectionAnchor", () => {
 
   it("prefers #firstHeading when present", async () => {
     document.body.innerHTML = `<h1 id="firstHeading">Protea Prime</h1>`;
-    const anchor = await wikiAdapter.findInjectionAnchor(item);
+    const anchor = await wikiAdapter.findInjectionAnchor(item, []);
     expect(anchor?.id).toBe("firstHeading");
   });
 
   it("falls back to a text match when #firstHeading is missing", async () => {
     document.body.innerHTML = `<h1 class="page-title">Protea Prime</h1>`;
-    const anchor = await wikiAdapter.findInjectionAnchor(item);
+    const anchor = await wikiAdapter.findInjectionAnchor(item, []);
     expect(anchor?.textContent).toBe("Protea Prime");
   });
 
   it("resolves to undefined when no anchor can be found", async () => {
     document.body.innerHTML = `<h1>Unrelated Page</h1>`;
-    const anchor = await wikiAdapter.findInjectionAnchor(item);
+    const anchor = await wikiAdapter.findInjectionAnchor(item, []);
     expect(anchor).toBeUndefined();
   });
 });

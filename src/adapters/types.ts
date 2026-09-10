@@ -1,5 +1,6 @@
 import type { SiteId, CanonicalItem } from "../items/types";
 import type { DetectedItemKey } from "../items/resolver";
+import type { Destination } from "../navigation/destinations";
 
 /**
  * A site adapter's only job is understanding one site's own pages: turning
@@ -27,6 +28,16 @@ export interface SiteAdapter {
    * page. May need to wait for client-side rendering. Resolves to
    * undefined if no safe location is found - callers must do nothing in
    * that case rather than fall back to a riskier insertion point.
+   *
+   * `destinations` is the final, settings-filtered list Crossframe is
+   * about to render (see run.ts) - passed through so an adapter can make
+   * an informed decision if it ever wants to react to *which* buttons
+   * will actually appear (e.g. only replacing a host page's own Wiki link
+   * if Crossframe's own Wiki button will actually be there to replace
+   * it). Most adapters have no reason to look at it.
    */
-  findInjectionAnchor(item: CanonicalItem): Promise<Element | undefined>;
+  findInjectionAnchor(
+    item: CanonicalItem,
+    destinations: readonly Destination[],
+  ): Promise<Element | undefined>;
 }

@@ -13,6 +13,16 @@ describe("findHeadingByText", () => {
     expect(findHeadingByText(document.body, "Protea Prime")).toBeDefined();
   });
 
+  it('matches even when whitespace is entirely absent between elements (regression: warframe.market splits a Prime set\'s "Set" suffix into an adjacent span with no space)', () => {
+    document.body.innerHTML = `<h1><span>Acceltra Prime</span><span>Set</span></h1>`;
+    expect(findHeadingByText(document.body, "Acceltra Prime Set")).toBeDefined();
+  });
+
+  it("still requires every letter to match - collapsing whitespace doesn't turn this into a substring match", () => {
+    document.body.innerHTML = `<h1>Protea Primed</h1>`;
+    expect(findHeadingByText(document.body, "Protea Prime")).toBeUndefined();
+  });
+
   it("matches ARIA heading roles, not just h1-h4", () => {
     document.body.innerHTML = `<div role="heading" aria-level="1">Protea Prime</div>`;
     expect(findHeadingByText(document.body, "Protea Prime")).toBeDefined();

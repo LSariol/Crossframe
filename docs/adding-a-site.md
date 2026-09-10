@@ -27,8 +27,15 @@ entry - rather than a change to existing site logic. Using a hypothetical
      `{ site: "overwiki"; ... }` variant to `DetectedItemKey` in
      `src/items/resolver.ts`, and a `findByOverwikiX` lookup + index to
      `src/items/registry.ts`).
-   - `findInjectionAnchor(item)`: find where on the page to put the
-     buttons. Investigate the real site first (view source, check
+   - `findInjectionAnchor(item, destinations)`: find where on the page to
+     put the buttons. `destinations` is the final, settings-filtered list
+     Crossframe is about to render - most adapters ignore it entirely
+     (they just return an anchor), but it's there if an adapter ever needs
+     to know _which_ buttons will actually appear, e.g. before touching
+     any of the host page's own content (see market.ts's
+     `repositionAroundNativeWikiLink`, which only removes the host's own
+     Wiki link when Crossframe's own Wiki button is actually about to
+     replace it). Investigate the real site first (view source, check
      `robots.txt` before doing anything automated) rather than guessing -
      see the Wiki, Market, and Overframe adapters for three different real
      answers to this (a stable server-rendered id, a client-rendered

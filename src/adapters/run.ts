@@ -35,7 +35,7 @@ export async function runAdapter(
   );
   if (destinations.length === 0) return;
 
-  const anchor = await adapter.findInjectionAnchor(item);
+  const anchor = await adapter.findInjectionAnchor(item, destinations);
   if (!anchor) return;
   if (document.querySelector(NAV_SELECTOR)) return; // a concurrent run beat us to it
 

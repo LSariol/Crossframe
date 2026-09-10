@@ -4,8 +4,21 @@
  * without leaking one site's markup assumptions into another's.
  */
 
+/**
+ * Strips whitespace entirely (not just collapsing runs of it) before
+ * comparing, rather than just trimming/collapsing: confirmed from real
+ * warframe.market markup that a Prime set's name is split across
+ * adjacent sibling elements with no whitespace between them at all -
+ * `<h1><span>Acceltra Prime</span><span>Set</span></h1>` - so `textContent`
+ * comes back as "Acceltra PrimeSet", not "Acceltra Prime Set". Matching
+ * against a target string with normal spacing would otherwise never find
+ * this heading at all. Still an exact match once whitespace is removed
+ * from both sides, so this doesn't loosen the match into a prefix/substring
+ * check - two genuinely different names remain different with their spaces
+ * removed.
+ */
 function normalizeText(text: string): string {
-  return text.trim().replace(/\s+/g, " ").toLowerCase();
+  return text.replace(/\s+/g, "").toLowerCase();
 }
 
 const HEADING_SELECTOR = 'h1, h2, h3, h4, [role="heading"]';
