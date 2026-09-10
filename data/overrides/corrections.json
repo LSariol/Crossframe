@@ -2,5 +2,9 @@
   "unfused_artifact": {
     "exclude": true,
     "reason": "WFCD lists ~40 distinct Railjack artifact mods that all share the generic pre-identification display name \"Unfused Artifact\" - the name alone can't tell them apart, so Crossframe can't safely link to any one of them."
+  },
+  "orion_and_sirius": {
+    "name": "Sirius & Orion",
+    "reason": "WFCD's own name field says \"Orion & Sirius\", but that same record's internal path (SiriusOrion), flavor text, and ability descriptions all consistently say \"Sirius & Orion\" - matching Overframe's real slug (sirius-orion), reported directly from the live site. Looks like an upstream typo in the name field specifically. The id stays orion_and_sirius (internal only, never shown to users) to avoid rippling a rename through anyone's existing overframe.json entries. The wiki path (/w/Orion) is untouched since nothing suggests it's wrong."
   }
 }

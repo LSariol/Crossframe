@@ -100,6 +100,7 @@ function buildRegistry(wfcd, marketItems) {
       itemsById.delete(id);
       continue;
     }
+    if (correction.name) item.name = correction.name;
     if (correction.wiki) item.wiki = correction.wiki;
     if (correction.market) item.market = correction.market;
   }
