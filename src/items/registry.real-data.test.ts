@@ -20,6 +20,7 @@ describe("bundled registry (real generated data)", () => {
 
     expect(registry.findByMarketSlug("protea_prime_set")).toBe(item);
     expect(registry.findByOverframeId(6534)).toBe(item);
+    expect(registry.findByOverframeSlug("protea-prime")).toBe(item);
   });
 
   it("gives Protea Prime all three destinations from each other site", () => {

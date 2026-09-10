@@ -8,6 +8,7 @@ export interface ItemRegistry {
   findByWikiPath(path: string): CanonicalItem | undefined;
   findByMarketSlug(slug: string): CanonicalItem | undefined;
   findByOverframeId(id: number): CanonicalItem | undefined;
+  findByOverframeSlug(slug: string): CanonicalItem | undefined;
 }
 
 /** Trims a trailing slash and decodes percent-escapes so lookups are forgiving of harmless URL variance. */
@@ -24,6 +25,7 @@ export function createRegistry(items: readonly CanonicalItem[]): ItemRegistry {
   const byWikiPath = new Map<string, CanonicalItem>();
   const byMarketSlug = new Map<string, CanonicalItem>();
   const byOverframeId = new Map<number, CanonicalItem>();
+  const byOverframeSlug = new Map<string, CanonicalItem>();
 
   for (const item of items) {
     // Prime components deliberately reuse their parent item's wiki path
@@ -40,7 +42,10 @@ export function createRegistry(items: readonly CanonicalItem[]): ItemRegistry {
       }
     }
     if (item.market) byMarketSlug.set(item.market.slug, item);
-    if (item.overframe) byOverframeId.set(item.overframe.id, item);
+    if (item.overframe) {
+      byOverframeId.set(item.overframe.id, item);
+      byOverframeSlug.set(item.overframe.slug, item);
+    }
   }
 
   return {
@@ -48,6 +53,7 @@ export function createRegistry(items: readonly CanonicalItem[]): ItemRegistry {
     findByWikiPath: (path) => byWikiPath.get(normalizeWikiPath(path)),
     findByMarketSlug: (slug) => byMarketSlug.get(slug),
     findByOverframeId: (id) => byOverframeId.get(id),
+    findByOverframeSlug: (slug) => byOverframeSlug.get(slug),
   };
 }
 

@@ -21,11 +21,12 @@ const wikiOnly: CanonicalItem = {
 };
 
 describe("createRegistry", () => {
-  it("finds an item by its exact wiki path, market slug, and overframe id", () => {
+  it("finds an item by its exact wiki path, market slug, and overframe id/slug", () => {
     const reg = createRegistry([proteaPrime]);
     expect(reg.findByWikiPath("/w/Protea/Prime")).toBe(proteaPrime);
     expect(reg.findByMarketSlug("protea_prime_set")).toBe(proteaPrime);
     expect(reg.findByOverframeId(6534)).toBe(proteaPrime);
+    expect(reg.findByOverframeSlug("protea-prime")).toBe(proteaPrime);
   });
 
   it("tolerates a trailing slash and percent-encoded wiki paths", () => {
@@ -38,6 +39,7 @@ describe("createRegistry", () => {
     const reg = createRegistry([wikiOnly]);
     expect(reg.findByMarketSlug("orokin_cell")).toBeUndefined();
     expect(reg.findByOverframeId(1)).toBeUndefined();
+    expect(reg.findByOverframeSlug("orokin-cell")).toBeUndefined();
   });
 
   it("returns undefined for a completely unknown key", () => {
