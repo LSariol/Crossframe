@@ -35,11 +35,17 @@ kind of access an automated screenshot tool would be). It's quick:
 1. `npm run build`, then load `dist/` unpacked (see the README's
    "Loading the unpacked extension" section) if you haven't already.
 2. Visit each page below, wait a second for the buttons to appear, and
-   capture the area around the page title where they show up (Win+Shift+S
-   works fine, or your browser's own screenshot tool):
-   - `https://wiki.warframe.com/w/Protea/Prime` - Market + Overframe buttons
-   - `https://warframe.market/items/protea_prime_set` - Wiki + Overframe buttons
-   - `https://overframe.gg/items/arsenal/6534/protea-prime/` - Wiki + Market buttons
+   capture a screenshot (Win+Shift+S works fine, or your browser's own
+   screenshot tool) that includes both the page title/item image *and*
+   the Crossframe buttons - where exactly that is differs per site:
+   - `https://wiki.warframe.com/w/Protea/Prime` - buttons sit right next
+     to the page title. Capture that area (Market + Overframe buttons).
+   - `https://warframe.market/items/protea_prime_set` - buttons sit next
+     to the Orders/Statistics/Drop Sources tabs, not the title - capture
+     enough of the page to include both the item name/image near the top
+     and that tab row a bit further down (Wiki + Overframe buttons).
+   - `https://overframe.gg/items/arsenal/6534/protea-prime/` - buttons
+     sit next to the page title (Wiki + Market buttons).
 3. A 4th showing a Mod (Wiki + Market only, no Overframe button - e.g.
    `https://wiki.warframe.com/w/Primed_Continuity`) is a good one to
    include too - it's the clearest illustration of Crossframe's
@@ -47,10 +53,10 @@ kind of access an automated screenshot tool would be). It's quick:
 4. Crop/resize to 1280x800 or 640x400 if your capture tool doesn't
    already produce one of those sizes.
 
-If any of these don't show the expected buttons when you check, that's
-worth flagging back - see the "Known limitations" section of the README
-for which parts of the site detection have and haven't been verified
-against the live sites, particularly Overframe.
+All three sites have been confirmed working end-to-end (including
+Overframe's build pages) as of this writing - see the README's "Known
+limitations" section for what's still unverified (Kitguns, Zaws, and a
+few other edge cases), none of which affect these specific screenshots.
 
 ## 4. Submit
 

@@ -212,22 +212,20 @@ not do.
   confirmed** against the live wiki (whose `robots.txt` also disallows
   automated access) - see [docs/data-sources.md](docs/data-sources.md)
   for the specific transform and how to correct one if it's wrong.
-- **Overframe's injection anchor is unverified against the live site, and
-  may not currently work there.** Wiki and Market's injection strategies
-  (see [docs/architecture.md](docs/architecture.md)) have been confirmed
-  end-to-end against their real, live pages - a real Edge browser loading
-  the built extension against the actual `wiki.warframe.com/w/Protea/Prime`
-  and `warframe.market/items/protea_prime_set` pages, both injecting the
-  correct buttons with the correct URLs. Overframe's `robots.txt`
-  disallows automated access, so - after one live check that came back
-  negative (either a real gap in the heading-matching heuristic, or
-  Overframe's bot-protection intercepting the automated request with a
-  challenge page instead of real content; the check couldn't distinguish
-  between the two, and wasn't repeated) - its adapter should be treated as
-  unverified rather than confirmed. If you hit this while testing (no
-  buttons on a real Overframe item page), check
-  `src/adapters/overframe.ts`'s injection strategy against what the page
-  actually renders in your own browser's DevTools.
+- **All three sites are confirmed working end-to-end on their real, live
+  pages** - Wiki and Market via direct browser testing during
+  development, and all of Overframe (arsenal item pages, and build
+  pages specifically) via manual testing plus real DevTools output
+  shared back during development, since Overframe's `robots.txt`
+  disallows automated access entirely and every adapter decision there
+  had to be verified by a human in a real browser rather than
+  automated. Several real bugs only surfaced this way and are fixed -
+  see git history around `src/adapters/overframe.ts` and
+  `src/adapters/market.ts` for the specifics (a build page never
+  showing the item's name as a heading at all, warframe.market
+  splitting a Prime set's "Set" suffix into a separate span with no
+  space in the markup, and layout adjustments driven by real
+  screenshots).
 - **Firefox is not yet packaged.** The codebase avoids
   Chrome-specific APIs beyond `chrome.storage` and Manifest V3's
   `content_scripts`/`options_ui`, both of which Firefox also supports, but
