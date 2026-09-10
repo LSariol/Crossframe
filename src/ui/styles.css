@@ -9,7 +9,23 @@
  */
 
 .crossframe-nav {
-  display: inline-flex;
+  /* Block-level, not inline-flex: reported (with a screenshot) sitting
+     centered on an Overframe build page while the breadcrumb and build
+     content around it stayed left-aligned - the signature of an ancestor
+     applying text-align:center (plausibly to center an ad slot sharing
+     that row) reaching an inline-level box while leaving block-level
+     siblings alone. A flex *container* is still a block box by default,
+     so this opts out of that entirely rather than fighting it with
+     "text-align: left" (which wouldn't work - text-align affects how a
+     parent places inline children, not how a box aligns itself).
+     width: fit-content keeps it sized to its own content instead of
+     stretching to fill the row now that it's block-level, and
+     align-self: flex-start additionally covers the case where an
+     ancestor is itself a flex/grid container centering children on the
+     cross-axis (text-align wouldn't apply there, but align-self does). */
+  display: flex;
+  width: fit-content;
+  align-self: flex-start;
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
