@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { findHeadingByText, waitForElement } from "./dom";
+import { findHeadingByText, findLinkByText, waitForElement } from "./dom";
 
 describe("findHeadingByText", () => {
   it("finds a heading whose text matches exactly", () => {
@@ -37,6 +37,24 @@ describe("findHeadingByText", () => {
   it("still requires an exact match against every candidate, not a prefix", () => {
     document.body.innerHTML = `<h1>Protea Prime Set Bonus</h1>`;
     expect(findHeadingByText(document.body, "Protea Prime", "Protea Prime Set")).toBeUndefined();
+  });
+});
+
+describe("findLinkByText", () => {
+  it("finds a link whose text matches exactly, ignoring case and nested markup", () => {
+    document.body.innerHTML = `<nav><a href="/items/arsenal/7962/sirius-orion/"><span>Sirius &amp; Orion</span></a></nav>`;
+    const link = findLinkByText(document.body, "sirius & orion");
+    expect(link?.getAttribute("href")).toBe("/items/arsenal/7962/sirius-orion/");
+  });
+
+  it("returns undefined when nothing matches", () => {
+    document.body.innerHTML = `<a href="/somewhere">Something Else</a>`;
+    expect(findLinkByText(document.body, "Protea Prime")).toBeUndefined();
+  });
+
+  it("ignores non-link elements with matching text", () => {
+    document.body.innerHTML = `<h1>Protea Prime</h1><span>Protea Prime</span>`;
+    expect(findLinkByText(document.body, "Protea Prime")).toBeUndefined();
   });
 });
 

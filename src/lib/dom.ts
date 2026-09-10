@@ -38,6 +38,31 @@ export function findHeadingByText(
   return undefined;
 }
 
+const LINK_SELECTOR = "a[href]";
+
+/**
+ * Finds a link whose text exactly matches one of `targetTexts`, ignoring
+ * case and incidental whitespace - the anchor equivalent of
+ * findHeadingByText, for pages that reference an item by name in a link
+ * (e.g. a breadcrumb) rather than in a heading. Callers wanting extra
+ * confidence should also check the returned link's `href` themselves
+ * (text-only matching can't tell a genuine self-link from an unrelated
+ * link that happens to share the item's name).
+ */
+export function findLinkByText(
+  root: ParentNode,
+  ...targetTexts: [string, ...string[]]
+): HTMLAnchorElement | undefined {
+  const targets = new Set(targetTexts.map(normalizeText));
+  const candidates = root.querySelectorAll<HTMLAnchorElement>(LINK_SELECTOR);
+  for (const element of candidates) {
+    if (targets.has(normalizeText(element.textContent ?? ""))) {
+      return element;
+    }
+  }
+  return undefined;
+}
+
 export interface WaitForElementOptions {
   /** Subtree to watch for mutations. Defaults to document.body. Keep this as narrow as possible. */
   root?: Element;

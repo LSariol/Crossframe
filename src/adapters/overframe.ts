@@ -1,5 +1,5 @@
 import type { SiteAdapter } from "./types";
-import { findHeadingByText, waitForElement } from "../lib/dom";
+import { findHeadingByText, findLinkByText, waitForElement } from "../lib/dom";
 
 // Item page: /items/arsenal/<id>/<slug>/ - the id is load-bearing (a
 // slug-only path 404s), and paired with the slug in every generated
@@ -16,16 +16,30 @@ const BUILD_PAGE_PATH = /^\/build\/\d+\/([a-z0-9-]+)\/[a-z0-9-]+\/?$/i;
 
 /**
  * Confirmed working (by manual testing against the live site) on arsenal
- * item pages. Build pages are a newer addition and use the same
- * name-matching injection strategy, on the reasonable assumption that a
- * build page displays its Warframe/weapon's name prominently too, but
- * that assumption hasn't been separately confirmed the way the item-page
- * behavior has - see the design decisions in git history around this file
- * if that ever needs revisiting.
+ * item pages, where the item's name is the page's actual heading.
+ *
+ * Build pages are different: confirmed, from real build-page markup, that
+ * the item's name is *not* in a heading there at all - the prominent
+ * heading is the build's own arbitrary, user-chosen title (e.g. "Two Body
+ * Problem | Sirius and Orion"). The item's name only appears as the last
+ * crumb of the page's breadcrumb nav, e.g.:
+ *   <nav aria-label="Breadcrumb">...
+ *     <a href="/items/arsenal/7962/sirius-orion/">Sirius &amp; Orion</a>
+ *   </nav>
+ * findInjectionAnchor therefore falls back to a link matching the item's
+ * name (rather than a heading) once no heading matches, and additionally
+ * requires that link's href to itself be a valid arsenal item path -
+ * matching by text alone would also accept an unrelated link elsewhere on
+ * the page that happens to share the item's name (e.g. a "related
+ * builds" list). The whole breadcrumb nav is used as the actual
+ * insertion point (found via the link's closest `nav` ancestor) rather
+ * than the tiny link itself, since a `<li>`/`<ul>` structure isn't a
+ * reasonable place to insert an unrelated block of buttons.
  *
  * overframe.gg's robots.txt disallows AI crawlers site-wide, so nothing
  * here was ever verified by automated means - only by a human loading the
- * real, built extension in a real browser. Keep verifying changes to this
+ * real, built extension in a real browser, or (for the build-page markup
+ * above) sharing real DevTools output. Keep verifying changes to this
  * file that way rather than by adding automated fetches against the live
  * site.
  */
@@ -45,6 +59,23 @@ export const overframeAdapter: SiteAdapter = {
   },
 
   async findInjectionAnchor(item) {
-    return waitForElement(() => findHeadingByText(document.body, item.name), { timeoutMs: 5000 });
+    return waitForElement(
+      () => {
+        const heading = findHeadingByText(document.body, item.name);
+        if (heading) return heading;
+
+        const link = findLinkByText(document.body, item.name);
+        if (!link) return undefined;
+        let pathname: string;
+        try {
+          pathname = new URL(link.href).pathname;
+        } catch {
+          return undefined;
+        }
+        if (!ARSENAL_ITEM_PATH.test(pathname)) return undefined;
+        return link.closest("nav") ?? link.closest("li") ?? link;
+      },
+      { timeoutMs: 5000 },
+    );
   },
 };

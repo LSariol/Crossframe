@@ -94,13 +94,39 @@ describe("overframeAdapter.findInjectionAnchor", () => {
     isPrime: true,
   };
 
-  it("finds a heading matching the item name", async () => {
+  it("finds a heading matching the item name (arsenal item pages)", async () => {
     document.body.innerHTML = `<main><h1>Protea Prime</h1></main>`;
     const anchor = await overframeAdapter.findInjectionAnchor(item);
     expect(anchor?.textContent).toBe("Protea Prime");
   });
 
-  it("resolves to undefined when no matching heading ever appears", async () => {
+  it("falls back to the breadcrumb link when no heading matches (build pages)", async () => {
+    // Real structure from a live build page: the item's name is never a
+    // heading there (the actual heading is the build's own arbitrary
+    // title) - only the last breadcrumb crumb links back to it.
+    document.body.innerHTML = `
+      <nav aria-label="Breadcrumb">
+        <ul>
+          <li><a href="/items/all/">ITEM</a></li>
+          <li><a href="/items/warframe/">WARFRAME</a></li>
+          <li><a href="/items/arsenal/6534/protea-prime/"><span>Protea Prime</span></a></li>
+        </ul>
+      </nav>
+      <h1>Some Player's Arbitrary Build Title</h1>
+    `;
+    const anchor = await overframeAdapter.findInjectionAnchor(item);
+    expect(anchor?.tagName).toBe("NAV");
+  });
+
+  it("ignores a matching-text link whose href isn't an arsenal item path", async () => {
+    // e.g. a "related builds" link elsewhere on the page that happens to
+    // share the item's name as its link text.
+    document.body.innerHTML = `<a href="/build/12345/protea-prime/some-other-build/">Protea Prime</a>`;
+    const anchor = await overframeAdapter.findInjectionAnchor(item);
+    expect(anchor).toBeUndefined();
+  }, 7000);
+
+  it("resolves to undefined when neither a heading nor a breadcrumb link ever appears", async () => {
     document.body.innerHTML = `<main><h1>Some Other Page</h1></main>`;
     const anchor = await overframeAdapter.findInjectionAnchor(item);
     expect(anchor).toBeUndefined();
