@@ -13,7 +13,15 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
-  margin: 8px 0;
+  /* Right margin is deliberate, not just symmetry: Crossframe is inserted
+     as a sibling right after the host page's own heading
+     (see insertAfter in buttons.ts), often into a flex row that also
+     contains a host-page button (e.g. Overframe's "New Build"). Whether
+     that row's own gap applies consistently to an element injected after
+     the fact is up to the host's CSS, not something Crossframe controls -
+     this margin guarantees a minimum gap regardless, rather than trusting
+     the host layout to space us correctly. */
+  margin: 8px 10px 8px 0;
   font-family: inherit;
   line-height: 1;
 }
