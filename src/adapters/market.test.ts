@@ -94,16 +94,10 @@ describe("marketAdapter.findInjectionAnchor", () => {
     expect(anchor).toBeUndefined();
   }, 7000);
 
-  describe("repositioning around the host page's own Wiki link", () => {
+  describe("anchoring near the Orders/Statistics/Drop Sources tab bar", () => {
     // Real structure from a live warframe.market page, per user-provided
-    // DevTools output:
-    //   <section class="name-container">
-    //     <div class="name"><h1>...</h1></div>
-    //     <div class="inlined-attrs">
-    //       <div class="tooltip">Description</div>
-    //       <div><a href="https://wiki.warframe.com/...">Wiki</a></div>
-    //     </div>
-    //   </section>
+    // DevTools output: a plain <ul> of tab links, "Drop Sources" being
+    // the last and most distinctively-named one.
     function realMarkup() {
       return `
         <section id="warframe_react">
@@ -114,19 +108,25 @@ describe("marketAdapter.findInjectionAnchor", () => {
               <div><a href="https://wiki.warframe.com/w/Protea/Prime" target="_blank">Wiki</a></div>
             </div>
           </section>
+          <ul class="tabs">
+            <li><a href="/items/protea_prime_set?type=sell"><span>Orders</span></a></li>
+            <li><a href="/items/protea_prime_set/statistics"><span>Statistics</span></a></li>
+            <li><a href="/items/protea_prime_set/dropsources"><span>Drop Sources</span></a></li>
+          </ul>
         </section>
       `;
     }
 
-    it("removes the native Wiki link and centers what's left, anchoring after the name instead of the heading itself", async () => {
+    it("anchors after the tab bar, not the name heading", async () => {
       document.body.innerHTML = realMarkup();
       const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
+      expect(anchor).toBe(document.querySelector("ul.tabs"));
+    });
 
+    it("removes the native Wiki link when Crossframe is showing its own Wiki button", async () => {
+      document.body.innerHTML = realMarkup();
+      await marketAdapter.findInjectionAnchor(item, withWiki);
       expect(document.querySelector('a[href^="https://wiki.warframe.com/"]')).toBeNull();
-      expect(anchor).toBe(document.querySelector(".name"));
-      const attrsRow = document.querySelector(".inlined-attrs") as HTMLElement;
-      expect(attrsRow.style.justifyContent).toBe("center");
-      expect(attrsRow.textContent).toContain("Description");
     });
 
     it("leaves the native Wiki link alone when Crossframe isn't showing its own Wiki button", async () => {
@@ -137,12 +137,11 @@ describe("marketAdapter.findInjectionAnchor", () => {
       const anchor = await marketAdapter.findInjectionAnchor(item, withoutWiki);
 
       expect(document.querySelector('a[href^="https://wiki.warframe.com/"]')).not.toBeNull();
-      expect(anchor).toBe(document.querySelector("h1"));
+      expect(anchor).toBe(document.querySelector("ul.tabs"));
     });
 
-    it("falls back to the plain heading anchor when the expected structure isn't there", async () => {
-      // No .inlined-attrs sibling, no Wiki link at all - a future
-      // redesign, an A/B test, or just a different page layout.
+    it("falls back to the plain heading anchor when no tab bar is found", async () => {
+      // A future redesign, an A/B test, or just a different page layout.
       document.body.innerHTML = `<section id="warframe_react"><h1>Protea Prime Set</h1></section>`;
       const anchor = await marketAdapter.findInjectionAnchor(item, withWiki);
       expect(anchor).toBe(document.querySelector("h1"));
