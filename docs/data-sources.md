@@ -119,12 +119,23 @@ changes over time.
   ```
   Set `"exclude": true` instead to remove a generated entry entirely (see
   the `unfused_artifact` example already in that file).
-- **Adding or fixing an Overframe mapping:** add or edit an entry in
-  `data/overrides/overframe.json` keyed the same way, after confirming the
-  id/slug on the item's real Overframe page:
-  ```json
-  { "some_item_id": { "id": 1234, "slug": "some-item-slug" } }
-  ```
+- **Adding or fixing an Overframe mapping:**
+  - **In bulk:** `npm run apply-overframe-urls -- urls.txt` (or pipe URLs
+    into it) takes a plain list of real Overframe item page URLs - one per
+    line, e.g. `https://overframe.gg/items/arsenal/6534/protea-prime/` -
+    and writes matching entries into `data/overrides/overframe.json`
+    automatically, matching each URL's slug against the generated
+    registry. Anything it can't match is reported instead of silently
+    dropped, since that usually means either a genuine name mismatch (fix
+    by hand) or an item outside Crossframe's current category coverage.
+    This is the intended way to gather coverage, since there's no bulk
+    source to generate from - see "Overframe (explicit overrides only,
+    no bulk source)" above.
+  - **One at a time:** add or edit an entry in
+    `data/overrides/overframe.json` directly, keyed by the item's `id`:
+    ```json
+    { "some_item_id": { "id": 1234, "slug": "some-item-slug" } }
+    ```
 - Run `npm run generate-data` afterward to apply the change, or
   `npm run check-data` to preview it first.
 

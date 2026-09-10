@@ -1,4 +1,10 @@
 {
-  "protea_prime": { "id": 6534, "slug": "protea-prime" },
-  "protea": { "id": 4633, "slug": "protea" }
+  "protea_prime": {
+    "id": 6534,
+    "slug": "protea-prime"
+  },
+  "protea": {
+    "id": 4633,
+    "slug": "protea"
+  }
 }
