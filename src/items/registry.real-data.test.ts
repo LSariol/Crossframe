@@ -49,11 +49,27 @@ describe("bundled registry (real generated data)", () => {
     expect(arcaneCount).toBeGreaterThan(50);
   });
 
-  it("resolves a well-known Founders-exclusive item with only a Wiki destination", () => {
+  it("covers the large majority of Warframes with an Overframe destination", () => {
+    // Overframe has no bulk data source (see docs/data-sources.md), so
+    // this is filled in by hand via data/overrides/overframe.json /
+    // scripts/apply-overframe-urls.mjs - this floor documents that the
+    // manual pass has actually been done, not just that the mechanism
+    // exists (2 items would technically pass a >0 check).
+    const warframes = registry.items.filter((item) => item.category === "warframe");
+    const withOverframe = warframes.filter((item) => item.overframe);
+    expect(withOverframe.length).toBeGreaterThan(warframes.length * 0.9);
+  });
+
+  it("never gives a well-known Founders-exclusive item a Market destination", () => {
+    // Excalibur Prime is untradable (Founders-exclusive), so it should
+    // never have a market slug - but it's a perfectly normal build
+    // subject, so (once Overframe coverage includes it) an Overframe
+    // destination is expected, not a bug. Market absence is the only
+    // thing genuinely guaranteed by "Founders-exclusive" here.
     const item = registry.findByWikiPath("/w/Excalibur/Prime");
     expect(item?.name).toBe("Excalibur Prime");
     expect(item?.market).toBeUndefined();
-    expect(getDestinations(item!, "wiki")).toEqual([]);
+    expect(getDestinations(item!, "wiki").map((d) => d.site)).not.toContain("market");
   });
 
   it("gives a tradable mod Wiki and Market but never Overframe", () => {

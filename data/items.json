@@ -2364,6 +2364,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Ash"
+    },
+    "overframe": {
+      "id": 42,
+      "slug": "ash"
     }
   },
   {
@@ -2376,6 +2380,10 @@
     },
     "market": {
       "slug": "ash_prime_set"
+    },
+    "overframe": {
+      "id": 41,
+      "slug": "ash-prime"
     }
   },
   {
@@ -2604,6 +2612,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Atlas"
+    },
+    "overframe": {
+      "id": 13,
+      "slug": "atlas"
     }
   },
   {
@@ -2616,6 +2628,10 @@
     },
     "market": {
       "slug": "atlas_prime_set"
+    },
+    "overframe": {
+      "id": 2792,
+      "slug": "atlas-prime"
     }
   },
   {
@@ -5442,6 +5458,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Banshee"
+    },
+    "overframe": {
+      "id": 8,
+      "slug": "banshee"
     }
   },
   {
@@ -5454,6 +5474,10 @@
     },
     "market": {
       "slug": "banshee_prime_set"
+    },
+    "overframe": {
+      "id": 9,
+      "slug": "banshee-prime"
     }
   },
   {
@@ -5532,6 +5556,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Baruuk"
+    },
+    "overframe": {
+      "id": 1462,
+      "slug": "baruuk"
     }
   },
   {
@@ -5544,6 +5572,10 @@
     },
     "market": {
       "slug": "baruuk_prime_set"
+    },
+    "overframe": {
+      "id": 6018,
+      "slug": "baruuk-prime"
     }
   },
   {
@@ -6798,6 +6830,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Caliban"
+    },
+    "overframe": {
+      "id": 5617,
+      "slug": "caliban"
     }
   },
   {
@@ -6810,6 +6846,10 @@
     },
     "market": {
       "slug": "caliban_prime_set"
+    },
+    "overframe": {
+      "id": 7455,
+      "slug": "caliban-prime"
     }
   },
   {
@@ -7488,6 +7528,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Chroma"
+    },
+    "overframe": {
+      "id": 15,
+      "slug": "chroma"
     }
   },
   {
@@ -7500,6 +7544,10 @@
     },
     "market": {
       "slug": "chroma_prime_set"
+    },
+    "overframe": {
+      "id": 1376,
+      "slug": "chroma-prime"
     }
   },
   {
@@ -7587,6 +7635,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Citrine"
+    },
+    "overframe": {
+      "id": 6066,
+      "slug": "citrine"
     }
   },
   {
@@ -9033,6 +9085,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Cyte-09"
+    },
+    "overframe": {
+      "id": 7199,
+      "slug": "cyte-09"
     }
   },
   {
@@ -9054,6 +9110,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Dagath"
+    },
+    "overframe": {
+      "id": 6285,
+      "slug": "dagath"
     }
   },
   {
@@ -9216,6 +9276,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Dante"
+    },
+    "overframe": {
+      "id": 6507,
+      "slug": "dante"
     }
   },
   {
@@ -10509,6 +10573,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Ember"
+    },
+    "overframe": {
+      "id": 16,
+      "slug": "ember"
     }
   },
   {
@@ -10521,6 +10589,10 @@
     },
     "market": {
       "slug": "ember_prime_set"
+    },
+    "overframe": {
+      "id": 17,
+      "slug": "ember-prime"
     }
   },
   {
@@ -11133,6 +11205,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Equinox"
+    },
+    "overframe": {
+      "id": 62,
+      "slug": "equinox"
     }
   },
   {
@@ -11145,6 +11221,10 @@
     },
     "market": {
       "slug": "equinox_prime_set"
+    },
+    "overframe": {
+      "id": 2462,
+      "slug": "equinox-prime"
     }
   },
   {
@@ -11391,6 +11471,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Excalibur"
+    },
+    "overframe": {
+      "id": 18,
+      "slug": "excalibur"
     }
   },
   {
@@ -11400,6 +11484,10 @@
     "isPrime": true,
     "wiki": {
       "path": "/w/Excalibur/Prime"
+    },
+    "overframe": {
+      "id": 19,
+      "slug": "excalibur-prime"
     }
   },
   {
@@ -11409,6 +11497,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Excalibur_Umbra"
+    },
+    "overframe": {
+      "id": 20,
+      "slug": "excalibur-umbra"
     }
   },
   {
@@ -12282,6 +12374,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Follie"
+    },
+    "overframe": {
+      "id": 7635,
+      "slug": "follie"
     }
   },
   {
@@ -12501,6 +12597,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Frost"
+    },
+    "overframe": {
+      "id": 22,
+      "slug": "frost"
     }
   },
   {
@@ -12525,6 +12625,10 @@
     },
     "market": {
       "slug": "frost_prime_set"
+    },
+    "overframe": {
+      "id": 23,
+      "slug": "frost-prime"
     }
   },
   {
@@ -13047,6 +13151,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Gara"
+    },
+    "overframe": {
+      "id": 24,
+      "slug": "gara"
     }
   },
   {
@@ -13059,6 +13167,10 @@
     },
     "market": {
       "slug": "gara_prime_set"
+    },
+    "overframe": {
+      "id": 5463,
+      "slug": "gara-prime"
     }
   },
   {
@@ -13116,6 +13228,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Garuda"
+    },
+    "overframe": {
+      "id": 1377,
+      "slug": "garuda"
     }
   },
   {
@@ -13128,6 +13244,10 @@
     },
     "market": {
       "slug": "garuda_prime_set"
+    },
+    "overframe": {
+      "id": 5768,
+      "slug": "garuda-prime"
     }
   },
   {
@@ -13197,6 +13317,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Gauss"
+    },
+    "overframe": {
+      "id": 2716,
+      "slug": "gauss"
     }
   },
   {
@@ -13209,6 +13333,10 @@
     },
     "market": {
       "slug": "gauss_prime_set"
+    },
+    "overframe": {
+      "id": 6442,
+      "slug": "gauss-prime"
     }
   },
   {
@@ -13677,6 +13805,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Grendel"
+    },
+    "overframe": {
+      "id": 2840,
+      "slug": "grendel"
     }
   },
   {
@@ -13689,6 +13821,10 @@
     },
     "market": {
       "slug": "grendel_prime_set"
+    },
+    "overframe": {
+      "id": 6294,
+      "slug": "grendel-prime"
     }
   },
   {
@@ -13968,6 +14104,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Gyre"
+    },
+    "overframe": {
+      "id": 5776,
+      "slug": "gyre"
     }
   },
   {
@@ -13980,6 +14120,10 @@
     },
     "market": {
       "slug": "gyre_prime_set"
+    },
+    "overframe": {
+      "id": 7522,
+      "slug": "gyre-prime"
     }
   },
   {
@@ -14190,6 +14334,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Harrow"
+    },
+    "overframe": {
+      "id": 47,
+      "slug": "harrow"
     }
   },
   {
@@ -14202,6 +14350,10 @@
     },
     "market": {
       "slug": "harrow_prime_set"
+    },
+    "overframe": {
+      "id": 5613,
+      "slug": "harrow-prime"
     }
   },
   {
@@ -14745,6 +14897,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Hildryn"
+    },
+    "overframe": {
+      "id": 2388,
+      "slug": "hildryn"
     }
   },
   {
@@ -14757,6 +14913,10 @@
     },
     "market": {
       "slug": "hildryn_prime_set"
+    },
+    "overframe": {
+      "id": 6096,
+      "slug": "hildryn-prime"
     }
   },
   {
@@ -15132,6 +15292,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Hydroid"
+    },
+    "overframe": {
+      "id": 46,
+      "slug": "hydroid"
     }
   },
   {
@@ -15144,6 +15308,10 @@
     },
     "market": {
       "slug": "hydroid_prime_set"
+    },
+    "overframe": {
+      "id": 45,
+      "slug": "hydroid-prime"
     }
   },
   {
@@ -15459,6 +15627,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Inaros"
+    },
+    "overframe": {
+      "id": 51,
+      "slug": "inaros"
     }
   },
   {
@@ -15471,6 +15643,10 @@
     },
     "market": {
       "slug": "inaros_prime_set"
+    },
+    "overframe": {
+      "id": 4671,
+      "slug": "inaros-prime"
     }
   },
   {
@@ -15873,6 +16049,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Ivara"
+    },
+    "overframe": {
+      "id": 48,
+      "slug": "ivara"
     }
   },
   {
@@ -15885,6 +16065,10 @@
     },
     "market": {
       "slug": "ivara_prime_set"
+    },
+    "overframe": {
+      "id": 4222,
+      "slug": "ivara-prime"
     }
   },
   {
@@ -15942,6 +16126,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Jade"
+    },
+    "overframe": {
+      "id": 6572,
+      "slug": "jade"
     }
   },
   {
@@ -16293,6 +16481,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Khora"
+    },
+    "overframe": {
+      "id": 30,
+      "slug": "khora"
     }
   },
   {
@@ -16305,6 +16497,10 @@
     },
     "market": {
       "slug": "khora_prime_set"
+    },
+    "overframe": {
+      "id": 5880,
+      "slug": "khora-prime"
     }
   },
   {
@@ -16629,6 +16825,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Koumei"
+    },
+    "overframe": {
+      "id": 7091,
+      "slug": "koumei"
     }
   },
   {
@@ -16725,6 +16925,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Kullervo"
+    },
+    "overframe": {
+      "id": 6201,
+      "slug": "kullervo"
     }
   },
   {
@@ -17232,6 +17436,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Lavos"
+    },
+    "overframe": {
+      "id": 5346,
+      "slug": "lavos"
     }
   },
   {
@@ -17244,6 +17452,10 @@
     },
     "market": {
       "slug": "lavos_prime_set"
+    },
+    "overframe": {
+      "id": 7246,
+      "slug": "lavos-prime"
     }
   },
   {
@@ -17463,6 +17675,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Limbo"
+    },
+    "overframe": {
+      "id": 36,
+      "slug": "limbo"
     }
   },
   {
@@ -17475,6 +17691,10 @@
     },
     "market": {
       "slug": "limbo_prime_set"
+    },
+    "overframe": {
+      "id": 35,
+      "slug": "limbo-prime"
     }
   },
   {
@@ -20022,6 +20242,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Loki"
+    },
+    "overframe": {
+      "id": 31,
+      "slug": "loki"
     }
   },
   {
@@ -20034,6 +20258,10 @@
     },
     "market": {
       "slug": "loki_prime_set"
+    },
+    "overframe": {
+      "id": 32,
+      "slug": "loki-prime"
     }
   },
   {
@@ -20328,6 +20556,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Mag"
+    },
+    "overframe": {
+      "id": 33,
+      "slug": "mag"
     }
   },
   {
@@ -20352,6 +20584,10 @@
     },
     "market": {
       "slug": "mag_prime_set"
+    },
+    "overframe": {
+      "id": 34,
+      "slug": "mag-prime"
     }
   },
   {
@@ -21492,6 +21728,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Mesa"
+    },
+    "overframe": {
+      "id": 14,
+      "slug": "mesa"
     }
   },
   {
@@ -21504,6 +21744,10 @@
     },
     "market": {
       "slug": "mesa_prime_set"
+    },
+    "overframe": {
+      "id": 2387,
+      "slug": "mesa-prime"
     }
   },
   {
@@ -23994,6 +24238,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Mirage"
+    },
+    "overframe": {
+      "id": 25,
+      "slug": "mirage"
     }
   },
   {
@@ -24006,6 +24254,10 @@
     },
     "market": {
       "slug": "mirage_prime_set"
+    },
+    "overframe": {
+      "id": 26,
+      "slug": "mirage-prime"
     }
   },
   {
@@ -25119,6 +25371,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nekros"
+    },
+    "overframe": {
+      "id": 38,
+      "slug": "nekros"
     }
   },
   {
@@ -25131,6 +25387,10 @@
     },
     "market": {
       "slug": "nekros_prime_set"
+    },
+    "overframe": {
+      "id": 39,
+      "slug": "nekros-prime"
     }
   },
   {
@@ -27528,6 +27788,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nezha"
+    },
+    "overframe": {
+      "id": 40,
+      "slug": "nezha"
     }
   },
   {
@@ -27540,6 +27804,10 @@
     },
     "market": {
       "slug": "nezha_prime_set"
+    },
+    "overframe": {
+      "id": 5176,
+      "slug": "nezha-prime"
     }
   },
   {
@@ -27597,6 +27865,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nidus"
+    },
+    "overframe": {
+      "id": 27,
+      "slug": "nidus"
     }
   },
   {
@@ -27609,6 +27881,10 @@
     },
     "market": {
       "slug": "nidus_prime_set"
+    },
+    "overframe": {
+      "id": 5598,
+      "slug": "nidus-prime"
     }
   },
   {
@@ -27879,6 +28155,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nokko"
+    },
+    "overframe": {
+      "id": 7472,
+      "slug": "nokko"
     }
   },
   {
@@ -27900,6 +28180,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nova"
+    },
+    "overframe": {
+      "id": 1,
+      "slug": "nova"
     }
   },
   {
@@ -27912,6 +28196,10 @@
     },
     "market": {
       "slug": "nova_prime_set"
+    },
+    "overframe": {
+      "id": 2,
+      "slug": "nova-prime"
     }
   },
   {
@@ -28017,6 +28305,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nyx"
+    },
+    "overframe": {
+      "id": 28,
+      "slug": "nyx"
     }
   },
   {
@@ -28029,6 +28321,10 @@
     },
     "market": {
       "slug": "nyx_prime_set"
+    },
+    "overframe": {
+      "id": 29,
+      "slug": "nyx-prime"
     }
   },
   {
@@ -28086,6 +28382,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Oberon"
+    },
+    "overframe": {
+      "id": 43,
+      "slug": "oberon"
     }
   },
   {
@@ -28098,6 +28398,10 @@
     },
     "market": {
       "slug": "oberon_prime_set"
+    },
+    "overframe": {
+      "id": 44,
+      "slug": "oberon-prime"
     }
   },
   {
@@ -28164,6 +28468,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Octavia"
+    },
+    "overframe": {
+      "id": 10,
+      "slug": "octavia"
     }
   },
   {
@@ -28176,6 +28484,10 @@
     },
     "market": {
       "slug": "octavia_prime_set"
+    },
+    "overframe": {
+      "id": 5365,
+      "slug": "octavia-prime"
     }
   },
   {
@@ -28488,6 +28800,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Oraxia"
+    },
+    "overframe": {
+      "id": 7400,
+      "slug": "oraxia"
     }
   },
   {
@@ -28557,6 +28873,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Orion"
+    },
+    "overframe": {
+      "id": 7962,
+      "slug": "sirius-orion/"
     }
   },
   {
@@ -31628,6 +31948,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Qorvex"
+    },
+    "overframe": {
+      "id": 6383,
+      "slug": "qorvex"
     }
   },
   {
@@ -32807,6 +33131,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Revenant"
+    },
+    "overframe": {
+      "id": 1378,
+      "slug": "revenant"
     }
   },
   {
@@ -32819,6 +33147,10 @@
     },
     "market": {
       "slug": "revenant_prime_set"
+    },
+    "overframe": {
+      "id": 5952,
+      "slug": "revenant-prime"
     }
   },
   {
@@ -32912,6 +33244,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Rhino"
+    },
+    "overframe": {
+      "id": 49,
+      "slug": "rhino"
     }
   },
   {
@@ -32924,6 +33260,10 @@
     },
     "market": {
       "slug": "rhino_prime_set"
+    },
+    "overframe": {
+      "id": 50,
+      "slug": "rhino-prime"
     }
   },
   {
@@ -33614,6 +33954,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Saryn"
+    },
+    "overframe": {
+      "id": 52,
+      "slug": "saryn"
     }
   },
   {
@@ -33626,6 +33970,10 @@
     },
     "market": {
       "slug": "saryn_prime_set"
+    },
+    "overframe": {
+      "id": 53,
+      "slug": "saryn-prime"
     }
   },
   {
@@ -34508,6 +34856,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Sevagoth"
+    },
+    "overframe": {
+      "id": 5429,
+      "slug": "sevagoth"
     }
   },
   {
@@ -34520,6 +34872,10 @@
     },
     "market": {
       "slug": "sevagoth_prime_set"
+    },
+    "overframe": {
+      "id": 6615,
+      "slug": "sevagoth-prime"
     }
   },
   {
@@ -36557,6 +36913,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Styanax"
+    },
+    "overframe": {
+      "id": 5927,
+      "slug": "styanax"
     }
   },
   {
@@ -36569,6 +36929,10 @@
     },
     "market": {
       "slug": "styanax_prime_set"
+    },
+    "overframe": {
+      "id": 7954,
+      "slug": "styanax-prime"
     }
   },
   {
@@ -37631,6 +37995,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Temple"
+    },
+    "overframe": {
+      "id": 7285,
+      "slug": "temple"
     }
   },
   {
@@ -38342,6 +38710,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Titania"
+    },
+    "overframe": {
+      "id": 21,
+      "slug": "titania"
     }
   },
   {
@@ -38354,6 +38726,10 @@
     },
     "market": {
       "slug": "titania_prime_set"
+    },
+    "overframe": {
+      "id": 4305,
+      "slug": "titania-prime"
     }
   },
   {
@@ -38693,6 +39069,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Trinity"
+    },
+    "overframe": {
+      "id": 58,
+      "slug": "trinity"
     }
   },
   {
@@ -38705,6 +39085,10 @@
     },
     "market": {
       "slug": "trinity_prime_set"
+    },
+    "overframe": {
+      "id": 59,
+      "slug": "trinity-prime"
     }
   },
   {
@@ -39116,6 +39500,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Uriel"
+    },
+    "overframe": {
+      "id": 7511,
+      "slug": "uriel"
     }
   },
   {
@@ -39173,6 +39561,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Valkyr"
+    },
+    "overframe": {
+      "id": 11,
+      "slug": "valkyr"
     }
   },
   {
@@ -39185,6 +39577,10 @@
     },
     "market": {
       "slug": "valkyr_prime_set"
+    },
+    "overframe": {
+      "id": 12,
+      "slug": "valkyr-prime"
     }
   },
   {
@@ -39404,6 +39800,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Vauban"
+    },
+    "overframe": {
+      "id": 56,
+      "slug": "vauban"
     }
   },
   {
@@ -39416,6 +39816,10 @@
     },
     "market": {
       "slug": "vauban_prime_set"
+    },
+    "overframe": {
+      "id": 57,
+      "slug": "vauban-prime"
     }
   },
   {
@@ -40619,6 +41023,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Volt"
+    },
+    "overframe": {
+      "id": 60,
+      "slug": "volt"
     }
   },
   {
@@ -40631,6 +41039,10 @@
     },
     "market": {
       "slug": "volt_prime_set"
+    },
+    "overframe": {
+      "id": 61,
+      "slug": "volt-prime"
     }
   },
   {
@@ -40748,6 +41160,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Voruna"
+    },
+    "overframe": {
+      "id": 5985,
+      "slug": "voruna"
     }
   },
   {
@@ -40760,6 +41176,10 @@
     },
     "market": {
       "slug": "voruna_prime_set"
+    },
+    "overframe": {
+      "id": 7937,
+      "slug": "voruna-prime"
     }
   },
   {
@@ -41066,6 +41486,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Wisp"
+    },
+    "overframe": {
+      "id": 2525,
+      "slug": "wisp"
     }
   },
   {
@@ -41078,6 +41502,10 @@
     },
     "market": {
       "slug": "wisp_prime_set"
+    },
+    "overframe": {
+      "id": 6227,
+      "slug": "wisp-prime"
     }
   },
   {
@@ -41213,6 +41641,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Wukong"
+    },
+    "overframe": {
+      "id": 37,
+      "slug": "wukong"
     }
   },
   {
@@ -41225,6 +41657,10 @@
     },
     "market": {
       "slug": "wukong_prime_set"
+    },
+    "overframe": {
+      "id": 2679,
+      "slug": "wukong-prime"
     }
   },
   {
@@ -41315,6 +41751,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Xaku"
+    },
+    "overframe": {
+      "id": 5002,
+      "slug": "xaku"
     }
   },
   {
@@ -41327,6 +41767,10 @@
     },
     "market": {
       "slug": "xaku_prime_set"
+    },
+    "overframe": {
+      "id": 7083,
+      "slug": "xaku-prime"
     }
   },
   {
@@ -41447,6 +41891,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Yareli"
+    },
+    "overframe": {
+      "id": 5532,
+      "slug": "yareli"
     }
   },
   {
@@ -41459,6 +41907,10 @@
     },
     "market": {
       "slug": "yareli_prime_set"
+    },
+    "overframe": {
+      "id": 7376,
+      "slug": "yareli-prime"
     }
   },
   {
@@ -41615,6 +42067,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Zephyr"
+    },
+    "overframe": {
+      "id": 54,
+      "slug": "zephyr"
     }
   },
   {
@@ -41627,6 +42083,10 @@
     },
     "market": {
       "slug": "zephyr_prime_set"
+    },
+    "overframe": {
+      "id": 55,
+      "slug": "zephyr-prime"
     }
   },
   {
