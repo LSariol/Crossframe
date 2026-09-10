@@ -6,5 +6,465 @@
   "protea": {
     "id": 4633,
     "slug": "protea"
+  },
+  "ash": {
+    "id": 42,
+    "slug": "ash"
+  },
+  "ash_prime": {
+    "id": 41,
+    "slug": "ash-prime"
+  },
+  "atlas": {
+    "id": 13,
+    "slug": "atlas"
+  },
+  "atlas_prime": {
+    "id": 2792,
+    "slug": "atlas-prime"
+  },
+  "banshee": {
+    "id": 8,
+    "slug": "banshee"
+  },
+  "banshee_prime": {
+    "id": 9,
+    "slug": "banshee-prime"
+  },
+  "baruuk": {
+    "id": 1462,
+    "slug": "baruuk"
+  },
+  "baruuk_prime": {
+    "id": 6018,
+    "slug": "baruuk-prime"
+  },
+  "caliban": {
+    "id": 5617,
+    "slug": "caliban"
+  },
+  "caliban_prime": {
+    "id": 7455,
+    "slug": "caliban-prime"
+  },
+  "chroma": {
+    "id": 15,
+    "slug": "chroma"
+  },
+  "chroma_prime": {
+    "id": 1376,
+    "slug": "chroma-prime"
+  },
+  "citrine": {
+    "id": 6066,
+    "slug": "citrine"
+  },
+  "cyte_09": {
+    "id": 7199,
+    "slug": "cyte-09"
+  },
+  "dagath": {
+    "id": 6285,
+    "slug": "dagath"
+  },
+  "dante": {
+    "id": 6507,
+    "slug": "dante"
+  },
+  "ember": {
+    "id": 16,
+    "slug": "ember"
+  },
+  "ember_prime": {
+    "id": 17,
+    "slug": "ember-prime"
+  },
+  "equinox": {
+    "id": 62,
+    "slug": "equinox"
+  },
+  "equinox_prime": {
+    "id": 2462,
+    "slug": "equinox-prime"
+  },
+  "excalibur": {
+    "id": 18,
+    "slug": "excalibur"
+  },
+  "excalibur_prime": {
+    "id": 19,
+    "slug": "excalibur-prime"
+  },
+  "excalibur_umbra": {
+    "id": 20,
+    "slug": "excalibur-umbra"
+  },
+  "follie": {
+    "id": 7635,
+    "slug": "follie"
+  },
+  "frost": {
+    "id": 22,
+    "slug": "frost"
+  },
+  "frost_prime": {
+    "id": 23,
+    "slug": "frost-prime"
+  },
+  "gara": {
+    "id": 24,
+    "slug": "gara"
+  },
+  "gara_prime": {
+    "id": 5463,
+    "slug": "gara-prime"
+  },
+  "garuda": {
+    "id": 1377,
+    "slug": "garuda"
+  },
+  "garuda_prime": {
+    "id": 5768,
+    "slug": "garuda-prime"
+  },
+  "gauss": {
+    "id": 2716,
+    "slug": "gauss"
+  },
+  "gauss_prime": {
+    "id": 6442,
+    "slug": "gauss-prime"
+  },
+  "grendel": {
+    "id": 2840,
+    "slug": "grendel"
+  },
+  "grendel_prime": {
+    "id": 6294,
+    "slug": "grendel-prime"
+  },
+  "gyre": {
+    "id": 5776,
+    "slug": "gyre"
+  },
+  "gyre_prime": {
+    "id": 7522,
+    "slug": "gyre-prime"
+  },
+  "harrow": {
+    "id": 47,
+    "slug": "harrow"
+  },
+  "harrow_prime": {
+    "id": 5613,
+    "slug": "harrow-prime"
+  },
+  "hildryn": {
+    "id": 2388,
+    "slug": "hildryn"
+  },
+  "hildryn_prime": {
+    "id": 6096,
+    "slug": "hildryn-prime"
+  },
+  "hydroid": {
+    "id": 46,
+    "slug": "hydroid"
+  },
+  "hydroid_prime": {
+    "id": 45,
+    "slug": "hydroid-prime"
+  },
+  "inaros": {
+    "id": 51,
+    "slug": "inaros"
+  },
+  "inaros_prime": {
+    "id": 4671,
+    "slug": "inaros-prime"
+  },
+  "ivara": {
+    "id": 48,
+    "slug": "ivara"
+  },
+  "ivara_prime": {
+    "id": 4222,
+    "slug": "ivara-prime"
+  },
+  "jade": {
+    "id": 6572,
+    "slug": "jade"
+  },
+  "khora": {
+    "id": 30,
+    "slug": "khora"
+  },
+  "khora_prime": {
+    "id": 5880,
+    "slug": "khora-prime"
+  },
+  "koumei": {
+    "id": 7091,
+    "slug": "koumei"
+  },
+  "kullervo": {
+    "id": 6201,
+    "slug": "kullervo"
+  },
+  "lavos": {
+    "id": 5346,
+    "slug": "lavos"
+  },
+  "lavos_prime": {
+    "id": 7246,
+    "slug": "lavos-prime"
+  },
+  "limbo": {
+    "id": 36,
+    "slug": "limbo"
+  },
+  "limbo_prime": {
+    "id": 35,
+    "slug": "limbo-prime"
+  },
+  "loki": {
+    "id": 31,
+    "slug": "loki"
+  },
+  "loki_prime": {
+    "id": 32,
+    "slug": "loki-prime"
+  },
+  "mag": {
+    "id": 33,
+    "slug": "mag"
+  },
+  "mag_prime": {
+    "id": 34,
+    "slug": "mag-prime"
+  },
+  "mesa": {
+    "id": 14,
+    "slug": "mesa"
+  },
+  "mesa_prime": {
+    "id": 2387,
+    "slug": "mesa-prime"
+  },
+  "mirage": {
+    "id": 25,
+    "slug": "mirage"
+  },
+  "mirage_prime": {
+    "id": 26,
+    "slug": "mirage-prime"
+  },
+  "nekros": {
+    "id": 38,
+    "slug": "nekros"
+  },
+  "nekros_prime": {
+    "id": 39,
+    "slug": "nekros-prime"
+  },
+  "nezha": {
+    "id": 40,
+    "slug": "nezha"
+  },
+  "nezha_prime": {
+    "id": 5176,
+    "slug": "nezha-prime"
+  },
+  "nidus": {
+    "id": 27,
+    "slug": "nidus"
+  },
+  "nidus_prime": {
+    "id": 5598,
+    "slug": "nidus-prime"
+  },
+  "nokko": {
+    "id": 7472,
+    "slug": "nokko"
+  },
+  "nova": {
+    "id": 1,
+    "slug": "nova"
+  },
+  "nova_prime": {
+    "id": 2,
+    "slug": "nova-prime"
+  },
+  "nyx": {
+    "id": 28,
+    "slug": "nyx"
+  },
+  "nyx_prime": {
+    "id": 29,
+    "slug": "nyx-prime"
+  },
+  "oberon": {
+    "id": 43,
+    "slug": "oberon"
+  },
+  "oberon_prime": {
+    "id": 44,
+    "slug": "oberon-prime"
+  },
+  "octavia": {
+    "id": 10,
+    "slug": "octavia"
+  },
+  "octavia_prime": {
+    "id": 5365,
+    "slug": "octavia-prime"
+  },
+  "oraxia": {
+    "id": 7400,
+    "slug": "oraxia"
+  },
+  "qorvex": {
+    "id": 6383,
+    "slug": "qorvex"
+  },
+  "revenant": {
+    "id": 1378,
+    "slug": "revenant"
+  },
+  "revenant_prime": {
+    "id": 5952,
+    "slug": "revenant-prime"
+  },
+  "rhino": {
+    "id": 49,
+    "slug": "rhino"
+  },
+  "rhino_prime": {
+    "id": 50,
+    "slug": "rhino-prime"
+  },
+  "saryn": {
+    "id": 52,
+    "slug": "saryn"
+  },
+  "saryn_prime": {
+    "id": 53,
+    "slug": "saryn-prime"
+  },
+  "sevagoth": {
+    "id": 5429,
+    "slug": "sevagoth"
+  },
+  "sevagoth_prime": {
+    "id": 6615,
+    "slug": "sevagoth-prime"
+  },
+  "orion_and_sirius": {
+    "id": 7962,
+    "slug": "sirius-orion/"
+  },
+  "styanax": {
+    "id": 5927,
+    "slug": "styanax"
+  },
+  "styanax_prime": {
+    "id": 7954,
+    "slug": "styanax-prime"
+  },
+  "temple": {
+    "id": 7285,
+    "slug": "temple"
+  },
+  "titania": {
+    "id": 21,
+    "slug": "titania"
+  },
+  "titania_prime": {
+    "id": 4305,
+    "slug": "titania-prime"
+  },
+  "trinity": {
+    "id": 58,
+    "slug": "trinity"
+  },
+  "trinity_prime": {
+    "id": 59,
+    "slug": "trinity-prime"
+  },
+  "uriel": {
+    "id": 7511,
+    "slug": "uriel"
+  },
+  "valkyr": {
+    "id": 11,
+    "slug": "valkyr"
+  },
+  "valkyr_prime": {
+    "id": 12,
+    "slug": "valkyr-prime"
+  },
+  "vauban": {
+    "id": 56,
+    "slug": "vauban"
+  },
+  "vauban_prime": {
+    "id": 57,
+    "slug": "vauban-prime"
+  },
+  "volt": {
+    "id": 60,
+    "slug": "volt"
+  },
+  "volt_prime": {
+    "id": 61,
+    "slug": "volt-prime"
+  },
+  "voruna": {
+    "id": 5985,
+    "slug": "voruna"
+  },
+  "voruna_prime": {
+    "id": 7937,
+    "slug": "voruna-prime"
+  },
+  "wisp": {
+    "id": 2525,
+    "slug": "wisp"
+  },
+  "wisp_prime": {
+    "id": 6227,
+    "slug": "wisp-prime"
+  },
+  "wukong": {
+    "id": 37,
+    "slug": "wukong"
+  },
+  "wukong_prime": {
+    "id": 2679,
+    "slug": "wukong-prime"
+  },
+  "xaku": {
+    "id": 5002,
+    "slug": "xaku"
+  },
+  "xaku_prime": {
+    "id": 7083,
+    "slug": "xaku-prime"
+  },
+  "yareli": {
+    "id": 5532,
+    "slug": "yareli"
+  },
+  "yareli_prime": {
+    "id": 7376,
+    "slug": "yareli-prime"
+  },
+  "zephyr": {
+    "id": 54,
+    "slug": "zephyr"
+  },
+  "zephyr_prime": {
+    "id": 55,
+    "slug": "zephyr-prime"
   }
 }
