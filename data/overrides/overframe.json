@@ -466,5 +466,2665 @@
   "zephyr_prime": {
     "id": 55,
     "slug": "zephyr-prime"
+  },
+  "bonewidow": {
+    "id": 5276,
+    "slug": "bonewidow"
+  },
+  "voidrig": {
+    "id": 5158,
+    "slug": "voidrig"
+  },
+  "amesha": {
+    "id": 7,
+    "slug": "amesha"
+  },
+  "elytron": {
+    "id": 3,
+    "slug": "elytron"
+  },
+  "itzal": {
+    "id": 6,
+    "slug": "itzal"
+  },
+  "odonata": {
+    "id": 5,
+    "slug": "odonata"
+  },
+  "odonata_prime": {
+    "id": 4,
+    "slug": "odonata-prime"
+  },
+  "adarza_kavat": {
+    "id": 2227,
+    "slug": "adarza-kavat"
+  },
+  "bhaira_hound": {
+    "id": 5856,
+    "slug": "bhaira-hound"
+  },
+  "carrier": {
+    "id": 2235,
+    "slug": "carrier"
+  },
+  "carrier_prime": {
+    "id": 2239,
+    "slug": "carrier-prime"
+  },
+  "chesa_kubrow": {
+    "id": 2233,
+    "slug": "chesa-kubrow"
+  },
+  "crescent_vulpaphyla": {
+    "id": 5019,
+    "slug": "crescent-vulpaphyla"
+  },
+  "dethcube": {
+    "id": 2236,
+    "slug": "dethcube"
+  },
+  "dethcube_prime": {
+    "id": 2793,
+    "slug": "dethcube-prime"
+  },
+  "diriga": {
+    "id": 2234,
+    "slug": "diriga"
+  },
+  "djinn": {
+    "id": 2237,
+    "slug": "djinn"
+  },
+  "dorma_hound": {
+    "id": 5853,
+    "slug": "dorma-hound"
+  },
+  "hec_hound": {
+    "id": 5858,
+    "slug": "hec-hound"
+  },
+  "helios": {
+    "id": 2238,
+    "slug": "helios"
+  },
+  "helios_prime": {
+    "id": 2240,
+    "slug": "helios-prime"
+  },
+  "helminth_charger": {
+    "id": 2229,
+    "slug": "helminth-charger"
+  },
+  "huras_kubrow": {
+    "id": 2230,
+    "slug": "huras-kubrow"
+  },
+  "lambeo_moa": {
+    "id": 2536,
+    "slug": "lambeo-moa"
+  },
+  "medjay_predasite": {
+    "id": 5020,
+    "slug": "medjay-predasite"
+  },
+  "nautilus": {
+    "id": 5415,
+    "slug": "nautilus"
+  },
+  "nautilus_prime": {
+    "id": 6628,
+    "slug": "nautilus-prime"
+  },
+  "nychus_moa": {
+    "id": 4748,
+    "slug": "nychus-moa"
+  },
+  "oloro_moa": {
+    "id": 2537,
+    "slug": "oloro-moa"
+  },
+  "oxylus": {
+    "id": 2243,
+    "slug": "oxylus"
+  },
+  "panzer_vulpaphyla": {
+    "id": 5018,
+    "slug": "panzer-vulpaphyla"
+  },
+  "para_moa": {
+    "id": 2538,
+    "slug": "para-moa"
+  },
+  "pharaoh_predasite": {
+    "id": 5021,
+    "slug": "pharaoh-predasite"
+  },
+  "prisma_shade": {
+    "id": 2242,
+    "slug": "prisma-shade"
+  },
+  "raksa_kubrow": {
+    "id": 2231,
+    "slug": "raksa-kubrow"
+  },
+  "sahasa_kubrow": {
+    "id": 2228,
+    "slug": "sahasa-kubrow"
+  },
+  "shade": {
+    "id": 2244,
+    "slug": "shade"
+  },
+  "shade_prime": {
+    "id": 6128,
+    "slug": "shade-prime"
+  },
+  "sly_vulpaphyla": {
+    "id": 5024,
+    "slug": "sly-vulpaphyla"
+  },
+  "smeeta_kavat": {
+    "id": 2226,
+    "slug": "smeeta-kavat"
+  },
+  "sunika_kubrow": {
+    "id": 2232,
+    "slug": "sunika-kubrow"
+  },
+  "taxon": {
+    "id": 2245,
+    "slug": "taxon"
+  },
+  "vasca_kavat": {
+    "id": 2841,
+    "slug": "vasca-kavat"
+  },
+  "venari": {
+    "id": 2409,
+    "slug": "venari"
+  },
+  "venari_prime": {
+    "id": 5912,
+    "slug": "venari-prime"
+  },
+  "vizier_predasite": {
+    "id": 5022,
+    "slug": "vizier-predasite"
+  },
+  "wyrm": {
+    "id": 2246,
+    "slug": "wyrm"
+  },
+  "wyrm_prime": {
+    "id": 2241,
+    "slug": "wyrm-prime"
+  },
+  "ax_52": {
+    "id": 6611,
+    "slug": "ax-52"
+  },
+  "acceltra": {
+    "id": 2717,
+    "slug": "acceltra"
+  },
+  "acceltra_prime": {
+    "id": 6474,
+    "slug": "acceltra-prime"
+  },
+  "acrid": {
+    "id": 906,
+    "slug": "acrid"
+  },
+  "aegrit": {
+    "id": 5943,
+    "slug": "aegrit"
+  },
+  "aeolak": {
+    "id": 5833,
+    "slug": "aeolak"
+  },
+  "afentis": {
+    "id": 5945,
+    "slug": "afentis"
+  },
+  "afentis_prime": {
+    "id": 7984,
+    "slug": "afentis-prime"
+  },
+  "afuris_prime": {
+    "id": 6047,
+    "slug": "afuris-prime"
+  },
+  "agkuza": {
+    "id": 1056,
+    "slug": "agkuza"
+  },
+  "akarius": {
+    "id": 2718,
+    "slug": "akarius"
+  },
+  "akarius_prime": {
+    "id": 6476,
+    "slug": "akarius-prime"
+  },
+  "akaten": {
+    "id": 5864,
+    "slug": "akaten"
+  },
+  "akbolto": {
+    "id": 1047,
+    "slug": "akbolto"
+  },
+  "akbolto_prime": {
+    "id": 1208,
+    "slug": "akbolto-prime"
+  },
+  "akbronco": {
+    "id": 1049,
+    "slug": "akbronco"
+  },
+  "akbronco_prime": {
+    "id": 1053,
+    "slug": "akbronco-prime"
+  },
+  "akjagara": {
+    "id": 1220,
+    "slug": "akjagara"
+  },
+  "akjagara_prime": {
+    "id": 2394,
+    "slug": "akjagara-prime"
+  },
+  "aklato": {
+    "id": 1048,
+    "slug": "aklato"
+  },
+  "aklex": {
+    "id": 1044,
+    "slug": "aklex"
+  },
+  "aklex_prime": {
+    "id": 1045,
+    "slug": "aklex-prime"
+  },
+  "akmagnus": {
+    "id": 1051,
+    "slug": "akmagnus"
+  },
+  "akmagnus_prime": {
+    "id": 6613,
+    "slug": "akmagnus-prime"
+  },
+  "aksomati": {
+    "id": 1217,
+    "slug": "aksomati"
+  },
+  "aksomati_prime": {
+    "id": 4235,
+    "slug": "aksomati-prime"
+  },
+  "akstiletto": {
+    "id": 1219,
+    "slug": "akstiletto"
+  },
+  "akstiletto_prime": {
+    "id": 1209,
+    "slug": "akstiletto-prime"
+  },
+  "akvasto": {
+    "id": 1052,
+    "slug": "akvasto"
+  },
+  "akvasto_prime": {
+    "id": 1444,
+    "slug": "akvasto-prime"
+  },
+  "akzani": {
+    "id": 1206,
+    "slug": "akzani"
+  },
+  "alternox": {
+    "id": 5829,
+    "slug": "alternox"
+  },
+  "alternox_prime": {
+    "id": 7564,
+    "slug": "alternox-prime"
+  },
+  "amanata": {
+    "id": 7140,
+    "slug": "amanata"
+  },
+  "ambassador": {
+    "id": 5554,
+    "slug": "ambassador"
+  },
+  "amphis": {
+    "id": 1159,
+    "slug": "amphis"
+  },
+  "amprex": {
+    "id": 920,
+    "slug": "amprex"
+  },
+  "angstrum": {
+    "id": 944,
+    "slug": "angstrum"
+  },
+  "anku": {
+    "id": 1152,
+    "slug": "anku"
+  },
+  "ankyros": {
+    "id": 1124,
+    "slug": "ankyros"
+  },
+  "ankyros_prime": {
+    "id": 1123,
+    "slug": "ankyros-prime"
+  },
+  "arbucep": {
+    "id": 7481,
+    "slug": "arbucep"
+  },
+  "arca_plasmor": {
+    "id": 927,
+    "slug": "arca-plasmor"
+  },
+  "arca_scisco": {
+    "id": 946,
+    "slug": "arca-scisco"
+  },
+  "arca_titron": {
+    "id": 933,
+    "slug": "arca-titron"
+  },
+  "argonak": {
+    "id": 968,
+    "slug": "argonak"
+  },
+  "artax": {
+    "id": 2250,
+    "slug": "artax"
+  },
+  "arum_spinosa": {
+    "id": 5297,
+    "slug": "arum-spinosa"
+  },
+  "astilla": {
+    "id": 1093,
+    "slug": "astilla"
+  },
+  "astilla_prime": {
+    "id": 5490,
+    "slug": "astilla-prime"
+  },
+  "athodai": {
+    "id": 4772,
+    "slug": "athodai"
+  },
+  "athodai_prime": {
+    "id": 7990,
+    "slug": "athodai-prime"
+  },
+  "atomos": {
+    "id": 998,
+    "slug": "atomos"
+  },
+  "atterax": {
+    "id": 981,
+    "slug": "atterax"
+  },
+  "attica": {
+    "id": 1099,
+    "slug": "attica"
+  },
+  "azima": {
+    "id": 1218,
+    "slug": "azima"
+  },
+  "azothane": {
+    "id": 6178,
+    "slug": "azothane"
+  },
+  "balla": {
+    "id": 2548,
+    "slug": "balla"
+  },
+  "ballistica": {
+    "id": 1204,
+    "slug": "ballistica"
+  },
+  "ballistica_prime": {
+    "id": 1210,
+    "slug": "ballistica-prime"
+  },
+  "basmu": {
+    "id": 4287,
+    "slug": "basmu"
+  },
+  "batoten": {
+    "id": 5862,
+    "slug": "batoten"
+  },
+  "battacor": {
+    "id": 1432,
+    "slug": "battacor"
+  },
+  "baza": {
+    "id": 1097,
+    "slug": "baza"
+  },
+  "baza_prime": {
+    "id": 4230,
+    "slug": "baza-prime"
+  },
+  "bo": {
+    "id": 1160,
+    "slug": "bo"
+  },
+  "bo_prime": {
+    "id": 1158,
+    "slug": "bo-prime"
+  },
+  "boar": {
+    "id": 1238,
+    "slug": "boar"
+  },
+  "boar_prime": {
+    "id": 1239,
+    "slug": "boar-prime"
+  },
+  "boltace": {
+    "id": 1189,
+    "slug": "boltace"
+  },
+  "bolto": {
+    "id": 1196,
+    "slug": "bolto"
+  },
+  "boltor": {
+    "id": 1224,
+    "slug": "boltor"
+  },
+  "boltor_prime": {
+    "id": 1083,
+    "slug": "boltor-prime"
+  },
+  "brakk": {
+    "id": 990,
+    "slug": "brakk"
+  },
+  "braton": {
+    "id": 1229,
+    "slug": "braton"
+  },
+  "braton_prime": {
+    "id": 1225,
+    "slug": "braton-prime"
+  },
+  "braton_vandal": {
+    "id": 1235,
+    "slug": "braton-vandal"
+  },
+  "broken_scepter": {
+    "id": 987,
+    "slug": "broken-scepter"
+  },
+  "broken_war": {
+    "id": 1182,
+    "slug": "broken-war"
+  },
+  "bronco": {
+    "id": 1197,
+    "slug": "bronco"
+  },
+  "bronco_prime": {
+    "id": 1194,
+    "slug": "bronco-prime"
+  },
+  "bubonico": {
+    "id": 5293,
+    "slug": "bubonico"
+  },
+  "burst_laser": {
+    "id": 2248,
+    "slug": "burst-laser"
+  },
+  "burst_laser_prime": {
+    "id": 6130,
+    "slug": "burst-laser-prime"
+  },
+  "burston": {
+    "id": 1226,
+    "slug": "burston"
+  },
+  "burston_prime": {
+    "id": 1084,
+    "slug": "burston-prime"
+  },
+  "buzlok": {
+    "id": 964,
+    "slug": "buzlok"
+  },
+  "cadus": {
+    "id": 5578,
+    "slug": "cadus"
+  },
+  "cantare": {
+    "id": 6600,
+    "slug": "cantare"
+  },
+  "carmine_penta": {
+    "id": 5421,
+    "slug": "carmine-penta"
+  },
+  "cassowar": {
+    "id": 1144,
+    "slug": "cassowar"
+  },
+  "castanas": {
+    "id": 1247,
+    "slug": "castanas"
+  },
+  "catabolyst": {
+    "id": 5301,
+    "slug": "catabolyst"
+  },
+  "caustacyst": {
+    "id": 1008,
+    "slug": "caustacyst"
+  },
+  "cedo": {
+    "id": 5358,
+    "slug": "cedo"
+  },
+  "cedo_prime": {
+    "id": 7259,
+    "slug": "cedo-prime"
+  },
+  "centaur": {
+    "id": 1059,
+    "slug": "centaur"
+  },
+  "ceramic_dagger": {
+    "id": 1109,
+    "slug": "ceramic-dagger"
+  },
+  "cerata": {
+    "id": 1007,
+    "slug": "cerata"
+  },
+  "cernos": {
+    "id": 1071,
+    "slug": "cernos"
+  },
+  "cernos_prime": {
+    "id": 1073,
+    "slug": "cernos-prime"
+  },
+  "cestra": {
+    "id": 939,
+    "slug": "cestra"
+  },
+  "ceti_lacera": {
+    "id": 4296,
+    "slug": "ceti-lacera"
+  },
+  "cinta": {
+    "id": 6169,
+    "slug": "cinta"
+  },
+  "coda_bassocyst": {
+    "id": 7323,
+    "slug": "coda-bassocyst"
+  },
+  "coda_bubonico": {
+    "id": 7650,
+    "slug": "coda-bubonico"
+  },
+  "coda_catabolyst": {
+    "id": 7333,
+    "slug": "coda-catabolyst"
+  },
+  "coda_caustacyst": {
+    "id": 7327,
+    "slug": "coda-caustacyst"
+  },
+  "coda_hema": {
+    "id": 7324,
+    "slug": "coda-hema"
+  },
+  "coda_hirudo": {
+    "id": 7330,
+    "slug": "coda-hirudo"
+  },
+  "coda_mire": {
+    "id": 7331,
+    "slug": "coda-mire"
+  },
+  "coda_motovore": {
+    "id": 7329,
+    "slug": "coda-motovore"
+  },
+  "coda_pathocyst": {
+    "id": 7328,
+    "slug": "coda-pathocyst"
+  },
+  "coda_pox": {
+    "id": 7334,
+    "slug": "coda-pox"
+  },
+  "coda_sporothrix": {
+    "id": 7325,
+    "slug": "coda-sporothrix"
+  },
+  "coda_synapse": {
+    "id": 7326,
+    "slug": "coda-synapse"
+  },
+  "coda_tysis": {
+    "id": 7335,
+    "slug": "coda-tysis"
+  },
+  "convectrix": {
+    "id": 928,
+    "slug": "convectrix"
+  },
+  "corinth": {
+    "id": 1094,
+    "slug": "corinth"
+  },
+  "corinth_prime": {
+    "id": 4313,
+    "slug": "corinth-prime"
+  },
+  "cortege": {
+    "id": 5118,
+    "slug": "cortege"
+  },
+  "corufell": {
+    "id": 6074,
+    "slug": "corufell"
+  },
+  "corvas": {
+    "id": 1067,
+    "slug": "corvas"
+  },
+  "corvas_prime": {
+    "id": 5827,
+    "slug": "corvas-prime"
+  },
+  "cronus": {
+    "id": 1107,
+    "slug": "cronus"
+  },
+  "cryotra": {
+    "id": 2222,
+    "slug": "cryotra"
+  },
+  "cyanex": {
+    "id": 2529,
+    "slug": "cyanex"
+  },
+  "cyath": {
+    "id": 2547,
+    "slug": "cyath"
+  },
+  "cycron": {
+    "id": 942,
+    "slug": "cycron"
+  },
+  "cyngas": {
+    "id": 1062,
+    "slug": "cyngas"
+  },
+  "daikyu": {
+    "id": 1072,
+    "slug": "daikyu"
+  },
+  "daikyu_prime": {
+    "id": 7390,
+    "slug": "daikyu-prime"
+  },
+  "dakra_prime": {
+    "id": 1108,
+    "slug": "dakra-prime"
+  },
+  "dark_dagger": {
+    "id": 1111,
+    "slug": "dark-dagger"
+  },
+  "dark_split_sword": {
+    "id": 1165,
+    "slug": "dark-split-sword"
+  },
+  "dark_sword": {
+    "id": 1164,
+    "slug": "dark-sword"
+  },
+  "deconstructor": {
+    "id": 2257,
+    "slug": "deconstructor"
+  },
+  "deconstructor_prime": {
+    "id": 2247,
+    "slug": "deconstructor-prime"
+  },
+  "dehtat": {
+    "id": 2546,
+    "slug": "dehtat"
+  },
+  "dera": {
+    "id": 916,
+    "slug": "dera"
+  },
+  "dera_vandal": {
+    "id": 914,
+    "slug": "dera-vandal"
+  },
+  "despair": {
+    "id": 1250,
+    "slug": "despair"
+  },
+  "destreza": {
+    "id": 1185,
+    "slug": "destreza"
+  },
+  "destreza_prime": {
+    "id": 1173,
+    "slug": "destreza-prime"
+  },
+  "deth_machine_rifle": {
+    "id": 2249,
+    "slug": "deth-machine-rifle"
+  },
+  "deth_machine_rifle_prime": {
+    "id": 2794,
+    "slug": "deth-machine-rifle-prime"
+  },
+  "detron": {
+    "id": 938,
+    "slug": "detron"
+  },
+  "dex_dakra": {
+    "id": 1166,
+    "slug": "dex-dakra"
+  },
+  "dex_furis": {
+    "id": 1205,
+    "slug": "dex-furis"
+  },
+  "dex_nikana": {
+    "id": 6520,
+    "slug": "dex-nikana"
+  },
+  "dex_sybaris": {
+    "id": 1077,
+    "slug": "dex-sybaris"
+  },
+  "dokrahm": {
+    "id": 2552,
+    "slug": "dokrahm"
+  },
+  "dorrclave": {
+    "id": 6335,
+    "slug": "dorrclave"
+  },
+  "dragon_nikana": {
+    "id": 1171,
+    "slug": "dragon-nikana"
+  },
+  "drakgoon": {
+    "id": 954,
+    "slug": "drakgoon"
+  },
+  "dread": {
+    "id": 1076,
+    "slug": "dread"
+  },
+  "dual_cestra": {
+    "id": 940,
+    "slug": "dual-cestra"
+  },
+  "dual_cleavers": {
+    "id": 975,
+    "slug": "dual-cleavers"
+  },
+  "dual_coda_torxica": {
+    "id": 7332,
+    "slug": "dual-coda-torxica"
+  },
+  "dual_decurion": {
+    "id": 1064,
+    "slug": "dual-decurion"
+  },
+  "dual_ether": {
+    "id": 1117,
+    "slug": "dual-ether"
+  },
+  "dual_heat_swords": {
+    "id": 1118,
+    "slug": "dual-heat-swords"
+  },
+  "dual_ichor": {
+    "id": 1104,
+    "slug": "dual-ichor"
+  },
+  "dual_kamas": {
+    "id": 1115,
+    "slug": "dual-kamas"
+  },
+  "dual_kamas_prime": {
+    "id": 1147,
+    "slug": "dual-kamas-prime"
+  },
+  "dual_keres": {
+    "id": 1179,
+    "slug": "dual-keres"
+  },
+  "dual_keres_prime": {
+    "id": 5908,
+    "slug": "dual-keres-prime"
+  },
+  "dual_raza": {
+    "id": 1156,
+    "slug": "dual-raza"
+  },
+  "dual_viciss": {
+    "id": 7340,
+    "slug": "dual-viciss"
+  },
+  "dual_toxocyst": {
+    "id": 1015,
+    "slug": "dual-toxocyst"
+  },
+  "dual_zoren": {
+    "id": 1103,
+    "slug": "dual-zoren"
+  },
+  "dual_zoren_prime": {
+    "id": 7261,
+    "slug": "dual-zoren-prime"
+  },
+  "efv_5_jupiter": {
+    "id": 7336,
+    "slug": "efv-5-jupiter"
+  },
+  "efv_8_mars": {
+    "id": 7338,
+    "slug": "efv-8-mars"
+  },
+  "edun": {
+    "id": 6173,
+    "slug": "edun"
+  },
+  "ekhein": {
+    "id": 6426,
+    "slug": "ekhein"
+  },
+  "embolist": {
+    "id": 1017,
+    "slug": "embolist"
+  },
+  "endura": {
+    "id": 1184,
+    "slug": "endura"
+  },
+  "enkaus": {
+    "id": 7651,
+    "slug": "enkaus"
+  },
+  "epitaph": {
+    "id": 5439,
+    "slug": "epitaph"
+  },
+  "epitaph_prime": {
+    "id": 6631,
+    "slug": "epitaph-prime"
+  },
+  "ether_daggers": {
+    "id": 1113,
+    "slug": "ether-daggers"
+  },
+  "ether_reaper": {
+    "id": 1153,
+    "slug": "ether-reaper"
+  },
+  "ether_sword": {
+    "id": 1135,
+    "slug": "ether-sword"
+  },
+  "euphona_prime": {
+    "id": 1203,
+    "slug": "euphona-prime"
+  },
+  "evensong": {
+    "id": 6596,
+    "slug": "evensong"
+  },
+  "exergis": {
+    "id": 1463,
+    "slug": "exergis"
+  },
+  "falcor": {
+    "id": 1434,
+    "slug": "falcor"
+  },
+  "fang": {
+    "id": 1112,
+    "slug": "fang"
+  },
+  "fang_prime": {
+    "id": 1114,
+    "slug": "fang-prime"
+  },
+  "felarx": {
+    "id": 5872,
+    "slug": "felarx"
+  },
+  "ferrox": {
+    "id": 931,
+    "slug": "ferrox"
+  },
+  "fluctus": {
+    "id": 1070,
+    "slug": "fluctus"
+  },
+  "flux_rifle": {
+    "id": 913,
+    "slug": "flux-rifle"
+  },
+  "fragor": {
+    "id": 1134,
+    "slug": "fragor"
+  },
+  "fragor_prime": {
+    "id": 1148,
+    "slug": "fragor-prime"
+  },
+  "fulmin": {
+    "id": 2530,
+    "slug": "fulmin"
+  },
+  "fulmin_prime": {
+    "id": 6254,
+    "slug": "fulmin-prime"
+  },
+  "furax": {
+    "id": 1120,
+    "slug": "furax"
+  },
+  "furax_wraith": {
+    "id": 1121,
+    "slug": "furax-wraith"
+  },
+  "furis": {
+    "id": 1193,
+    "slug": "furis"
+  },
+  "fusilai": {
+    "id": 1243,
+    "slug": "fusilai"
+  },
+  "galariak_prime": {
+    "id": 7558,
+    "slug": "galariak-prime"
+  },
+  "galatine": {
+    "id": 1167,
+    "slug": "galatine"
+  },
+  "galatine_prime": {
+    "id": 1176,
+    "slug": "galatine-prime"
+  },
+  "galvacord": {
+    "id": 1464,
+    "slug": "galvacord"
+  },
+  "gammacor": {
+    "id": 1030,
+    "slug": "gammacor"
+  },
+  "gazal_machete": {
+    "id": 1141,
+    "slug": "gazal-machete"
+  },
+  "ghoulsaw": {
+    "id": 5600,
+    "slug": "ghoulsaw"
+  },
+  "glaive": {
+    "id": 1126,
+    "slug": "glaive"
+  },
+  "glaive_prime": {
+    "id": 1127,
+    "slug": "glaive-prime"
+  },
+  "glaxion": {
+    "id": 924,
+    "slug": "glaxion"
+  },
+  "glaxion_vandal": {
+    "id": 2526,
+    "slug": "glaxion-vandal"
+  },
+  "gorgon": {
+    "id": 1227,
+    "slug": "gorgon"
+  },
+  "gorgon_wraith": {
+    "id": 970,
+    "slug": "gorgon-wraith"
+  },
+  "gotva_prime": {
+    "id": 6262,
+    "slug": "gotva-prime"
+  },
+  "grakata": {
+    "id": 952,
+    "slug": "grakata"
+  },
+  "gram": {
+    "id": 1129,
+    "slug": "gram"
+  },
+  "gram_prime": {
+    "id": 1442,
+    "slug": "gram-prime"
+  },
+  "grattler": {
+    "id": 1069,
+    "slug": "grattler"
+  },
+  "grimoire": {
+    "id": 6429,
+    "slug": "grimoire"
+  },
+  "grinlok": {
+    "id": 955,
+    "slug": "grinlok"
+  },
+  "guandao": {
+    "id": 1143,
+    "slug": "guandao"
+  },
+  "guandao_prime": {
+    "id": 5203,
+    "slug": "guandao-prime"
+  },
+  "gunsen": {
+    "id": 1192,
+    "slug": "gunsen"
+  },
+  "gunsen_prime": {
+    "id": 6258,
+    "slug": "gunsen-prime"
+  },
+  "haalvu": {
+    "id": 8015,
+    "slug": "haalvu"
+  },
+  "halikar": {
+    "id": 982,
+    "slug": "halikar"
+  },
+  "halikar_wraith": {
+    "id": 5428,
+    "slug": "halikar-wraith"
+  },
+  "harmony": {
+    "id": 6598,
+    "slug": "harmony"
+  },
+  "harpak": {
+    "id": 966,
+    "slug": "harpak"
+  },
+  "hate": {
+    "id": 1155,
+    "slug": "hate"
+  },
+  "heat_dagger": {
+    "id": 1110,
+    "slug": "heat-dagger"
+  },
+  "heat_sword": {
+    "id": 1168,
+    "slug": "heat-sword"
+  },
+  "hek": {
+    "id": 1240,
+    "slug": "hek"
+  },
+  "heliocor": {
+    "id": 904,
+    "slug": "heliocor"
+  },
+  "helstrum": {
+    "id": 4666,
+    "slug": "helstrum"
+  },
+  "hema": {
+    "id": 1003,
+    "slug": "hema"
+  },
+  "hespar": {
+    "id": 5835,
+    "slug": "hespar"
+  },
+  "higasa": {
+    "id": 7135,
+    "slug": "higasa"
+  },
+  "hikou": {
+    "id": 1251,
+    "slug": "hikou"
+  },
+  "hikou_prime": {
+    "id": 1246,
+    "slug": "hikou-prime"
+  },
+  "hind": {
+    "id": 951,
+    "slug": "hind"
+  },
+  "hirudo": {
+    "id": 1009,
+    "slug": "hirudo"
+  },
+  "hystrix": {
+    "id": 1215,
+    "slug": "hystrix"
+  },
+  "hystrix_prime": {
+    "id": 5910,
+    "slug": "hystrix-prime"
+  },
+  "ignis": {
+    "id": 908,
+    "slug": "ignis"
+  },
+  "ignis_wraith": {
+    "id": 909,
+    "slug": "ignis-wraith"
+  },
+  "imperator": {
+    "id": 1065,
+    "slug": "imperator"
+  },
+  "imperator_vandal": {
+    "id": 1066,
+    "slug": "imperator-vandal"
+  },
+  "innodem": {
+    "id": 5874,
+    "slug": "innodem"
+  },
+  "jat_kittag": {
+    "id": 974,
+    "slug": "jat-kittag"
+  },
+  "jat_kusar": {
+    "id": 986,
+    "slug": "jat-kusar"
+  },
+  "javlok": {
+    "id": 962,
+    "slug": "javlok"
+  },
+  "jaw_sword": {
+    "id": 1169,
+    "slug": "jaw-sword"
+  },
+  "kama": {
+    "id": 1116,
+    "slug": "kama"
+  },
+  "karak": {
+    "id": 956,
+    "slug": "karak"
+  },
+  "karak_wraith": {
+    "id": 957,
+    "slug": "karak-wraith"
+  },
+  "karyst": {
+    "id": 1172,
+    "slug": "karyst"
+  },
+  "karyst_prime": {
+    "id": 4700,
+    "slug": "karyst-prime"
+  },
+  "kaszas": {
+    "id": 1055,
+    "slug": "kaszas"
+  },
+  "keratinos": {
+    "id": 5114,
+    "slug": "keratinos"
+  },
+  "kesheg": {
+    "id": 973,
+    "slug": "kesheg"
+  },
+  "kestrel": {
+    "id": 1125,
+    "slug": "kestrel"
+  },
+  "kestrel_prime": {
+    "id": 7566,
+    "slug": "kestrel-prime"
+  },
+  "knell": {
+    "id": 1223,
+    "slug": "knell"
+  },
+  "knell_prime": {
+    "id": 5614,
+    "slug": "knell-prime"
+  },
+  "knux": {
+    "id": 1060,
+    "slug": "knux"
+  },
+  "kogake": {
+    "id": 2531,
+    "slug": "kogake"
+  },
+  "kogake_prime": {
+    "id": 1149,
+    "slug": "kogake-prime"
+  },
+  "kohm": {
+    "id": 967,
+    "slug": "kohm"
+  },
+  "kohmak": {
+    "id": 994,
+    "slug": "kohmak"
+  },
+  "komorex": {
+    "id": 2527,
+    "slug": "komorex"
+  },
+  "kompressa": {
+    "id": 5582,
+    "slug": "kompressa"
+  },
+  "kompressa_prime": {
+    "id": 7392,
+    "slug": "kompressa-prime"
+  },
+  "korrudo": {
+    "id": 2466,
+    "slug": "korrudo"
+  },
+  "korumm": {
+    "id": 5732,
+    "slug": "korumm"
+  },
+  "kraken": {
+    "id": 949,
+    "slug": "kraken"
+  },
+  "kreska": {
+    "id": 1433,
+    "slug": "kreska"
+  },
+  "krohkur": {
+    "id": 985,
+    "slug": "krohkur"
+  },
+  "kronen": {
+    "id": 1190,
+    "slug": "kronen"
+  },
+  "kronen_prime": {
+    "id": 1191,
+    "slug": "kronen-prime"
+  },
+  "kronsh": {
+    "id": 2549,
+    "slug": "kronsh"
+  },
+  "kulstar": {
+    "id": 996,
+    "slug": "kulstar"
+  },
+  "kunai": {
+    "id": 1249,
+    "slug": "kunai"
+  },
+  "kuva_ayanga": {
+    "id": 2842,
+    "slug": "kuva-ayanga"
+  },
+  "kuva_brakk": {
+    "id": 2849,
+    "slug": "kuva-brakk"
+  },
+  "kuva_bramma": {
+    "id": 4245,
+    "slug": "kuva-bramma"
+  },
+  "kuva_chakkhurr": {
+    "id": 2852,
+    "slug": "kuva-chakkhurr"
+  },
+  "kuva_drakgoon": {
+    "id": 2843,
+    "slug": "kuva-drakgoon"
+  },
+  "kuva_ghoulsaw": {
+    "id": 7648,
+    "slug": "kuva-ghoulsaw"
+  },
+  "kuva_grattler": {
+    "id": 5572,
+    "slug": "kuva-grattler"
+  },
+  "kuva_hek": {
+    "id": 5574,
+    "slug": "kuva-hek"
+  },
+  "kuva_hind": {
+    "id": 4247,
+    "slug": "kuva-hind"
+  },
+  "kuva_karak": {
+    "id": 2844,
+    "slug": "kuva-karak"
+  },
+  "kuva_kohm": {
+    "id": 2845,
+    "slug": "kuva-kohm"
+  },
+  "kuva_kraken": {
+    "id": 2850,
+    "slug": "kuva-kraken"
+  },
+  "kuva_nukor": {
+    "id": 4249,
+    "slug": "kuva-nukor"
+  },
+  "kuva_ogris": {
+    "id": 2846,
+    "slug": "kuva-ogris"
+  },
+  "kuva_quartakk": {
+    "id": 2847,
+    "slug": "kuva-quartakk"
+  },
+  "kuva_seer": {
+    "id": 2851,
+    "slug": "kuva-seer"
+  },
+  "kuva_shildeg": {
+    "id": 2853,
+    "slug": "kuva-shildeg"
+  },
+  "kuva_sobek": {
+    "id": 6554,
+    "slug": "kuva-sobek"
+  },
+  "kuva_tonkor": {
+    "id": 2848,
+    "slug": "kuva-tonkor"
+  },
+  "kuva_twin_stubbas": {
+    "id": 2859,
+    "slug": "kuva-twin-stubbas"
+  },
+  "kuva_zarr": {
+    "id": 5576,
+    "slug": "kuva-zarr"
+  },
+  "lacera": {
+    "id": 1180,
+    "slug": "lacera"
+  },
+  "lacerten": {
+    "id": 5863,
+    "slug": "lacerten"
+  },
+  "laetum": {
+    "id": 5841,
+    "slug": "laetum"
+  },
+  "lanka": {
+    "id": 917,
+    "slug": "lanka"
+  },
+  "larkspur": {
+    "id": 2391,
+    "slug": "larkspur"
+  },
+  "larkspur_prime": {
+    "id": 6131,
+    "slug": "larkspur-prime"
+  },
+  "laser_rifle": {
+    "id": 2251,
+    "slug": "laser-rifle"
+  },
+  "lato": {
+    "id": 1201,
+    "slug": "lato"
+  },
+  "lato_prime": {
+    "id": 1199,
+    "slug": "lato-prime"
+  },
+  "lato_vandal": {
+    "id": 1200,
+    "slug": "lato-vandal"
+  },
+  "latron": {
+    "id": 1230,
+    "slug": "latron"
+  },
+  "latron_prime": {
+    "id": 1228,
+    "slug": "latron-prime"
+  },
+  "latron_wraith": {
+    "id": 1100,
+    "slug": "latron-wraith"
+  },
+  "lecta": {
+    "id": 937,
+    "slug": "lecta"
+  },
+  "lenz": {
+    "id": 919,
+    "slug": "lenz"
+  },
+  "lesion": {
+    "id": 1012,
+    "slug": "lesion"
+  },
+  "lex": {
+    "id": 1198,
+    "slug": "lex"
+  },
+  "lex_prime": {
+    "id": 1211,
+    "slug": "lex-prime"
+  },
+  "mk1_bo": {
+    "id": 1018,
+    "slug": "mk1-bo"
+  },
+  "mk1_braton": {
+    "id": 1232,
+    "slug": "mk1-braton"
+  },
+  "mk1_furax": {
+    "id": 1019,
+    "slug": "mk1-furax"
+  },
+  "mk1_furis": {
+    "id": 1020,
+    "slug": "mk1-furis"
+  },
+  "mk1_kunai": {
+    "id": 1021,
+    "slug": "mk1-kunai"
+  },
+  "mk1_paris": {
+    "id": 1022,
+    "slug": "mk1-paris"
+  },
+  "mk1_strun": {
+    "id": 1023,
+    "slug": "mk1-strun"
+  },
+  "machete": {
+    "id": 976,
+    "slug": "machete"
+  },
+  "machete_wraith": {
+    "id": 979,
+    "slug": "machete-wraith"
+  },
+  "magistar": {
+    "id": 1138,
+    "slug": "magistar"
+  },
+  "magnus": {
+    "id": 1207,
+    "slug": "magnus"
+  },
+  "magnus_prime": {
+    "id": 5560,
+    "slug": "magnus-prime"
+  },
+  "mandonel": {
+    "id": 6424,
+    "slug": "mandonel"
+  },
+  "mara_detron": {
+    "id": 1254,
+    "slug": "mara-detron"
+  },
+  "marelok": {
+    "id": 991,
+    "slug": "marelok"
+  },
+  "masseter": {
+    "id": 2854,
+    "slug": "masseter"
+  },
+  "masseter_prime": {
+    "id": 6333,
+    "slug": "masseter-prime"
+  },
+  "mausolon": {
+    "id": 5141,
+    "slug": "mausolon"
+  },
+  "mewan": {
+    "id": 2550,
+    "slug": "mewan"
+  },
+  "mios": {
+    "id": 1010,
+    "slug": "mios"
+  },
+  "mire": {
+    "id": 1011,
+    "slug": "mire"
+  },
+  "miter": {
+    "id": 958,
+    "slug": "miter"
+  },
+  "morgha": {
+    "id": 5307,
+    "slug": "morgha"
+  },
+  "multron": {
+    "id": 2223,
+    "slug": "multron"
+  },
+  "mutalist_cernos": {
+    "id": 1001,
+    "slug": "mutalist-cernos"
+  },
+  "mutalist_quanta": {
+    "id": 1002,
+    "slug": "mutalist-quanta"
+  },
+  "nagantaka": {
+    "id": 1439,
+    "slug": "nagantaka"
+  },
+  "nagantaka_prime": {
+    "id": 5831,
+    "slug": "nagantaka-prime"
+  },
+  "nami_skyla": {
+    "id": 1162,
+    "slug": "nami-skyla"
+  },
+  "nami_skyla_prime": {
+    "id": 1178,
+    "slug": "nami-skyla-prime"
+  },
+  "nami_solo": {
+    "id": 1163,
+    "slug": "nami-solo"
+  },
+  "nataruk": {
+    "id": 5725,
+    "slug": "nataruk"
+  },
+  "nepheri": {
+    "id": 5730,
+    "slug": "nepheri"
+  },
+  "nikana": {
+    "id": 1170,
+    "slug": "nikana"
+  },
+  "nikana_prime": {
+    "id": 1177,
+    "slug": "nikana-prime"
+  },
+  "ninkondi": {
+    "id": 1139,
+    "slug": "ninkondi"
+  },
+  "ninkondi_prime": {
+    "id": 2682,
+    "slug": "ninkondi-prime"
+  },
+  "nukor": {
+    "id": 992,
+    "slug": "nukor"
+  },
+  "obex": {
+    "id": 934,
+    "slug": "obex"
+  },
+  "ocucor": {
+    "id": 1435,
+    "slug": "ocucor"
+  },
+  "ogris": {
+    "id": 910,
+    "slug": "ogris"
+  },
+  "ohma": {
+    "id": 932,
+    "slug": "ohma"
+  },
+  "okina": {
+    "id": 1183,
+    "slug": "okina"
+  },
+  "okina_prime": {
+    "id": 6546,
+    "slug": "okina-prime"
+  },
+  "onorix": {
+    "id": 1057,
+    "slug": "onorix"
+  },
+  "onos": {
+    "id": 6523,
+    "slug": "onos"
+  },
+  "ooltha": {
+    "id": 2551,
+    "slug": "ooltha"
+  },
+  "opticor": {
+    "id": 923,
+    "slug": "opticor"
+  },
+  "opticor_vandal": {
+    "id": 2389,
+    "slug": "opticor-vandal"
+  },
+  "orthos": {
+    "id": 1145,
+    "slug": "orthos"
+  },
+  "orthos_prime": {
+    "id": 1146,
+    "slug": "orthos-prime"
+  },
+  "orvius": {
+    "id": 1128,
+    "slug": "orvius"
+  },
+  "pandero": {
+    "id": 1221,
+    "slug": "pandero"
+  },
+  "pandero_prime": {
+    "id": 5398,
+    "slug": "pandero-prime"
+  },
+  "pangolin_prime": {
+    "id": 4318,
+    "slug": "pangolin-prime"
+  },
+  "pangolin_sword": {
+    "id": 1174,
+    "slug": "pangolin-sword"
+  },
+  "panthera": {
+    "id": 1082,
+    "slug": "panthera"
+  },
+  "panthera_prime": {
+    "id": 4698,
+    "slug": "panthera-prime"
+  },
+  "paracesis": {
+    "id": 1438,
+    "slug": "paracesis"
+  },
+  "paracyst": {
+    "id": 1004,
+    "slug": "paracyst"
+  },
+  "paris": {
+    "id": 1074,
+    "slug": "paris"
+  },
+  "paris_prime": {
+    "id": 1075,
+    "slug": "paris-prime"
+  },
+  "pathocyst": {
+    "id": 2731,
+    "slug": "pathocyst"
+  },
+  "pennant": {
+    "id": 2887,
+    "slug": "pennant"
+  },
+  "penta": {
+    "id": 929,
+    "slug": "penta"
+  },
+  "perigale": {
+    "id": 5998,
+    "slug": "perigale"
+  },
+  "perigale_prime": {
+    "id": 7950,
+    "slug": "perigale-prime"
+  },
+  "phaedra": {
+    "id": 1063,
+    "slug": "phaedra"
+  },
+  "phage": {
+    "id": 1005,
+    "slug": "phage"
+  },
+  "phantasma": {
+    "id": 1440,
+    "slug": "phantasma"
+  },
+  "phantasma_prime": {
+    "id": 5977,
+    "slug": "phantasma-prime"
+  },
+  "phenmor": {
+    "id": 5837,
+    "slug": "phenmor"
+  },
+  "plague_keewar": {
+    "id": 2556,
+    "slug": "plague-keewar"
+  },
+  "plague_kripath": {
+    "id": 2555,
+    "slug": "plague-kripath"
+  },
+  "plasma_sword": {
+    "id": 1175,
+    "slug": "plasma-sword"
+  },
+  "plinx": {
+    "id": 1465,
+    "slug": "plinx"
+  },
+  "pox": {
+    "id": 1014,
+    "slug": "pox"
+  },
+  "praedos": {
+    "id": 5839,
+    "slug": "praedos"
+  },
+  "pride": {
+    "id": 7988,
+    "slug": "pride"
+  },
+  "prime_laser_rifle": {
+    "id": 2252,
+    "slug": "prime-laser-rifle"
+  },
+  "prisma_angstrum": {
+    "id": 945,
+    "slug": "prisma-angstrum"
+  },
+  "prisma_burst_laser": {
+    "id": 2254,
+    "slug": "prisma-burst-laser"
+  },
+  "prisma_dual_cleavers": {
+    "id": 977,
+    "slug": "prisma-dual-cleavers"
+  },
+  "prisma_dual_decurions": {
+    "id": 5338,
+    "slug": "prisma-dual-decurions"
+  },
+  "prisma_gorgon": {
+    "id": 969,
+    "slug": "prisma-gorgon"
+  },
+  "prisma_grakata": {
+    "id": 1252,
+    "slug": "prisma-grakata"
+  },
+  "prisma_grinlok": {
+    "id": 2390,
+    "slug": "prisma-grinlok"
+  },
+  "prisma_lenz": {
+    "id": 6190,
+    "slug": "prisma-lenz"
+  },
+  "prisma_machete": {
+    "id": 978,
+    "slug": "prisma-machete"
+  },
+  "prisma_obex": {
+    "id": 935,
+    "slug": "prisma-obex"
+  },
+  "prisma_ohma": {
+    "id": 6260,
+    "slug": "prisma-ohma"
+  },
+  "prisma_skana": {
+    "id": 1253,
+    "slug": "prisma-skana"
+  },
+  "prisma_tetra": {
+    "id": 922,
+    "slug": "prisma-tetra"
+  },
+  "prisma_twin_gremlins": {
+    "id": 1436,
+    "slug": "prisma-twin-gremlins"
+  },
+  "prisma_veritux": {
+    "id": 1061,
+    "slug": "prisma-veritux"
+  },
+  "proboscis_cernos": {
+    "id": 5315,
+    "slug": "proboscis-cernos"
+  },
+  "prova": {
+    "id": 915,
+    "slug": "prova"
+  },
+  "prova_vandal": {
+    "id": 918,
+    "slug": "prova-vandal"
+  },
+  "pulmonars": {
+    "id": 5299,
+    "slug": "pulmonars"
+  },
+  "pupacyst": {
+    "id": 1437,
+    "slug": "pupacyst"
+  },
+  "purgator_1": {
+    "id": 7342,
+    "slug": "purgator-1"
+  },
+  "pyrana": {
+    "id": 1216,
+    "slug": "pyrana"
+  },
+  "pyrana_prime": {
+    "id": 1212,
+    "slug": "pyrana-prime"
+  },
+  "quanta": {
+    "id": 925,
+    "slug": "quanta"
+  },
+  "quanta_vandal": {
+    "id": 926,
+    "slug": "quanta-vandal"
+  },
+  "quartakk": {
+    "id": 963,
+    "slug": "quartakk"
+  },
+  "quassus": {
+    "id": 5120,
+    "slug": "quassus"
+  },
+  "quassus_prime": {
+    "id": 7143,
+    "slug": "quassus-prime"
+  },
+  "quatz": {
+    "id": 2683,
+    "slug": "quatz"
+  },
+  "quellor": {
+    "id": 2886,
+    "slug": "quellor"
+  },
+  "rabvee": {
+    "id": 2554,
+    "slug": "rabvee"
+  },
+  "rakta_ballistica": {
+    "id": 1040,
+    "slug": "rakta-ballistica"
+  },
+  "rakta_cernos": {
+    "id": 1038,
+    "slug": "rakta-cernos"
+  },
+  "rakta_dark_dagger": {
+    "id": 1039,
+    "slug": "rakta-dark-dagger"
+  },
+  "rathbone": {
+    "id": 1054,
+    "slug": "rathbone"
+  },
+  "rauta": {
+    "id": 6213,
+    "slug": "rauta"
+  },
+  "reaper_prime": {
+    "id": 1154,
+    "slug": "reaper-prime"
+  },
+  "reconifex": {
+    "id": 7229,
+    "slug": "reconifex"
+  },
+  "redeemer": {
+    "id": 1131,
+    "slug": "redeemer"
+  },
+  "redeemer_prime": {
+    "id": 2392,
+    "slug": "redeemer-prime"
+  },
+  "riot_848": {
+    "id": 7344,
+    "slug": "riot-848"
+  },
+  "ripkas": {
+    "id": 971,
+    "slug": "ripkas"
+  },
+  "rubico": {
+    "id": 1080,
+    "slug": "rubico"
+  },
+  "rubico_prime": {
+    "id": 1441,
+    "slug": "rubico-prime"
+  },
+  "rumblejack": {
+    "id": 5723,
+    "slug": "rumblejack"
+  },
+  "ruvox": {
+    "id": 6521,
+    "slug": "ruvox"
+  },
+  "sagek_prime": {
+    "id": 7560,
+    "slug": "sagek-prime"
+  },
+  "sampotes": {
+    "id": 6171,
+    "slug": "sampotes"
+  },
+  "sancti_castanas": {
+    "id": 1034,
+    "slug": "sancti-castanas"
+  },
+  "sancti_magistar": {
+    "id": 1033,
+    "slug": "sancti-magistar"
+  },
+  "sancti_tigris": {
+    "id": 1032,
+    "slug": "sancti-tigris"
+  },
+  "sarofang": {
+    "id": 6003,
+    "slug": "sarofang"
+  },
+  "sarofang_prime": {
+    "id": 7952,
+    "slug": "sarofang-prime"
+  },
+  "sarpa": {
+    "id": 1130,
+    "slug": "sarpa"
+  },
+  "scindo": {
+    "id": 1102,
+    "slug": "scindo"
+  },
+  "scindo_prime": {
+    "id": 1101,
+    "slug": "scindo-prime"
+  },
+  "scoliac": {
+    "id": 1013,
+    "slug": "scoliac"
+  },
+  "scourge": {
+    "id": 1095,
+    "slug": "scourge"
+  },
+  "scourge_prime": {
+    "id": 5615,
+    "slug": "scourge-prime"
+  },
+  "scyotid": {
+    "id": 7419,
+    "slug": "scyotid"
+  },
+  "secura_dual_cestra": {
+    "id": 1037,
+    "slug": "secura-dual-cestra"
+  },
+  "secura_lecta": {
+    "id": 1036,
+    "slug": "secura-lecta"
+  },
+  "secura_penta": {
+    "id": 1035,
+    "slug": "secura-penta"
+  },
+  "seer": {
+    "id": 950,
+    "slug": "seer"
+  },
+  "sepfahn": {
+    "id": 2553,
+    "slug": "sepfahn"
+  },
+  "sepulcrum": {
+    "id": 5123,
+    "slug": "sepulcrum"
+  },
+  "serro": {
+    "id": 936,
+    "slug": "serro"
+  },
+  "shaku": {
+    "id": 1140,
+    "slug": "shaku"
+  },
+  "shedu": {
+    "id": 2885,
+    "slug": "shedu"
+  },
+  "sheev": {
+    "id": 972,
+    "slug": "sheev"
+  },
+  "sibear": {
+    "id": 1133,
+    "slug": "sibear"
+  },
+  "sicarus": {
+    "id": 1195,
+    "slug": "sicarus"
+  },
+  "sicarus_prime": {
+    "id": 1213,
+    "slug": "sicarus-prime"
+  },
+  "simulor": {
+    "id": 905,
+    "slug": "simulor"
+  },
+  "skana": {
+    "id": 1136,
+    "slug": "skana"
+  },
+  "skana_prime": {
+    "id": 1137,
+    "slug": "skana-prime"
+  },
+  "skiajati": {
+    "id": 1186,
+    "slug": "skiajati"
+  },
+  "slaytra": {
+    "id": 5941,
+    "slug": "slaytra"
+  },
+  "snipetron": {
+    "id": 1231,
+    "slug": "snipetron"
+  },
+  "snipetron_vandal": {
+    "id": 1236,
+    "slug": "snipetron-vandal"
+  },
+  "sobek": {
+    "id": 1237,
+    "slug": "sobek"
+  },
+  "soma": {
+    "id": 1233,
+    "slug": "soma"
+  },
+  "soma_prime": {
+    "id": 1085,
+    "slug": "soma-prime"
+  },
+  "sonicor": {
+    "id": 941,
+    "slug": "sonicor"
+  },
+  "spectra": {
+    "id": 912,
+    "slug": "spectra"
+  },
+  "spectra_vandal": {
+    "id": 2528,
+    "slug": "spectra-vandal"
+  },
+  "spinnerex": {
+    "id": 7411,
+    "slug": "spinnerex"
+  },
+  "spira": {
+    "id": 1244,
+    "slug": "spira"
+  },
+  "spira_prime": {
+    "id": 1245,
+    "slug": "spira-prime"
+  },
+  "sporothrix": {
+    "id": 5295,
+    "slug": "sporothrix"
+  },
+  "stahlta": {
+    "id": 4641,
+    "slug": "stahlta"
+  },
+  "staticor": {
+    "id": 943,
+    "slug": "staticor"
+  },
+  "steflos": {
+    "id": 6079,
+    "slug": "steflos"
+  },
+  "stinger": {
+    "id": 2255,
+    "slug": "stinger"
+  },
+  "stradavar": {
+    "id": 1091,
+    "slug": "stradavar"
+  },
+  "stradavar_prime": {
+    "id": 2463,
+    "slug": "stradavar-prime"
+  },
+  "stropha": {
+    "id": 4646,
+    "slug": "stropha"
+  },
+  "strun": {
+    "id": 1241,
+    "slug": "strun"
+  },
+  "strun_prime": {
+    "id": 5599,
+    "slug": "strun-prime"
+  },
+  "strun_wraith": {
+    "id": 1242,
+    "slug": "strun-wraith"
+  },
+  "stubba": {
+    "id": 997,
+    "slug": "stubba"
+  },
+  "stug": {
+    "id": 989,
+    "slug": "stug"
+  },
+  "supra": {
+    "id": 911,
+    "slug": "supra"
+  },
+  "supra_vandal": {
+    "id": 930,
+    "slug": "supra-vandal"
+  },
+  "sweeper": {
+    "id": 2258,
+    "slug": "sweeper"
+  },
+  "sweeper_prime": {
+    "id": 2253,
+    "slug": "sweeper-prime"
+  },
+  "syam": {
+    "id": 6176,
+    "slug": "syam"
+  },
+  "sybaris": {
+    "id": 1098,
+    "slug": "sybaris"
+  },
+  "sybaris_prime": {
+    "id": 1086,
+    "slug": "sybaris-prime"
+  },
+  "sydon": {
+    "id": 988,
+    "slug": "sydon"
+  },
+  "synapse": {
+    "id": 1006,
+    "slug": "synapse"
+  },
+  "synoid_gammacor": {
+    "id": 1031,
+    "slug": "synoid-gammacor"
+  },
+  "synoid_heliocor": {
+    "id": 1029,
+    "slug": "synoid-heliocor"
+  },
+  "synoid_simulor": {
+    "id": 1028,
+    "slug": "synoid-simulor"
+  },
+  "talons": {
+    "id": 1248,
+    "slug": "talons"
+  },
+  "tatsu": {
+    "id": 2393,
+    "slug": "tatsu"
+  },
+  "tatsu_prime": {
+    "id": 5979,
+    "slug": "tatsu-prime"
+  },
+  "tazicor": {
+    "id": 2224,
+    "slug": "tazicor"
+  },
+  "tekko": {
+    "id": 1122,
+    "slug": "tekko"
+  },
+  "tekko_prime": {
+    "id": 2795,
+    "slug": "tekko-prime"
+  },
+  "telos_akbolto": {
+    "id": 1027,
+    "slug": "telos-akbolto"
+  },
+  "telos_boltace": {
+    "id": 1026,
+    "slug": "telos-boltace"
+  },
+  "telos_boltor": {
+    "id": 1025,
+    "slug": "telos-boltor"
+  },
+  "tenet_agendus": {
+    "id": 5565,
+    "slug": "tenet-agendus"
+  },
+  "tenet_arca_plasmor": {
+    "id": 5544,
+    "slug": "tenet-arca-plasmor"
+  },
+  "tenet_cycron": {
+    "id": 5550,
+    "slug": "tenet-cycron"
+  },
+  "tenet_detron": {
+    "id": 5552,
+    "slug": "tenet-detron"
+  },
+  "tenet_diplos": {
+    "id": 5567,
+    "slug": "tenet-diplos"
+  },
+  "tenet_envoy": {
+    "id": 5559,
+    "slug": "tenet-envoy"
+  },
+  "tenet_exec": {
+    "id": 5580,
+    "slug": "tenet-exec"
+  },
+  "tenet_ferrox": {
+    "id": 5994,
+    "slug": "tenet-ferrox"
+  },
+  "tenet_flux_rifle": {
+    "id": 5546,
+    "slug": "tenet-flux-rifle"
+  },
+  "tenet_glaxion": {
+    "id": 6552,
+    "slug": "tenet-glaxion"
+  },
+  "tenet_grigori": {
+    "id": 5563,
+    "slug": "tenet-grigori"
+  },
+  "tenet_livia": {
+    "id": 5561,
+    "slug": "tenet-livia"
+  },
+  "tenet_plinx": {
+    "id": 5996,
+    "slug": "tenet-plinx"
+  },
+  "tenet_quanta": {
+    "id": 7646,
+    "slug": "tenet-quanta"
+  },
+  "tenet_spirex": {
+    "id": 5569,
+    "slug": "tenet-spirex"
+  },
+  "tenet_tetra": {
+    "id": 5548,
+    "slug": "tenet-tetra"
+  },
+  "tenora": {
+    "id": 1092,
+    "slug": "tenora"
+  },
+  "tenora_prime": {
+    "id": 5396,
+    "slug": "tenora-prime"
+  },
+  "tetra": {
+    "id": 921,
+    "slug": "tetra"
+  },
+  "thalys": {
+    "id": 7425,
+    "slug": "thalys"
+  },
+  "thornbak": {
+    "id": 7496,
+    "slug": "thornbak"
+  },
+  "tiberon": {
+    "id": 1079,
+    "slug": "tiberon"
+  },
+  "tiberon_prime": {
+    "id": 1087,
+    "slug": "tiberon-prime"
+  },
+  "tigris": {
+    "id": 1078,
+    "slug": "tigris"
+  },
+  "tigris_prime": {
+    "id": 1088,
+    "slug": "tigris-prime"
+  },
+  "tipedo": {
+    "id": 1157,
+    "slug": "tipedo"
+  },
+  "tipedo_prime": {
+    "id": 2464,
+    "slug": "tipedo-prime"
+  },
+  "tonbo": {
+    "id": 1142,
+    "slug": "tonbo"
+  },
+  "tonkkatt": {
+    "id": 7370,
+    "slug": "tonkkatt"
+  },
+  "tonkor": {
+    "id": 965,
+    "slug": "tonkor"
+  },
+  "torid": {
+    "id": 907,
+    "slug": "torid"
+  },
+  "trumna": {
+    "id": 5125,
+    "slug": "trumna"
+  },
+  "trumna_prime": {
+    "id": 7137,
+    "slug": "trumna-prime"
+  },
+  "twin_basolk": {
+    "id": 983,
+    "slug": "twin-basolk"
+  },
+  "twin_grakatas": {
+    "id": 953,
+    "slug": "twin-grakatas"
+  },
+  "twin_gremlins": {
+    "id": 947,
+    "slug": "twin-gremlins"
+  },
+  "twin_kohmak": {
+    "id": 993,
+    "slug": "twin-kohmak"
+  },
+  "twin_krohkur": {
+    "id": 984,
+    "slug": "twin-krohkur"
+  },
+  "twin_rogga": {
+    "id": 995,
+    "slug": "twin-rogga"
+  },
+  "twin_vipers": {
+    "id": 1050,
+    "slug": "twin-vipers"
+  },
+  "twin_vipers_wraith": {
+    "id": 1000,
+    "slug": "twin-vipers-wraith"
+  },
+  "tysis": {
+    "id": 1016,
+    "slug": "tysis"
+  },
+  "vadarya_prime": {
+    "id": 7468,
+    "slug": "vadarya-prime"
+  },
+  "vastilok": {
+    "id": 5594,
+    "slug": "vastilok"
+  },
+  "vasto": {
+    "id": 1202,
+    "slug": "vasto"
+  },
+  "vasto_prime": {
+    "id": 1214,
+    "slug": "vasto-prime"
+  },
+  "vaykor_hek": {
+    "id": 1041,
+    "slug": "vaykor-hek"
+  },
+  "vaykor_marelok": {
+    "id": 1043,
+    "slug": "vaykor-marelok"
+  },
+  "vaykor_sydon": {
+    "id": 1042,
+    "slug": "vaykor-sydon"
+  },
+  "vectis": {
+    "id": 1234,
+    "slug": "vectis"
+  },
+  "vectis_prime": {
+    "id": 1089,
+    "slug": "vectis-prime"
+  },
+  "veldt": {
+    "id": 1096,
+    "slug": "veldt"
+  },
+  "velocitus": {
+    "id": 1068,
+    "slug": "velocitus"
+  },
+  "velox": {
+    "id": 4656,
+    "slug": "velox"
+  },
+  "velox_prime": {
+    "id": 6548,
+    "slug": "velox-prime"
+  },
+  "venato": {
+    "id": 5616,
+    "slug": "venato"
+  },
+  "venato_prime": {
+    "id": 7470,
+    "slug": "venato-prime"
+  },
+  "venka": {
+    "id": 1106,
+    "slug": "venka"
+  },
+  "venka_prime": {
+    "id": 1151,
+    "slug": "venka-prime"
+  },
+  "verdilac": {
+    "id": 5734,
+    "slug": "verdilac"
+  },
+  "verglas": {
+    "id": 5420,
+    "slug": "verglas"
+  },
+  "verglas_prime": {
+    "id": 6630,
+    "slug": "verglas-prime"
+  },
+  "vericres": {
+    "id": 5871,
+    "slug": "vericres"
+  },
+  "veritux": {
+    "id": 1058,
+    "slug": "veritux"
+  },
+  "vesper_77": {
+    "id": 7221,
+    "slug": "vesper-77"
+  },
+  "vinquibus": {
+    "id": 7562,
+    "slug": "vinquibus"
+  },
+  "viper": {
+    "id": 948,
+    "slug": "viper"
+  },
+  "viper_wraith": {
+    "id": 999,
+    "slug": "viper-wraith"
+  },
+  "vitrica": {
+    "id": 5205,
+    "slug": "vitrica"
+  },
+  "volnus": {
+    "id": 1132,
+    "slug": "volnus"
+  },
+  "volnus_prime": {
+    "id": 5492,
+    "slug": "volnus-prime"
+  },
+  "vulcax": {
+    "id": 2225,
+    "slug": "vulcax"
+  },
+  "vulkar": {
+    "id": 959,
+    "slug": "vulkar"
+  },
+  "vulkar_wraith": {
+    "id": 960,
+    "slug": "vulkar-wraith"
+  },
+  "vulklok": {
+    "id": 2256,
+    "slug": "vulklok"
+  },
+  "war": {
+    "id": 1181,
+    "slug": "war"
+  },
+  "war_prime": {
+    "id": 7992,
+    "slug": "war-prime"
+  },
+  "wolf_sledge": {
+    "id": 2471,
+    "slug": "wolf-sledge"
+  },
+  "wrath": {
+    "id": 7986,
+    "slug": "wrath"
+  },
+  "xoris": {
+    "id": 4660,
+    "slug": "xoris"
+  },
+  "zakti": {
+    "id": 1222,
+    "slug": "zakti"
+  },
+  "zakti_prime": {
+    "id": 5207,
+    "slug": "zakti-prime"
+  },
+  "zarr": {
+    "id": 961,
+    "slug": "zarr"
+  },
+  "zenistar": {
+    "id": 1161,
+    "slug": "zenistar"
+  },
+  "zenith": {
+    "id": 1081,
+    "slug": "zenith"
+  },
+  "zhuge": {
+    "id": 1090,
+    "slug": "zhuge"
+  },
+  "zhuge_prime": {
+    "id": 2681,
+    "slug": "zhuge-prime"
+  },
+  "zylok": {
+    "id": 1443,
+    "slug": "zylok"
+  },
+  "zylok_prime": {
+    "id": 6337,
+    "slug": "zylok-prime"
+  },
+  "zymos": {
+    "id": 5116,
+    "slug": "zymos"
   }
 }
