@@ -46,10 +46,11 @@ here, per the design doc's preference for structured data over scraping).
 `data/overrides/overframe.json` is the **entire** source of Overframe data:
 a hand-maintained `{ "<canonicalId>": { "id": number, "slug": string } }`
 map. Every entry in it was verified by opening that one item's real
-Overframe page. As of this writing it covers only Protea and Protea Prime
-(the pair used as the worked example throughout the design doc) - this is
-intentionally minimal rather than guessed. See "Adding or fixing an Overframe
-mapping" below.
+Overframe page - as of this writing that covers 117 of 120 Warframes
+(gathered via `scripts/apply-overframe-urls.mjs`, see below); weapons,
+companions, and other equipment categories are still largely uncovered.
+This is intentionally built up incrementally by hand rather than guessed.
+See "Adding or fixing an Overframe mapping" below.
 
 ### wiki.warframe.com (never queried directly)
 
@@ -75,9 +76,11 @@ rather than fetching anything to confirm it.
   keyed by the base name (e.g. "Axi A1"), and derives both the wiki path
   (`/w/Axi_A1`) and, where warframe.market has a matching `"<Base> Relic"`
   listing, the market slug.
-- **Overframe coverage is minimal by design** - see above. The
-  architecture and registry fully support it; the data just isn't there
-  yet for most items.
+- **Overframe coverage is Warframes-first.** 117/120 Warframes are
+  covered; weapons, companions, and other equipment categories are not
+  yet, since gathering coverage is a manual, per-category process (see
+  above). The architecture and registry fully support any category; the
+  data just isn't there yet outside Warframes.
 - **Ambiguous item names are excluded, not guessed.** A handful of WFCD
   entries share an exact display name with something that isn't really the
   same navigable page (see `data/overrides/corrections.json`). "Unfused
@@ -111,14 +114,35 @@ changes over time.
 
 ## Adding or fixing an item mapping
 
-- **Wrong or missing Wiki/Market destination for a specific item:** add an
-  entry to `data/overrides/corrections.json` keyed by the item's `id` (the
-  slugified canonical name, e.g. `protea_prime`):
+- **Wrong name, or wrong/missing Wiki/Market destination, for a specific
+  item:** add an entry to `data/overrides/corrections.json` keyed by the
+  item's `id` (the slugified canonical name, e.g. `protea_prime` - this
+  stays the same even if you're correcting the `name` itself, since the
+  id is internal-only and nothing rederives it after generation):
+
   ```json
-  { "some_item_id": { "wiki": { "path": "/w/Correct_Title" } } }
+  {
+    "some_item_id": {
+      "name": "Corrected Display Name",
+      "wiki": { "path": "/w/Correct_Title" },
+      "market": { "slug": "correct_slug" }
+    }
+  }
   ```
+
+  Include only the fields you're correcting - all three are optional. A
+  wrong `name` is worth fixing even though it's never shown to users
+  directly, since it's what the Market and Overframe adapters search page
+  headings for (see `src/adapters/market.ts`/`overframe.ts`) - a wrong
+  name there means those buttons silently fail to appear for that item
+  specifically, on those two sites, even though the item itself resolves
+  fine. The `orion_and_sirius` entry is a real example: WFCD's `name`
+  field disagreed with that same record's other fields (internal path,
+  flavor text) and with Overframe's actual slug.
+
   Set `"exclude": true` instead to remove a generated entry entirely (see
   the `unfused_artifact` example already in that file).
+
 - **Adding or fixing an Overframe mapping:**
   - **In bulk:** `npm run apply-overframe-urls -- urls.txt` (or pipe URLs
     into it) takes a plain list of real Overframe item page URLs - one per

@@ -60,6 +60,13 @@ describe("bundled registry (real generated data)", () => {
     expect(withOverframe.length).toBeGreaterThan(warframes.length * 0.9);
   });
 
+  it("applies a name correction (regression: WFCD's own name field disagreed with its other fields)", () => {
+    // See data/overrides/corrections.json's "orion_and_sirius" entry.
+    const item = registry.findByOverframeSlug("sirius-orion");
+    expect(item?.name).toBe("Sirius & Orion");
+    expect(item?.id).toBe("orion_and_sirius"); // id is internal-only and deliberately not rederived
+  });
+
   it("never gives a well-known Founders-exclusive item a Market destination", () => {
     // Excalibur Prime is untradable (Founders-exclusive), so it should
     // never have a market slug - but it's a perfectly normal build

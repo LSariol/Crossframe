@@ -44,8 +44,8 @@ Prime components, Relics, and (Wiki-only) Resources. See
 [`src/navigation/rules.ts`](src/navigation/rules.ts) for exactly which
 destinations apply to which category, and
 [docs/data-sources.md](docs/data-sources.md) for current data coverage per
-category (Overframe coverage is intentionally minimal today - see
-"Known limitations" below).
+category (Overframe coverage is Warframes-first today, gathered by hand -
+see "Known limitations" below).
 
 ## Development
 
@@ -196,13 +196,15 @@ not do.
 
 ## Known limitations
 
-- **Overframe coverage is minimal.** Its `robots.txt` disallows AI
+- **Overframe coverage is Warframes-first.** Its `robots.txt` disallows AI
   crawlers and there's no public API, so unlike Wiki and Market, its
-  mappings are entirely hand-verified (`data/overrides/overframe.json`)
-  rather than generated. Most items currently have no Overframe
-  destination simply because no one has added the mapping yet, not
-  because Crossframe determined it doesn't apply. Contributions welcome
-  via that file - see [docs/data-sources.md](docs/data-sources.md).
+  mappings are entirely hand-verified (`data/overrides/overframe.json`,
+  built up via `npm run apply-overframe-urls`) rather than generated.
+  117/120 Warframes are covered as of this writing; weapons, companions,
+  and other equipment categories mostly aren't yet - not because
+  Crossframe determined Overframe doesn't apply to them, just because no
+  one's gathered those URLs yet. Contributions welcome via that file -
+  see [docs/data-sources.md](docs/data-sources.md).
 - **Resource and Relic wiki paths are derived, not individually
   confirmed** against the live wiki (whose `robots.txt` also disallows
   automated access) - see [docs/data-sources.md](docs/data-sources.md)
