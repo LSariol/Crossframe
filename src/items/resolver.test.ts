@@ -34,6 +34,14 @@ describe("resolveCanonicalItem", () => {
     expect(item).toBe(proteaPrime);
   });
 
+  it("resolves an overframe slug to the canonical item (build pages have no id)", () => {
+    const item = resolveCanonicalItem(
+      { site: "overframe", overframeSlug: "protea-prime" },
+      testRegistry,
+    );
+    expect(item).toBe(proteaPrime);
+  });
+
   it("returns undefined for an unknown key on any site", () => {
     expect(
       resolveCanonicalItem({ site: "wiki", wikiPath: "/w/Nonexistent" }, testRegistry),
@@ -43,6 +51,9 @@ describe("resolveCanonicalItem", () => {
     ).toBeUndefined();
     expect(
       resolveCanonicalItem({ site: "overframe", overframeId: 999999 }, testRegistry),
+    ).toBeUndefined();
+    expect(
+      resolveCanonicalItem({ site: "overframe", overframeSlug: "nonexistent" }, testRegistry),
     ).toBeUndefined();
   });
 });

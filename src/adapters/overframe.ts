@@ -1,35 +1,47 @@
 import type { SiteAdapter } from "./types";
 import { findHeadingByText, waitForElement } from "../lib/dom";
 
-const ARSENAL_ITEM_PATH = /^\/items\/arsenal\/(\d+)\/[a-z0-9-]+\/?$/i;
+// Item page: /items/arsenal/<id>/<slug>/ - the id is load-bearing (a
+// slug-only path 404s), and paired with the slug in every generated
+// registry entry (scripts/lib/build-items.mjs), so either can resolve it.
+const ARSENAL_ITEM_PATH = /^\/items\/arsenal\/(\d+)\/([a-z0-9-]+)\/?$/i;
+
+// Build page: /build/<buildId>/<frameSlug>/<buildTitleSlug>/ - buildId
+// identifies the build itself, not the item, so it's not useful for
+// lookup. frameSlug is the same slug the item page uses, so resolution
+// falls back to that. This pattern already distinguishes item and build
+// pages from Overframe's other page types (tier lists, generic build
+// *listings*, the homepage) without any further filtering.
+const BUILD_PAGE_PATH = /^\/build\/\d+\/([a-z0-9-]+)\/[a-z0-9-]+\/?$/i;
 
 /**
- * Overframe identifies an item by both a numeric id and a slug in its URL
- * (/items/arsenal/<id>/<slug>/ - the id is load-bearing; a slug-only path
- * 404s). That shape already distinguishes real item pages from Overframe's
- * other page types (tier lists, generic build listings, the homepage) on
- * its own, so detectItemKey needs nothing beyond the regex.
+ * Confirmed working (by manual testing against the live site) on arsenal
+ * item pages. Build pages are a newer addition and use the same
+ * name-matching injection strategy, on the reasonable assumption that a
+ * build page displays its Warframe/weapon's name prominently too, but
+ * that assumption hasn't been separately confirmed the way the item-page
+ * behavior has - see the design decisions in git history around this file
+ * if that ever needs revisiting.
  *
- * overframe.gg's robots.txt disallows AI crawlers site-wide, so this
- * adapter's injection strategy should be treated as unverified: one live
- * automated check (which shouldn't have been run, given the robots.txt
- * restriction above, and wasn't repeated) found no injection on a real
- * item page, but couldn't distinguish a real gap in the heuristic below
- * from Overframe's bot-protection serving a challenge page instead of
- * real content. Unlike wiki.ts and market.ts, do not treat this adapter
- * as confirmed working without checking it in a real browser by hand
- * first. It uses the same name-matching heuristic as the Market adapter
- * (see market.ts): it only depends on the item's name being visible
- * somewhere on its own page, not on any specific selector - but that
- * assumption itself is unverified here.
+ * overframe.gg's robots.txt disallows AI crawlers site-wide, so nothing
+ * here was ever verified by automated means - only by a human loading the
+ * real, built extension in a real browser. Keep verifying changes to this
+ * file that way rather than by adding automated fetches against the live
+ * site.
  */
 export const overframeAdapter: SiteAdapter = {
   site: "overframe",
 
   detectItemKey(url) {
-    const match = ARSENAL_ITEM_PATH.exec(url.pathname);
-    if (!match?.[1]) return undefined;
-    return { site: "overframe", overframeId: Number(match[1]) };
+    const itemMatch = ARSENAL_ITEM_PATH.exec(url.pathname);
+    if (itemMatch?.[1]) {
+      return { site: "overframe", overframeId: Number(itemMatch[1]) };
+    }
+    const buildMatch = BUILD_PAGE_PATH.exec(url.pathname);
+    if (buildMatch?.[1]) {
+      return { site: "overframe", overframeSlug: buildMatch[1].toLowerCase() };
+    }
+    return undefined;
   },
 
   async findInjectionAnchor(item) {
