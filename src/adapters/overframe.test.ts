@@ -100,22 +100,30 @@ describe("overframeAdapter.findInjectionAnchor", () => {
     expect(anchor?.textContent).toBe("Protea Prime");
   });
 
-  it("falls back to the breadcrumb link when no heading matches (build pages)", async () => {
+  it("falls back to the breadcrumb's wrapper when no heading matches (build pages)", async () => {
     // Real structure from a live build page: the item's name is never a
     // heading there (the actual heading is the build's own arbitrary
-    // title) - only the last breadcrumb crumb links back to it.
+    // title) - only the last breadcrumb crumb links back to it, and that
+    // breadcrumb nav shares a wrapper with an ad slot.
     document.body.innerHTML = `
-      <nav aria-label="Breadcrumb">
-        <ul>
-          <li><a href="/items/all/">ITEM</a></li>
-          <li><a href="/items/warframe/">WARFRAME</a></li>
-          <li><a href="/items/arsenal/6534/protea-prime/"><span>Protea Prime</span></a></li>
-        </ul>
-      </nav>
-      <h1>Some Player's Arbitrary Build Title</h1>
+      <div id="breadcrumbsWrapper">
+        <nav aria-label="Breadcrumb">
+          <ul>
+            <li><a href="/items/all/">ITEM</a></li>
+            <li><a href="/items/warframe/">WARFRAME</a></li>
+            <li><a href="/items/arsenal/6534/protea-prime/"><span>Protea Prime</span></a></li>
+          </ul>
+        </nav>
+        <div id="AdThrive_Header_1_desktop">ad</div>
+      </div>
+      <div class="BuildCalculatorWrapper_build">
+        <header><h1>Some Player's Arbitrary Build Title</h1></header>
+      </div>
     `;
     const anchor = await overframeAdapter.findInjectionAnchor(item);
-    expect(anchor?.tagName).toBe("NAV");
+    // The wrapper, not the nav itself - so Crossframe's buttons land in
+    // their own row below the breadcrumb+ad, not squeezed inside that row.
+    expect(anchor?.id).toBe("breadcrumbsWrapper");
   });
 
   it("ignores a matching-text link whose href isn't an arsenal item path", async () => {

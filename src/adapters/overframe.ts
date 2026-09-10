@@ -31,10 +31,29 @@ const BUILD_PAGE_PATH = /^\/build\/\d+\/([a-z0-9-]+)\/[a-z0-9-]+\/?$/i;
  * requires that link's href to itself be a valid arsenal item path -
  * matching by text alone would also accept an unrelated link elsewhere on
  * the page that happens to share the item's name (e.g. a "related
- * builds" list). The whole breadcrumb nav is used as the actual
- * insertion point (found via the link's closest `nav` ancestor) rather
- * than the tiny link itself, since a `<li>`/`<ul>` structure isn't a
- * reasonable place to insert an unrelated block of buttons.
+ * builds" list).
+ *
+ * The insertion point is the breadcrumb nav's *parent* (found via the
+ * link's closest `nav` ancestor, then one level further up), not the nav
+ * itself: on a real build page, that nav sits inside a wrapper alongside
+ * an ad slot, e.g.:
+ *   <div id="breadcrumbsWrapper">
+ *     <nav aria-label="Breadcrumb">...</nav>
+ *     <div id="AdThrive_Header_1_desktop">...</div>
+ *   </div>
+ *   <div class="BuildCalculatorWrapper_build...">
+ *     <header>...build title, weapon image...</header>
+ *   </div>
+ * Inserting after the nav itself lands Crossframe's buttons inside that
+ * wrapper, sharing a row with the ad (confirmed from a real screenshot -
+ * cramped, inconsistent spacing depending on the ad's width). Inserting
+ * after the wrapper instead puts them in their own row, below the
+ * breadcrumb and any ad, above the actual build content - matching where
+ * they already land on item pages (right after the heading, before
+ * everything else). Falls back to the nav itself if it has no parent for
+ * some reason, then the same `<li>`/link fallbacks as before, since a
+ * `<li>`/`<ul>` isn't a reasonable place to insert an unrelated block of
+ * buttons either.
  *
  * overframe.gg's robots.txt disallows AI crawlers site-wide, so nothing
  * here was ever verified by automated means - only by a human loading the
@@ -73,7 +92,8 @@ export const overframeAdapter: SiteAdapter = {
           return undefined;
         }
         if (!ARSENAL_ITEM_PATH.test(pathname)) return undefined;
-        return link.closest("nav") ?? link.closest("li") ?? link;
+        const nav = link.closest("nav");
+        return nav?.parentElement ?? nav ?? link.closest("li") ?? link;
       },
       { timeoutMs: 5000 },
     );
