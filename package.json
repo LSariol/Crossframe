@@ -17,6 +17,7 @@
     "package": "node scripts/package-extension.mjs",
     "generate-data": "node scripts/generate-data.mjs",
     "check-data": "node scripts/generate-data.mjs --check",
+    "apply-overframe-urls": "node scripts/apply-overframe-urls.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",
