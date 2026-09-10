@@ -36,4 +36,11 @@ describe("isDestinationRelevant", () => {
     expect(isDestinationRelevant("resource", "market")).toBe(false);
     expect(isDestinationRelevant("resource", "overframe")).toBe(false);
   });
+
+  it("makes Wiki and Overframe relevant for Exalted Weapons, but never Market", () => {
+    // Bundled with their Warframe - never independently tradable.
+    expect(isDestinationRelevant("exaltedWeapon", "wiki")).toBe(true);
+    expect(isDestinationRelevant("exaltedWeapon", "market")).toBe(false);
+    expect(isDestinationRelevant("exaltedWeapon", "overframe")).toBe(true);
+  });
 });

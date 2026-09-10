@@ -17,12 +17,20 @@ categories) wiki paths via its `wikiaUrl` field.
 
 Categories consumed: `Warframes`, `Primary`, `Secondary`, `Melee`,
 `Arch-Gun`, `Arch-Melee`, `Archwing`, `Pets`, `Sentinels`, `SentinelWeapons`,
-`Mods`, `Arcanes`, `Resources`, `Relics`. Categories deliberately **not**
-consumed: `Enemy`, `Fish`, `Gear`, `Glyphs`, `Misc`, `Node`, `Quests`,
-`Railjack`, `Sigils`, `Skins`, `i18n` - these are either not "items" in the
-navigational sense Crossframe cares about, or (in the case of `Misc`, a
-1,256-entry grab-bag of collectibles, decorations, and inconsistently
-tagged resources) too noisy to trust without per-item verification.
+`Mods`, `Arcanes`, `Resources`, `Relics`, and (filtered - see below) `Misc`.
+Categories deliberately **not** consumed at all: `Enemy`, `Fish`, `Gear`,
+`Glyphs`, `Node`, `Quests`, `Railjack`, `Sigils`, `Skins`, `i18n` - these
+aren't "items" in the navigational sense Crossframe cares about.
+
+`Misc` is a 1,256-entry grab-bag of collectibles, decorations, and
+inconsistently tagged resources - too noisy to trust wholesale, and still
+mostly ignored - but one `productCategory` value within it,
+`"SpecialItems"`, turned out (verified by checking every entry at the time
+it was added) to be a small, clean 36-entry set containing exactly one
+thing: **Exalted Weapons** (Exalted Blade, Regulators, Iron Staff, ...) -
+see `buildExaltedWeaponItem` in `scripts/lib/build-items.mjs`. Everything
+else in `Misc` (companion-part components, Kitgun/Zaw component pieces,
+duplicate/inconsistent entries) is still ignored.
 
 ### warframe.market v2 API (market cross-reference)
 
@@ -76,11 +84,17 @@ rather than fetching anything to confirm it.
   keyed by the base name (e.g. "Axi A1"), and derives both the wiki path
   (`/w/Axi_A1`) and, where warframe.market has a matching `"<Base> Relic"`
   listing, the market slug.
-- **Overframe coverage is Warframes-first.** 117/120 Warframes are
-  covered; weapons, companions, and other equipment categories are not
-  yet, since gathering coverage is a manual, per-category process (see
-  above). The architecture and registry fully support any category; the
-  data just isn't there yet outside Warframes.
+- **Overframe coverage is near-complete for Warframes, standard weapons,
+  companions, and archwing gear** (gathered via
+  `scripts/apply-overframe-urls.mjs`, see below) **but not yet for
+  Kitguns, Zaws, or companion Helminth "Claws"/"Talons" variants.**
+  Those don't have a clean bulk source the way Exalted Weapons did
+  (`Misc.json`'s `"SpecialItems"` `productCategory` is clean; the
+  `"Pistols"` value where Kitguns live is a mix of finished Kitguns,
+  their individual component parts, and unrelated duplicate entries,
+  so it wasn't treated as reliable enough to filter automatically).
+  Adding one is the same process as any other Overframe mapping -
+  manual, via that script or `data/overrides/overframe.json` directly.
 - **Ambiguous item names are excluded, not guessed.** A handful of WFCD
   entries share an exact display name with something that isn't really the
   same navigable page (see `data/overrides/corrections.json`). "Unfused

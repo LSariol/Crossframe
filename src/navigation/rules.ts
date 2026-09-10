@@ -33,10 +33,18 @@ const DESTINATION_RELEVANCE: RelevanceTable = {
   primeComponent: { wiki: true, market: true, overframe: false },
   relic: { wiki: true, market: true, overframe: false },
 
-  // Most crafting resources aren't traded on warframe.market at all; the
-  // rare ones that are will still surface a Market button because that's
-  // data-driven (see destinations.ts), not decided here.
+  // Base crafting resources are never individually traded on
+  // warframe.market - this is a hard rule, not a data-driven one (the
+  // generator never even attempts a market cross-reference for resources;
+  // see buildResourceItem in scripts/lib/build-items.mjs).
   resource: { wiki: true, market: false, overframe: false },
+
+  // Exalted Weapons (Exalted Blade, Regulators, Iron Staff, ...) come
+  // bundled with their Warframe and can never be independently bought or
+  // sold - every WFCD entry confirms this with tradable: false - but they
+  // are exactly the kind of thing Overframe covers (mod/build pages exist
+  // for them).
+  exaltedWeapon: { wiki: true, market: false, overframe: true },
 };
 
 export function isDestinationRelevant(category: ItemCategory, site: SiteId): boolean {

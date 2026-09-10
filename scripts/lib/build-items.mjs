@@ -116,6 +116,38 @@ export function buildPrimeComponents(parentItem, rawComponents, marketIndex) {
   return items;
 }
 
+/**
+ * Exalted Weapons (Exalted Blade, Regulators, Iron Staff, ...): WFCD lists
+ * these inside Misc.json - a 1,256-entry grab-bag Crossframe otherwise
+ * deliberately ignores as too noisy to trust wholesale (see
+ * docs/data-sources.md) - tagged with productCategory "SpecialItems",
+ * which turns out to be a small (36-entry, verified at generation time),
+ * clean subset containing exactly this category and nothing else. The
+ * caller is expected to have already filtered to that subset (see
+ * generate-data.mjs); this function doesn't re-check productCategory
+ * itself; so it stays a plain per-item transform like the others here.
+ *
+ * Never independently tradable - bundled with their Warframe, and every
+ * entry confirms this with tradable: false - so market is never
+ * attempted, the same reasoning as buildResourceItem. WFCD doesn't
+ * populate isPrime on these entries the way it does elsewhere, so it's
+ * derived from the name itself (e.g. "Regulators Prime", "Garuda Prime
+ * Talons") - safe here since every one of the 36 either clearly is or
+ * clearly isn't, with no ambiguous cases.
+ */
+export function buildExaltedWeaponItem(raw) {
+  if (!raw.name) return undefined;
+  const wikiPath = wikiPathFrom(raw.wikiaUrl);
+  if (!wikiPath) return undefined;
+  return {
+    id: slugify(raw.name),
+    name: raw.name,
+    category: "exaltedWeapon",
+    isPrime: /\bprime\b/i.test(raw.name),
+    wiki: { path: wikiPath },
+  };
+}
+
 /** Mods and Arcanes: same shape as equipment but without the "Set" market pattern. */
 export function buildSimpleItem(raw, category, marketIndex) {
   if (!raw.name) return undefined;

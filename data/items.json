@@ -2495,6 +2495,19 @@
     }
   },
   {
+    "id": "arquebex",
+    "name": "Arquebex",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Arquebex"
+    },
+    "overframe": {
+      "id": 5160,
+      "slug": "arquebex"
+    }
+  },
+  {
     "id": "arrow_mutation",
     "name": "Arrow Mutation",
     "category": "mod",
@@ -2517,6 +2530,32 @@
     "overframe": {
       "id": 2250,
       "slug": "artax"
+    }
+  },
+  {
+    "id": "artemis_bow",
+    "name": "Artemis Bow",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Artemis_Bow"
+    },
+    "overframe": {
+      "id": 2276,
+      "slug": "artemis-bow"
+    }
+  },
+  {
+    "id": "artemis_bow_prime",
+    "name": "Artemis Bow Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Artemis_Bow_Prime"
+    },
+    "overframe": {
+      "id": 4240,
+      "slug": "artemis-bow-prime"
     }
   },
   {
@@ -5547,6 +5586,32 @@
     },
     "market": {
       "slug": "balanced_posture"
+    }
+  },
+  {
+    "id": "balefire_charger",
+    "name": "Balefire Charger",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Balefire_Charger"
+    },
+    "overframe": {
+      "id": 2408,
+      "slug": "balefire-charger"
+    }
+  },
+  {
+    "id": "balefire_charger_prime",
+    "name": "Balefire Charger Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Balefire_Charger_Prime"
+    },
+    "overframe": {
+      "id": 6133,
+      "slug": "balefire-charger-prime"
     }
   },
   {
@@ -10128,6 +10193,32 @@
     }
   },
   {
+    "id": "desert_wind",
+    "name": "Desert Wind",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Desert_Wind"
+    },
+    "overframe": {
+      "id": 2272,
+      "slug": "desert-wind"
+    }
+  },
+  {
+    "id": "desert_wind_prime",
+    "name": "Desert Wind Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Desert_Wind_Prime"
+    },
+    "overframe": {
+      "id": 6056,
+      "slug": "desert-wind-prime"
+    }
+  },
+  {
     "id": "desiccation_s_curse",
     "name": "Desiccation's Curse",
     "category": "mod",
@@ -10373,6 +10464,32 @@
     }
   },
   {
+    "id": "dex_pixia",
+    "name": "Dex Pixia",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Dex_Pixia"
+    },
+    "overframe": {
+      "id": 2402,
+      "slug": "dex-pixia"
+    }
+  },
+  {
+    "id": "dex_pixia_prime",
+    "name": "Dex Pixia Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Dex_Pixia_Prime"
+    },
+    "overframe": {
+      "id": 4303,
+      "slug": "dex-pixia-prime"
+    }
+  },
+  {
     "id": "dex_sybaris",
     "name": "Dex Sybaris",
     "category": "primaryWeapon",
@@ -10540,6 +10657,32 @@
     },
     "market": {
       "slug": "divine_retribution"
+    }
+  },
+  {
+    "id": "diwata",
+    "name": "Diwata",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Diwata"
+    },
+    "overframe": {
+      "id": 2273,
+      "slug": "diwata"
+    }
+  },
+  {
+    "id": "diwata_prime",
+    "name": "Diwata Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Diwata_Prime"
+    },
+    "overframe": {
+      "id": 4304,
+      "slug": "diwata-prime"
     }
   },
   {
@@ -12262,6 +12405,45 @@
     },
     "market": {
       "slug": "evir_ti"
+    }
+  },
+  {
+    "id": "exalted_blade",
+    "name": "Exalted Blade",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Exalted_Blade"
+    },
+    "overframe": {
+      "id": 2406,
+      "slug": "exalted-blade"
+    }
+  },
+  {
+    "id": "exalted_prime_blade",
+    "name": "Exalted Prime Blade",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Exalted_Prime_Blade"
+    },
+    "overframe": {
+      "id": 2401,
+      "slug": "exalted-prime-blade"
+    }
+  },
+  {
+    "id": "exalted_umbra_blade",
+    "name": "Exalted Umbra Blade",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Exalted_Umbra_Blade"
+    },
+    "overframe": {
+      "id": 2398,
+      "slug": "exalted-umbra-blade"
     }
   },
   {
@@ -14183,6 +14365,32 @@
     }
   },
   {
+    "id": "garuda_prime_talons",
+    "name": "Garuda Prime Talons",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Garuda_Prime_Talons"
+    },
+    "overframe": {
+      "id": 5844,
+      "slug": "garuda-prime-talons"
+    }
+  },
+  {
+    "id": "garuda_talons",
+    "name": "Garuda Talons",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Garuda_Talons"
+    },
+    "overframe": {
+      "id": 2403,
+      "slug": "garuda-talons"
+    }
+  },
+  {
     "id": "gastro",
     "name": "Gastro",
     "category": "mod",
@@ -14527,6 +14735,19 @@
     },
     "market": {
       "slug": "gleaming_talon"
+    }
+  },
+  {
+    "id": "glory",
+    "name": "Glory",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Glory"
+    },
+    "overframe": {
+      "id": 6602,
+      "slug": "glory"
     }
   },
   {
@@ -17057,6 +17278,45 @@
     }
   },
   {
+    "id": "iron_staff",
+    "name": "Iron Staff",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Iron_Staff"
+    },
+    "overframe": {
+      "id": 2407,
+      "slug": "iron-staff"
+    }
+  },
+  {
+    "id": "iron_staff_prime",
+    "name": "Iron Staff Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Iron_Staff_Prime"
+    },
+    "overframe": {
+      "id": 2680,
+      "slug": "iron-staff-prime"
+    }
+  },
+  {
+    "id": "ironbride",
+    "name": "Ironbride",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Ironbride"
+    },
+    "overframe": {
+      "id": 5318,
+      "slug": "ironbride"
+    }
+  },
+  {
     "id": "ironclad_charge",
     "name": "Ironclad Charge",
     "category": "mod",
@@ -18522,6 +18782,32 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Lamentus"
+    }
+  },
+  {
+    "id": "landslide_fists",
+    "name": "Landslide Fists",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Landslide_Fists"
+    },
+    "overframe": {
+      "id": 7352,
+      "slug": "landslide-fists"
+    }
+  },
+  {
+    "id": "landslide_fists_prime",
+    "name": "Landslide Fists Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Landslide_Fists_Prime"
+    },
+    "overframe": {
+      "id": 7355,
+      "slug": "landslide-fists-prime"
     }
   },
   {
@@ -29282,6 +29568,19 @@
     }
   },
   {
+    "id": "neutralizer",
+    "name": "Neutralizer",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Neutralizer"
+    },
+    "overframe": {
+      "id": 7238,
+      "slug": "neutralizer"
+    }
+  },
+  {
     "id": "neutralizing_justice",
     "name": "Neutralizing Justice",
     "category": "mod",
@@ -29674,6 +29973,19 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Noctrul"
+    }
+  },
+  {
+    "id": "noctua",
+    "name": "Noctua",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Noctua"
+    },
+    "overframe": {
+      "id": 6525,
+      "slug": "noctua"
     }
   },
   {
@@ -34623,6 +34935,32 @@
     }
   },
   {
+    "id": "regulators",
+    "name": "Regulators",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Regulators"
+    },
+    "overframe": {
+      "id": 2399,
+      "slug": "regulators"
+    }
+  },
+  {
+    "id": "regulators_prime",
+    "name": "Regulators Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Regulators_Prime"
+    },
+    "overframe": {
+      "id": 2405,
+      "slug": "regulators-prime"
+    }
+  },
+  {
     "id": "reinforced_bond",
     "name": "Reinforced Bond",
     "category": "mod",
@@ -37004,6 +37342,58 @@
     }
   },
   {
+    "id": "shadow_claws",
+    "name": "Shadow Claws",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Shadow_Claws"
+    },
+    "overframe": {
+      "id": 5442,
+      "slug": "shadow-claws"
+    }
+  },
+  {
+    "id": "shadow_claws_prime",
+    "name": "Shadow Claws Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Shadow_Claws_Prime"
+    },
+    "overframe": {
+      "id": 6633,
+      "slug": "shadow-claws-prime"
+    }
+  },
+  {
+    "id": "shadow_clones",
+    "name": "Shadow Clones",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Shadow_Clones"
+    },
+    "overframe": {
+      "id": 7350,
+      "slug": "shadow-clones"
+    }
+  },
+  {
+    "id": "shadow_clones_prime",
+    "name": "Shadow Clones Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Shadow_Clones_Prime"
+    },
+    "overframe": {
+      "id": 7359,
+      "slug": "shadow-clones-prime"
+    }
+  },
+  {
     "id": "shadow_harvest",
     "name": "Shadow Harvest",
     "category": "mod",
@@ -37098,6 +37488,32 @@
     },
     "market": {
       "slug": "shatter_burst"
+    }
+  },
+  {
+    "id": "shattered_lash",
+    "name": "Shattered Lash",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Shattered_Lash"
+    },
+    "overframe": {
+      "id": 7358,
+      "slug": "shattered-lash"
+    }
+  },
+  {
+    "id": "shattered_lash_prime",
+    "name": "Shattered Lash Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Shattered_Lash_Prime"
+    },
+    "overframe": {
+      "id": 7357,
+      "slug": "shattered-lash-prime"
     }
   },
   {
@@ -42076,6 +42492,32 @@
     }
   },
   {
+    "id": "valkyr_prime_talons",
+    "name": "Valkyr Prime Talons",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Valkyr_Prime_Talons"
+    },
+    "overframe": {
+      "id": 2404,
+      "slug": "valkyr-prime-talons"
+    }
+  },
+  {
+    "id": "valkyr_talons",
+    "name": "Valkyr Talons",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Valkyr_Talons"
+    },
+    "overframe": {
+      "id": 2400,
+      "slug": "valkyr-talons"
+    }
+  },
+  {
     "id": "vampire_leech",
     "name": "Vampire Leech",
     "category": "mod",
@@ -44005,6 +44447,32 @@
     },
     "market": {
       "slug": "weeping_wounds"
+    }
+  },
+  {
+    "id": "whipclaw",
+    "name": "Whipclaw",
+    "category": "exaltedWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Whipclaw"
+    },
+    "overframe": {
+      "id": 7356,
+      "slug": "whipclaw"
+    }
+  },
+  {
+    "id": "whipclaw_prime",
+    "name": "Whipclaw Prime",
+    "category": "exaltedWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Whipclaw_Prime"
+    },
+    "overframe": {
+      "id": 7351,
+      "slug": "whipclaw-prime"
     }
   },
   {

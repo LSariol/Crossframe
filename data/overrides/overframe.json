@@ -3126,5 +3126,149 @@
   "zymos": {
     "id": 5116,
     "slug": "zymos"
+  },
+  "arquebex": {
+    "id": 5160,
+    "slug": "arquebex"
+  },
+  "artemis_bow": {
+    "id": 2276,
+    "slug": "artemis-bow"
+  },
+  "artemis_bow_prime": {
+    "id": 4240,
+    "slug": "artemis-bow-prime"
+  },
+  "balefire_charger": {
+    "id": 2408,
+    "slug": "balefire-charger"
+  },
+  "balefire_charger_prime": {
+    "id": 6133,
+    "slug": "balefire-charger-prime"
+  },
+  "desert_wind": {
+    "id": 2272,
+    "slug": "desert-wind"
+  },
+  "desert_wind_prime": {
+    "id": 6056,
+    "slug": "desert-wind-prime"
+  },
+  "dex_pixia": {
+    "id": 2402,
+    "slug": "dex-pixia"
+  },
+  "dex_pixia_prime": {
+    "id": 4303,
+    "slug": "dex-pixia-prime"
+  },
+  "diwata": {
+    "id": 2273,
+    "slug": "diwata"
+  },
+  "diwata_prime": {
+    "id": 4304,
+    "slug": "diwata-prime"
+  },
+  "exalted_blade": {
+    "id": 2406,
+    "slug": "exalted-blade"
+  },
+  "exalted_prime_blade": {
+    "id": 2401,
+    "slug": "exalted-prime-blade"
+  },
+  "exalted_umbra_blade": {
+    "id": 2398,
+    "slug": "exalted-umbra-blade"
+  },
+  "garuda_prime_talons": {
+    "id": 5844,
+    "slug": "garuda-prime-talons"
+  },
+  "garuda_talons": {
+    "id": 2403,
+    "slug": "garuda-talons"
+  },
+  "glory": {
+    "id": 6602,
+    "slug": "glory"
+  },
+  "iron_staff": {
+    "id": 2407,
+    "slug": "iron-staff"
+  },
+  "iron_staff_prime": {
+    "id": 2680,
+    "slug": "iron-staff-prime"
+  },
+  "ironbride": {
+    "id": 5318,
+    "slug": "ironbride"
+  },
+  "landslide_fists": {
+    "id": 7352,
+    "slug": "landslide-fists"
+  },
+  "landslide_fists_prime": {
+    "id": 7355,
+    "slug": "landslide-fists-prime"
+  },
+  "neutralizer": {
+    "id": 7238,
+    "slug": "neutralizer"
+  },
+  "noctua": {
+    "id": 6525,
+    "slug": "noctua"
+  },
+  "regulators": {
+    "id": 2399,
+    "slug": "regulators"
+  },
+  "regulators_prime": {
+    "id": 2405,
+    "slug": "regulators-prime"
+  },
+  "shadow_claws": {
+    "id": 5442,
+    "slug": "shadow-claws"
+  },
+  "shadow_claws_prime": {
+    "id": 6633,
+    "slug": "shadow-claws-prime"
+  },
+  "shadow_clones": {
+    "id": 7350,
+    "slug": "shadow-clones"
+  },
+  "shadow_clones_prime": {
+    "id": 7359,
+    "slug": "shadow-clones-prime"
+  },
+  "shattered_lash": {
+    "id": 7358,
+    "slug": "shattered-lash"
+  },
+  "shattered_lash_prime": {
+    "id": 7357,
+    "slug": "shattered-lash-prime"
+  },
+  "valkyr_prime_talons": {
+    "id": 2404,
+    "slug": "valkyr-prime-talons"
+  },
+  "valkyr_talons": {
+    "id": 2400,
+    "slug": "valkyr-talons"
+  },
+  "whipclaw": {
+    "id": 7356,
+    "slug": "whipclaw"
+  },
+  "whipclaw_prime": {
+    "id": 7351,
+    "slug": "whipclaw-prime"
   }
 }

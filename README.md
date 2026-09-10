@@ -39,13 +39,15 @@ rather than guess.
 
 Categories: Warframes, Prime Warframes, Primary/Secondary/Melee weapons
 (and their Prime variants), Archwing/Archgun/Archmelee equipment,
-companions and companion weapons, Mods, Arcanes, individually tradable
-Prime components, Relics, and (Wiki-only) Resources. See
+companions and companion weapons, Exalted Weapons (Exalted Blade,
+Regulators, Iron Staff, ...), Mods, Arcanes, individually tradable Prime
+components, Relics, and (Wiki-only) Resources. See
 [`src/navigation/rules.ts`](src/navigation/rules.ts) for exactly which
 destinations apply to which category, and
 [docs/data-sources.md](docs/data-sources.md) for current data coverage per
-category (Overframe coverage is Warframes-first today, gathered by hand -
-see "Known limitations" below).
+category (Overframe coverage is gathered by hand and near-complete for
+most categories, but not yet Kitguns/Zaws/companion Helminth
+"Claws"/"Talons" - see "Known limitations" below).
 
 ## Development
 
@@ -196,15 +198,16 @@ not do.
 
 ## Known limitations
 
-- **Overframe coverage is Warframes-first.** Its `robots.txt` disallows AI
-  crawlers and there's no public API, so unlike Wiki and Market, its
-  mappings are entirely hand-verified (`data/overrides/overframe.json`,
-  built up via `npm run apply-overframe-urls`) rather than generated.
-  117/120 Warframes are covered as of this writing; weapons, companions,
-  and other equipment categories mostly aren't yet - not because
-  Crossframe determined Overframe doesn't apply to them, just because no
-  one's gathered those URLs yet. Contributions welcome via that file -
-  see [docs/data-sources.md](docs/data-sources.md).
+- **Overframe coverage is near-complete but not exhaustive.** Its
+  `robots.txt` disallows AI crawlers and there's no public API, so
+  unlike Wiki and Market, its mappings are entirely hand-verified
+  (`data/overrides/overframe.json`, built up via
+  `npm run apply-overframe-urls`) rather than generated. Warframes,
+  standard weapons, companions, and archwing gear are covered; Kitguns,
+  Zaws, and companion Helminth "Claws"/"Talons" variants mostly aren't
+  yet - not because Crossframe determined Overframe doesn't apply to
+  them, just because no one's gathered those URLs yet. Contributions
+  welcome via that file - see [docs/data-sources.md](docs/data-sources.md).
 - **Resource and Relic wiki paths are derived, not individually
   confirmed** against the live wiki (whose `robots.txt` also disallows
   automated access) - see [docs/data-sources.md](docs/data-sources.md)

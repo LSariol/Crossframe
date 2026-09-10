@@ -67,6 +67,25 @@ describe("bundled registry (real generated data)", () => {
     expect(item?.id).toBe("orion_and_sirius"); // id is internal-only and deliberately not rederived
   });
 
+  it("resolves an Exalted Weapon with Wiki and Overframe but never Market", () => {
+    // Exalted Blade comes bundled with Excalibur - it can never be
+    // independently bought or sold, but it's exactly the kind of thing
+    // people build/mod around, hence Overframe. Sourced from Misc.json's
+    // "SpecialItems" productCategory - see docs/data-sources.md.
+    const item = registry.findByWikiPath("/w/Exalted_Blade");
+    expect(item?.name).toBe("Exalted Blade");
+    expect(item?.category).toBe("exaltedWeapon");
+    expect(item?.market).toBeUndefined();
+    expect(getDestinations(item!, "wiki").map((d) => d.site)).toEqual(["overframe"]);
+  });
+
+  it("marks a Prime Exalted Weapon as Prime even though WFCD doesn't set isPrime for these", () => {
+    const item = registry.findByWikiPath("/w/Regulators_Prime");
+    expect(item?.isPrime).toBe(true);
+    const nonPrime = registry.findByWikiPath("/w/Regulators");
+    expect(nonPrime?.isPrime).toBe(false);
+  });
+
   it("never gives a well-known Founders-exclusive item a Market destination", () => {
     // Excalibur Prime is untradable (Founders-exclusive), so it should
     // never have a market slug - but it's a perfectly normal build

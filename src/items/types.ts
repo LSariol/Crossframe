@@ -28,7 +28,8 @@ export type ItemCategory =
   | "arcane"
   | "primeComponent"
   | "relic"
-  | "resource";
+  | "resource"
+  | "exaltedWeapon";
 
 /** Path (no origin) of the item's page on wiki.warframe.com, e.g. "/w/Protea/Prime". */
 export interface WikiDestination {

@@ -23,6 +23,7 @@ import {
   buildSimpleItem,
   buildResourceItem,
   buildRelicItems,
+  buildExaltedWeaponItem,
   buildMarketIndex,
   hasAnyDestination,
 } from "./lib/build-items.mjs";
@@ -86,6 +87,14 @@ function buildRegistry(wfcd, marketItems) {
   for (const raw of wfcd.Arcanes ?? []) addItem(buildSimpleItem(raw, "arcane", marketIndex));
   for (const raw of wfcd.Resources ?? []) addItem(buildResourceItem(raw));
   for (const item of buildRelicItems(wfcd.Relics ?? [], marketIndex)) addItem(item);
+
+  // Misc.json is a 1,256-entry grab-bag Crossframe otherwise ignores (see
+  // docs/data-sources.md) - "SpecialItems" is the one productCategory
+  // value within it that's actually clean, and is exactly Exalted Weapons.
+  for (const raw of wfcd.Misc ?? []) {
+    if (raw.productCategory !== "SpecialItems") continue;
+    addItem(buildExaltedWeaponItem(raw));
+  }
 
   // Apply corrections (fix or exclude a specific generated entry) before
   // Overframe overrides, so a correction can't accidentally resurrect an

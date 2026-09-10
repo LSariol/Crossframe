@@ -39,6 +39,7 @@ const WFCD_CATEGORIES = [
   "Arcanes",
   "Resources",
   "Relics",
+  "Misc",
 ];
 
 const WFCD_RAW_BASE = "https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json";
