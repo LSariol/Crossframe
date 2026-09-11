@@ -33,10 +33,10 @@ disallow automated/AI access in their `robots.txt`, which is exactly the
 kind of access an automated screenshot tool would be). It's quick:
 
 1. `npm run build`, then load `dist/` unpacked (see the README's
-   "Loading the unpacked extension" section) if you haven't already.
+   "Installing" section) if you haven't already.
 2. Visit each page below, wait a second for the buttons to appear, and
    capture a screenshot (Win+Shift+S works fine, or your browser's own
-   screenshot tool) that includes both the page title/item image *and*
+   screenshot tool) that includes both the page title/item image _and_
    the Crossframe buttons - where exactly that is differs per site:
    - `https://wiki.warframe.com/w/Protea/Prime` - buttons sit right next
      to the page title. Capture that area (Market + Overframe buttons).

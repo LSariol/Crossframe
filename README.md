@@ -1,5 +1,7 @@
 # Crossframe
 
+[![Available in the Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install%20Crossframe-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd)
+
 A browser extension that links [Warframe Wiki](https://wiki.warframe.com),
 [Warframe.Market](https://warframe.market), and
 [Overframe](https://overframe.gg) together. When you're looking at a
@@ -63,7 +65,13 @@ npm run lint     # eslint
 npm run typecheck
 ```
 
-### Loading the unpacked extension
+### Installing
+
+Easiest option: [install it from the Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd) -
+one click, no developer mode needed.
+
+To run a local build instead (for development, or to try changes before
+they're published):
 
 1. `npm run build` (produces `dist/`).
 2. Open `chrome://extensions` (or `edge://extensions`) in a
@@ -79,12 +87,13 @@ after any change (Chrome doesn't hot-reload unpacked extensions).
 
 ### Publishing
 
-No developer-mode install is required once published through an actual
-extension store - see [docs/publishing.md](docs/publishing.md) for the
-full Chrome Web Store submission checklist and
-[store/listing.md](store/listing.md) for ready-to-paste listing copy.
-[PRIVACY.md](PRIVACY.md) is Crossframe's privacy policy (short version:
-it collects nothing).
+Live on the
+[Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd).
+See [docs/publishing.md](docs/publishing.md) for the submission
+checklist (useful for future updates, or for publishing to another
+store like Edge Add-ons) and [store/listing.md](store/listing.md) for
+the listing copy. [PRIVACY.md](PRIVACY.md) is Crossframe's privacy
+policy (short version: it collects nothing).
 
 ## Architecture
 
