@@ -1,6 +1,6 @@
 {
   "name": "crossframe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "license": "MIT",
   "description": "Browser extension that links Warframe Wiki, Warframe.Market, and Overframe pages for the item you're viewing.",
