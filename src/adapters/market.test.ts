@@ -123,20 +123,38 @@ describe("marketAdapter.findInjectionAnchor", () => {
       expect(anchor).toBe(document.querySelector("ul.tabs"));
     });
 
-    it("removes the native Wiki link when Crossframe is showing its own Wiki button", async () => {
+    it("hides (not removes) the native Wiki link when Crossframe is showing its own Wiki button", async () => {
+      // Hidden via style, never .remove()'d: warframe.market is a React
+      // app that tracks its own belief about the DOM independently of the
+      // DOM's actual state, and deleting a node React still thinks it owns
+      // caused a real, reported crash the next time React's own
+      // reconciliation tried to clean up that same node and found it
+      // already gone (NotFoundError: Failed to execute 'removeChild').
+      // The node must stay in the DOM - just visually hidden - so React's
+      // own tree is never surprised by structure Crossframe changed
+      // behind its back.
       document.body.innerHTML = realMarkup();
       await marketAdapter.findInjectionAnchor(item, withWiki);
-      expect(document.querySelector('a[href^="https://wiki.warframe.com/"]')).toBeNull();
+
+      const link = document.querySelector<HTMLElement>('a[href^="https://wiki.warframe.com/"]');
+      expect(link).not.toBeNull(); // still in the DOM
+      // realMarkup's link is the sole child of its wrapper <div>, so the
+      // wrapper is what gets hidden (see hideNativeWikiLink) rather than
+      // the link itself - either way, nothing was removed from the DOM.
+      expect(link!.parentElement!.style.display).toBe("none");
     });
 
     it("leaves the native Wiki link alone when Crossframe isn't showing its own Wiki button", async () => {
-      // e.g. the user disabled Wiki as a destination in settings - removing
+      // e.g. the user disabled Wiki as a destination in settings - hiding
       // the only way to reach the wiki page would be worse than the
       // duplicate link this is otherwise meant to clean up.
       document.body.innerHTML = realMarkup();
       const anchor = await marketAdapter.findInjectionAnchor(item, withoutWiki);
 
-      expect(document.querySelector('a[href^="https://wiki.warframe.com/"]')).not.toBeNull();
+      const link = document.querySelector<HTMLElement>('a[href^="https://wiki.warframe.com/"]');
+      expect(link).not.toBeNull();
+      expect(link!.style.display).not.toBe("none");
+      expect(link!.parentElement!.style.display).not.toBe("none");
       expect(anchor).toBe(document.querySelector("ul.tabs"));
     });
 

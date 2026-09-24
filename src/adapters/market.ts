@@ -35,25 +35,36 @@ function findNameHeading(root: ParentNode, item: { name: string }) {
 /**
  * warframe.market shows its own outbound link to the item's wiki page
  * right next to the name, which duplicates Crossframe's own Wiki button.
- * Removed (only when Crossframe is actually about to show its own Wiki
+ * Hidden (only when Crossframe is actually about to show its own Wiki
  * button - see findInjectionAnchor) since it's redundant, not because
  * Crossframe generally touches host content - it doesn't, anywhere else.
- * If the link is the sole content of its immediate wrapper (the common
- * shape, confirmed from real markup: <div><a>Wiki</a></div>), that
- * wrapper is removed too rather than leaving an empty element behind;
- * otherwise just the link itself goes. A no-op, not an error, if no such
- * link is found - a future warframe.market redesign shouldn't need this
- * file to change to stay safe.
+ *
+ * Hidden via CSS, not removed from the DOM: an earlier version called
+ * .remove() here, which worked visually but intermittently crashed the
+ * entire page with "NotFoundError: Failed to execute 'removeChild' on
+ * 'Node': The node to be removed is not a child of this node" - reported
+ * with a real screenshot of warframe.market's own React error boundary
+ * replacing the whole page. The page is a React app; React tracks its
+ * own belief about what's in the DOM independently of the DOM's actual
+ * state, and warframe.market has live order data streaming in that can
+ * trigger a re-render of any part of the page at basically any time. The
+ * moment .remove() deleted a node React's tree still referenced as a
+ * child, the next such re-render's own cleanup pass would try to remove
+ * that same node again, find it already gone, and throw - not a race
+ * Crossframe caused directly, but a state mismatch it created that some
+ * unrelated later React update would eventually trip over. Setting
+ * display:none never touches DOM structure, so React's own reconciliation
+ * can't be surprised by it - the node is still exactly where React thinks
+ * it is, just visually hidden. A no-op, not an error, if no such link is
+ * found - a future warframe.market redesign shouldn't need this file to
+ * change to stay safe.
  */
-function removeNativeWikiLink(root: ParentNode): void {
-  const link = root.querySelector(WIKI_LINK_SELECTOR);
+function hideNativeWikiLink(root: ParentNode): void {
+  const link = root.querySelector<HTMLElement>(WIKI_LINK_SELECTOR);
   if (!link) return;
   const parent = link.parentElement;
-  if (parent && parent.children.length === 1) {
-    parent.remove();
-  } else {
-    link.remove();
-  }
+  const target = parent && parent.children.length === 1 ? parent : link;
+  target.style.display = "none";
 }
 
 /**
@@ -96,7 +107,7 @@ export const marketAdapter: SiteAdapter = {
       () => {
         const heading = findNameHeading(root, item);
         if (!heading) return undefined; // wait for the real item page, not a loading state
-        if (showingOwnWikiButton) removeNativeWikiLink(root);
+        if (showingOwnWikiButton) hideNativeWikiLink(root);
         return findTabsAnchor(root) ?? heading;
       },
       { root, timeoutMs: 5000 },
