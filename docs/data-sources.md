@@ -54,11 +54,14 @@ here, per the design doc's preference for structured data over scraping).
 `data/overrides/overframe.json` is the **entire** source of Overframe data:
 a hand-maintained `{ "<canonicalId>": { "id": number, "slug": string } }`
 map. Every entry in it was verified by opening that one item's real
-Overframe page - as of this writing that covers 117 of 120 Warframes
-(gathered via `scripts/apply-overframe-urls.mjs`, see below); weapons,
-companions, and other equipment categories are still largely uncovered.
-This is intentionally built up incrementally by hand rather than guessed.
-See "Adding or fixing an Overframe mapping" below.
+Overframe page - as of this writing that's 835 mappings, covering all 121
+Warframes and the large majority of standard weapons, companions, and
+archwing gear (gathered via `scripts/apply-overframe-urls.mjs`, see
+below). Kitguns, Zaws, and companion Helminth "Claws"/"Talons" variants
+remain uncovered - see "Known limitations" below for why that's a
+different, bigger problem than the rest of this list. This is
+intentionally built up incrementally by hand rather than guessed. See
+"Adding or fixing an Overframe mapping" below.
 
 ### wiki.warframe.com (never queried directly)
 
@@ -110,8 +113,8 @@ entered, the same bar as generated data.
   MediaWiki title transform - unconfirmed against the live wiki, same as
   Resources and Relics. If one 404s, just fix the `wiki.path` in that
   file directly.
-- **Overframe coverage is near-complete for Warframes, standard weapons,
-  companions, and archwing gear** (gathered via
+- **Overframe coverage is complete for all Warframes and near-complete
+  for standard weapons, companions, and archwing gear** (gathered via
   `scripts/apply-overframe-urls.mjs`, see below) **but not yet for
   Kitguns, Zaws, or companion Helminth "Claws"/"Talons" variants.**
   Those don't have a clean bulk source the way Exalted Weapons did
@@ -128,6 +131,18 @@ entered, the same bar as generated data.
   the same generic name before being identified in-game, so Crossframe
   can't safely resolve that name to any one of them and excludes it
   entirely rather than link to a plausible-but-arbitrary guess.
+- **Two distinct canonical ids can independently end up with the same
+  display name, and the generator can't catch this on its own.** Unlike
+  the same-WFCD-id duplicates below, this is two genuinely separate
+  registry entries - different ids, different (or missing) wiki/market
+  data - that happen to render an identical name, so nothing about
+  generation flags it as a collision. Found this way once already:
+  `orion_and_sirius` (the real, corrected, Overframe-verified entry) and
+  `sirius_and_orion` (a bogus duplicate pointing at an unrelated wiki
+  path, now excluded in `corrections.json`) both displayed as "Sirius &
+  Orion". No automated check catches this class of bug - it only
+  surfaced because a real player noticed two identically-named things in
+  the data. Worth a skeptical look if this pattern shows up again.
 - **Duplicate WFCD entries collapse safely, not arbitrarily.** Many mods
   appear multiple times under different internal ids that share one
   display name (e.g. "Vitality" also exists as reduced-strength "Beginner"
@@ -195,6 +210,13 @@ changes over time.
     This is the intended way to gather coverage, since there's no bulk
     source to generate from - see "Overframe (explicit overrides only,
     no bulk source)" above.
+    **Known matching gap:** dual-wielded "X & Y"-named weapons
+    (e.g. "Silva & Aegis") never auto-match - Overframe's slug drops the
+    connecting word entirely (`silva-aegis`), while the registry's
+    canonical id keeps it (`silva_and_aegis`), so the script's
+    `slug.replace(/-/g, "_")` guess doesn't land on the real id. These
+    always need the "one at a time" path below, using the item's real id
+    (found by searching `data/items.json` for its name).
   - **One at a time:** add or edit an entry in
     `data/overrides/overframe.json` directly, keyed by the item's `id`:
     ```json

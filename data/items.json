@@ -188,6 +188,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Ack_&_Brunt"
+    },
+    "overframe": {
+      "id": 980,
+      "slug": "ack-brunt"
     }
   },
   {
@@ -521,6 +525,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Afuris"
+    },
+    "overframe": {
+      "id": 1046,
+      "slug": "afuris"
     }
   },
   {
@@ -2807,6 +2815,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Argo_&_Vel"
+    },
+    "overframe": {
+      "id": 6256,
+      "slug": "argo-vel"
     }
   },
   {
@@ -9185,6 +9197,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Cobra_&_Crane"
+    },
+    "overframe": {
+      "id": 1466,
+      "slug": "cobra-crane"
     }
   },
   {
@@ -9197,6 +9213,10 @@
     },
     "market": {
       "slug": "cobra_and_crane_prime_set"
+    },
+    "overframe": {
+      "id": 6045,
+      "slug": "cobra-crane-prime"
     }
   },
   {
@@ -12415,6 +12435,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Dual_Skana"
+    },
+    "overframe": {
+      "id": 1119,
+      "slug": "dual-skana"
     }
   },
   {
@@ -17859,15 +17883,6 @@
     "overframe": {
       "id": 951,
       "slug": "hind"
-    }
-  },
-  {
-    "id": "hinta_stabilizer",
-    "name": "Hinta Stabilizer",
-    "category": "companion",
-    "isPrime": false,
-    "market": {
-      "slug": "hinta_stabilizer"
     }
   },
   {
@@ -32929,7 +32944,7 @@
     "category": "warframe",
     "isPrime": false,
     "wiki": {
-      "path": "/w/Orion"
+      "path": "/w/Sirius_&_Orion"
     },
     "overframe": {
       "id": 7962,
@@ -40680,6 +40695,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Sigma_&_Octantis"
+    },
+    "overframe": {
+      "id": 1188,
+      "slug": "sigma-octantis"
     }
   },
   {
@@ -40734,6 +40753,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Silva_&_Aegis"
+    },
+    "overframe": {
+      "id": 1187,
+      "slug": "silva-aegis"
     }
   },
   {
@@ -40746,6 +40769,10 @@
     },
     "market": {
       "slug": "silva_and_aegis_prime_set"
+    },
+    "overframe": {
+      "id": 1150,
+      "slug": "silva-aegis-prime"
     }
   },
   {
@@ -40843,24 +40870,6 @@
     },
     "market": {
       "slug": "sinking_talon"
-    }
-  },
-  {
-    "id": "sirius_and_orion",
-    "name": "Sirius & Orion",
-    "category": "warframe",
-    "isPrime": false,
-    "wiki": {
-      "path": "/w/Sirius"
-    }
-  },
-  {
-    "id": "sirocco",
-    "name": "Sirocco",
-    "category": "primaryWeapon",
-    "isPrime": false,
-    "wiki": {
-      "path": "/w/Sirocco"
     }
   },
   {
@@ -42493,6 +42502,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Sun_&_Moon"
+    },
+    "overframe": {
+      "id": 6145,
+      "slug": "sun-moon"
     }
   },
   {
@@ -43145,6 +43158,10 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Tak_&_Lug"
+    },
+    "overframe": {
+      "id": 7372,
+      "slug": "tak-lug"
     }
   },
   {

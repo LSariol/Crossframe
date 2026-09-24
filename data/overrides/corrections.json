@@ -5,6 +5,19 @@
   },
   "orion_and_sirius": {
     "name": "Sirius & Orion",
-    "reason": "WFCD's own name field says \"Orion & Sirius\", but that same record's internal path (SiriusOrion), flavor text, and ability descriptions all consistently say \"Sirius & Orion\" - matching Overframe's real slug (sirius-orion), reported directly from the live site. Looks like an upstream typo in the name field specifically. The id stays orion_and_sirius (internal only, never shown to users) to avoid rippling a rename through anyone's existing overframe.json entries. The wiki path (/w/Orion) is untouched since nothing suggests it's wrong."
+    "wiki": { "path": "/w/Sirius_&_Orion" },
+    "reason": "WFCD's own name field says \"Orion & Sirius\", but that same record's internal path (SiriusOrion), flavor text, and ability descriptions all consistently say \"Sirius & Orion\" - matching Overframe's real slug (sirius-orion), reported directly from the live site. Looks like an upstream typo in the name field specifically. The id stays orion_and_sirius (internal only, never shown to users) to avoid rippling a rename through anyone's existing overframe.json entries. Wiki path corrected from the generated /w/Orion (WFCD's wikiaUrl) to /w/Sirius_&_Orion, confirmed as the official page by the user directly in their own browser - /w/Orion apparently still works (a redirect or alias) but isn't the canonical URL."
+  },
+  "sirius_and_orion": {
+    "exclude": true,
+    "reason": "Duplicate of orion_and_sirius (see above) - a separate WFCD entry that renders the identical display name \"Sirius & Orion\" but points at a different, unrelated wiki path (/w/Sirius) and has no market or overframe data. orion_and_sirius is the real, already-verified entry (confirmed against Overframe's live slug); this one is excluded rather than corrected since nothing about it besides the name overlap suggests it's meant to be a distinct item."
+  },
+  "hinta_stabilizer": {
+    "exclude": true,
+    "reason": "Not an actual companion - it's a companion part/component (per user, who plays the game) that WFCD's data categorizes as a standalone companion. Confirmed by the generated entry itself having a market slug but no wiki page at all, consistent with a sub-part rather than a full companion."
+  },
+  "sirocco": {
+    "exclude": true,
+    "reason": "An Operator/Drifter Amp component, not a Tenno primary weapon - WFCD's Primary.json miscategorizes it (per user, who plays the game). Amps aren't individually listed on warframe.market or overframe.gg the way standard weapons are, consistent with this entry having a wiki path but no market data at all."
   }
 }

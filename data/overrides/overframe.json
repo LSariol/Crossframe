@@ -1,4 +1,40 @@
 {
+  "ack_and_brunt": {
+    "id": 980,
+    "slug": "ack-brunt"
+  },
+  "argo_and_vel": {
+    "id": 6256,
+    "slug": "argo-vel"
+  },
+  "cobra_and_crane": {
+    "id": 1466,
+    "slug": "cobra-crane"
+  },
+  "cobra_and_crane_prime": {
+    "id": 6045,
+    "slug": "cobra-crane-prime"
+  },
+  "sigma_and_octantis": {
+    "id": 1188,
+    "slug": "sigma-octantis"
+  },
+  "silva_and_aegis": {
+    "id": 1187,
+    "slug": "silva-aegis"
+  },
+  "silva_and_aegis_prime": {
+    "id": 1150,
+    "slug": "silva-aegis-prime"
+  },
+  "sun_and_moon": {
+    "id": 6145,
+    "slug": "sun-moon"
+  },
+  "tak_and_lug": {
+    "id": 7372,
+    "slug": "tak-lug"
+  },
   "protea_prime": {
     "id": 6534,
     "slug": "protea-prime"
@@ -3270,5 +3306,13 @@
   "whipclaw_prime": {
     "id": 7351,
     "slug": "whipclaw-prime"
+  },
+  "afuris": {
+    "id": 1046,
+    "slug": "afuris"
+  },
+  "dual_skana": {
+    "id": 1119,
+    "slug": "dual-skana"
   }
 }
