@@ -11,3 +11,13 @@ data/.cache/
 
 # Local-only agent orientation doc - not part of the public project.
 CLAUDE.md
+
+# Internal gap-analysis/roadmap notes - candid self-assessment written for
+# planning, not the kind of thing a public repo's docs/ folder is for
+# (contrast with architecture.md etc., which document how the system
+# actually works and are meant for contributors to read).
+docs/consumer-readiness.md
+
+# Scratch input file for `npm run apply-overframe-urls` (see that script's
+# own doc comment) - a personal working list, not project content.
+urls.txt

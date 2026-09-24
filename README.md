@@ -91,9 +91,12 @@ Live on the
 [Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd).
 See [docs/publishing.md](docs/publishing.md) for the submission
 checklist (useful for future updates, or for publishing to another
-store like Edge Add-ons) and [store/listing.md](store/listing.md) for
-the listing copy. [PRIVACY.md](PRIVACY.md) is Crossframe's privacy
-policy (short version: it collects nothing).
+store like Edge Add-ons - see [docs/cross-browser-support.md](docs/cross-browser-support.md)
+for what Edge/Firefox support specifically involves) and
+[store/listing.md](store/listing.md) for the listing copy.
+[CHANGELOG.md](CHANGELOG.md) tracks what changed release to release.
+[PRIVACY.md](PRIVACY.md) is Crossframe's privacy policy (short version:
+it collects nothing).
 
 ## Architecture
 
