@@ -13,8 +13,8 @@
         automatically.
       </p>
 
-      <section>
-        <h2>Enabled sites</h2>
+      <fieldset>
+        <legend>Enabled sites</legend>
         <p class="crossframe-options__hint">
           Turning a site off stops Crossframe from activating there, and hides it as a destination
           everywhere else.
@@ -31,10 +31,10 @@
           <input type="checkbox" data-site="overframe" />
           Overframe
         </label>
-      </section>
+      </fieldset>
 
-      <section>
-        <h2>Link behavior</h2>
+      <fieldset>
+        <legend>Link behavior</legend>
         <label class="crossframe-options__row">
           <input type="radio" name="linkTarget" value="new-tab" />
           Open in a new tab
@@ -43,9 +43,22 @@
           <input type="radio" name="linkTarget" value="same-tab" />
           Open in the current tab
         </label>
-      </section>
+      </fieldset>
 
       <p class="crossframe-options__status" role="status"></p>
+
+      <footer class="crossframe-options__footer">
+        <p>
+          Found a bug, or a page where the buttons don't show up right?
+          <a
+            href="https://github.com/LSariol/Crossframe/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Report an issue on GitHub</a
+          >
+          (opens in a new tab).
+        </p>
+      </footer>
     </main>
   </body>
 </html>

@@ -39,5 +39,5 @@ export async function runAdapter(
   if (!anchor) return;
   if (document.querySelector(NAV_SELECTOR)) return; // a concurrent run beat us to it
 
-  insertAfter(anchor, renderNavigation(destinations, settings.linkTarget));
+  insertAfter(anchor, renderNavigation(destinations, settings.linkTarget, item.name));
 }

@@ -31,6 +31,40 @@ describe("renderNavigation", () => {
     const nav = renderNavigation([]);
     expect(nav.children).toHaveLength(0);
   });
+
+  it("is a <nav> landmark with its own accessible name, distinct from the host page's own navigation", () => {
+    const nav = renderNavigation([{ site: "wiki", url: "https://wiki.warframe.com/w/Protea" }]);
+    expect(nav.tagName).toBe("NAV");
+    expect(nav.getAttribute("aria-label")).toBe("Crossframe");
+  });
+
+  it("gives each link an aria-label with the full site name and item name, since the short visible label alone is ambiguous out of context", () => {
+    const nav = renderNavigation(
+      [{ site: "wiki", url: "https://wiki.warframe.com/w/Protea/Prime" }],
+      "new-tab",
+      "Protea Prime",
+    );
+    const link = nav.querySelector("a");
+    expect(link?.getAttribute("aria-label")).toBe(
+      "View Protea Prime on Warframe Wiki (opens in a new tab)",
+    );
+  });
+
+  it("degrades the aria-label gracefully when no item name is given", () => {
+    const nav = renderNavigation([{ site: "market", url: "https://warframe.market/items/x" }]);
+    const link = nav.querySelector("a");
+    expect(link?.getAttribute("aria-label")).toBe("View on Warframe.Market (opens in a new tab)");
+  });
+
+  it("omits the 'opens in a new tab' suffix when linkTarget is same-tab", () => {
+    const nav = renderNavigation(
+      [{ site: "overframe", url: "https://overframe.gg/items/arsenal/1/x/" }],
+      "same-tab",
+    );
+    const link = nav.querySelector("a");
+    expect(link?.getAttribute("aria-label")).toBe("View on Overframe");
+    expect(link?.target).toBe("");
+  });
 });
 
 describe("insertAfter", () => {

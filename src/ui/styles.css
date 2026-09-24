@@ -80,6 +80,21 @@
   transform: translateY(0);
 }
 
+/* Respect the OS-level "reduce motion" preference - the hover/focus lift
+   is purely decorative, so it's the transition/transform that gets
+   dropped here, not the hover/focus state itself (background-color still
+   changes, just instantly). */
+@media (prefers-reduced-motion: reduce) {
+  .crossframe-nav__link {
+    transition: none;
+  }
+
+  .crossframe-nav__link:hover,
+  .crossframe-nav__link:focus-visible {
+    transform: none;
+  }
+}
+
 .crossframe-nav__link::before {
   content: "";
   width: 6px;
@@ -129,18 +144,6 @@
   line-height: 1.5;
 }
 
-.crossframe-options section {
-  margin: 20px 0;
-}
-
-.crossframe-options h2 {
-  margin: 0 0 8px;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #7fd8d0;
-}
-
 .crossframe-options__row {
   display: flex;
   align-items: center;
@@ -154,4 +157,36 @@
   min-height: 1em;
   font-size: 12px;
   color: #7fd8d0;
+}
+
+.crossframe-options fieldset {
+  margin: 20px 0;
+  padding: 0;
+  border: none;
+}
+
+.crossframe-options legend {
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #7fd8d0;
+}
+
+.crossframe-options__footer {
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(127, 216, 208, 0.2);
+  font-size: 12px;
+  color: #9fb8bb;
+}
+
+.crossframe-options__footer a {
+  color: #7fd8d0;
+}
+
+.crossframe-options__footer a:focus-visible {
+  outline: 2px solid #7fd8d0;
+  outline-offset: 2px;
 }
