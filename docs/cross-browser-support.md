@@ -38,52 +38,79 @@ not a rewrite.
 1. **`browser_specific_settings.gecko.id` in the manifest.** Firefox
    requires every extension to have a stable, explicit id for signing and
    updates (Chrome derives its equivalent from the upload itself, so this
-   key doesn't exist in the current `manifest.json`). Something like:
+   key doesn't exist in Chrome's manifest).
+
+   **Done** - added to `manifest.json`:
 
    ```json
    "browser_specific_settings": {
      "gecko": {
-       "id": "crossframe@<your-domain-or-email>",
+       "id": "{f3c2291c-83db-469e-ae92-eec9598dceee}",
        "strict_min_version": "109.0"
      }
    }
    ```
 
-   Chrome and Edge both silently ignore an unrecognized top-level key, so
-   this is safe to add directly to the existing `manifest.json` rather
-   than needing a separate Firefox-only manifest variant - confirm this
-   with a Chrome build after adding it, but there's no structural reason
-   it would break anything.
+   Used a randomly-generated UUID rather than an email-shaped id (the
+   more common convention, e.g. `crossframe@example.com`) specifically so
+   nothing personal ends up permanently baked into a public manifest file
+   - Mozilla's requirement is just that the id is globally unique and
+   never changes across future updates of this same listing, not that it
+   resolves to anything. **This id is now permanent** - changing it later
+   means AMO treats the next upload as a brand-new, unrelated extension
+   (loses update continuity, review history, and any installs). Confirmed
+   Chrome/Edge silently ignore the unrecognized top-level key: `npm run
+   build` and the full test suite both still pass clean with this added.
 
-2. **Verify `chrome.storage.sync` behaves the same under Firefox's
+2. **`browser_specific_settings.gecko.data_collection_permissions` in
+   the manifest.** A newer, separate Mozilla requirement from the `id`
+   above - a transparency declaration of what categories of user data
+   the extension collects. Not needed for the manifest to be *valid* by
+   any schema Chrome/Edge or `esbuild`/TypeScript check, only for AMO's
+   own upload validation - so this one wasn't caught until an actual
+   submission attempt failed with `"the data_collection_permission
+   property is missing"`.
+
+   **Done** - added to `manifest.json`, alongside the `id`:
+
+   ```json
+   "data_collection_permissions": {
+     "required": ["none"]
+   }
+   ```
+
+   Crossframe collects nothing (see [PRIVACY.md](../PRIVACY.md)), so
+   `"none"` is the correct value outright - no judgment call needed. If a
+   future AMO upload complains about this field again (Mozilla has
+   changed its exact required shape before and may again), the answer is
+   always going to be "collects nothing" regardless of what the current
+   shape is; only the JSON structure itself might need adjusting to match.
+
+3. **Verify `chrome.storage.sync` behaves the same under Firefox's
    implementation.** It should - `src/settings/settings.ts` uses nothing
    beyond `get`/`set` with a plain object, which both browsers support
-   identically - but this needs an actual Firefox test pass before
-   claiming it works, not an assumption. This is the one item on this
-   list that's a real "go verify," not just packaging.
+   identically. **Done** - verified working in a real Firefox install.
 
-3. **Re-run the adapter test suite's assumptions in real Firefox, not
+4. **Re-run the adapter test suite's assumptions in real Firefox, not
    just happy-dom.** The vitest suite exercises DOM logic in a simulated
    environment, not any specific browser's actual rendering/timing
-   behavior. Chrome and Edge share an engine, so testing one covers both;
-   Firefox is a genuinely different engine (Gecko), so "it works in
-   Chrome" isn't evidence it works in Firefox for anything
-   timing-sensitive - specifically `waitForElement`'s `MutationObserver`
-   usage on warframe.market and overframe.gg, both of which render
-   client-side after initial load. `MutationObserver` itself is
-   standard and well-supported, so this is very likely fine, but "very
-   likely fine" is exactly the kind of claim that should be confirmed by
-   loading the unpacked extension in real Firefox and visiting all three
-   sites before submitting, not assumed from the Chromium test results.
+   behavior - Firefox is a genuinely different engine (Gecko) than
+   Chrome/Edge, so "it works in Chrome" wasn't evidence it works in
+   Firefox for anything timing-sensitive, specifically
+   `waitForElement`'s `MutationObserver` usage on warframe.market and
+   overframe.gg. **Done** - confirmed working across all three sites in
+   a real Firefox install, alongside step 3.
 
-4. **One-time developer account.** Register at
+5. **One-time developer account.** Register at
    [addons.mozilla.org (AMO)](https://addons.mozilla.org/developers/) -
    free, separate from both the Chrome and Edge developer accounts.
 
-5. **Submit for review.** AMO's review process is stricter and can be
+6. **Submit for review.** AMO's review process is stricter and can be
    slower than Chrome's/Edge's, especially for a first submission - budget
    more time than the "hours to a few days" Chrome estimate in
-   `docs/publishing.md`.
+   `docs/publishing.md`. See `store/listing.md`'s Firefox section for the
+   "Notes to Reviewers" build-instructions tip and the exact listing
+   copy to submit.
 
 ### What does NOT need to change
 
@@ -102,3 +129,13 @@ Edge first (near-zero cost, same package, wider reach immediately), then
 Firefox once there's time to actually sit down and verify it in a real
 Firefox install rather than assume compatibility from the Chromium test
 suite.
+
+### Current status
+
+Both manifest changes (steps 1-2) are done, and both real-browser
+verification steps (3-4) have been confirmed - tested working across
+Chrome, Edge, and Firefox as of version 1.1.0. Remaining: AMO account
+registration and submission (steps 5-6), and the equivalent Edge Add-ons
+submission (see `store/listing.md` for both, and the `data_collection_
+permissions` manifest requirement that surfaced on first AMO upload
+attempt - already fixed, documented there and in step 2 above).

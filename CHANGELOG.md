@@ -7,6 +7,46 @@ actually submitted/approved on any given store.
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-09-24
+
+First version submitted to Edge Add-ons and Mozilla Add-ons (AMO), alongside Chrome - tested working on all three browsers.
+
+### Added
+
+- Overframe button on individually tradable Prime component pages
+  (Blueprints, Chassis, Barrels, Receivers, ...) on warframe.market -
+  Overframe has no build page for a single part, so it links to the
+  *finished item's* build page instead (e.g. "Sevagoth Prime Blueprint"
+  links to Sevagoth Prime; "Acceltra Prime Receiver" links to Acceltra
+  Prime). No new Overframe data needed - each component simply inherits
+  its parent's existing mapping.
+
+### Fixed
+
+- Firefox Add-ons (AMO) rejected the package on upload with `"the
+  data_collection_permission property is missing"` -
+  `browser_specific_settings.gecko` needs a
+  `data_collection_permissions` field (a Mozilla transparency
+  requirement separate from the `gecko.id` added for 1.0.3), which
+  Chrome/Edge don't validate at all so nothing caught it until an actual
+  AMO submission attempt. Added `{ "required": ["none"] }` - accurate,
+  since Crossframe collects nothing (see `PRIVACY.md`).
+- **The options page did nothing.** `options.html` had no `<script>` tag
+  at all - `options.js` was bundled but never loaded in a real browser, so
+  every checkbox/radio always showed its default unchecked state
+  regardless of saved settings, and toggling any of them had no effect.
+  Not a regression - this appears to have been broken since the options
+  page was first built, undetected because the existing tests exercised
+  the page's functions directly against an in-memory fixture rather than
+  the real HTML file. Fixed, with a new regression test that reads the
+  actual `options.html` source and confirms the script tag is there.
+- `findByOverframeId`/`findByOverframeSlug` could resolve to a Prime
+  component instead of the actual item once components started sharing
+  their parent's Overframe id/slug (see above) - the same class of bug
+  already fixed for wiki-path lookups, now fixed the same way for
+  Overframe lookups too (a component is never allowed to win either
+  index over a non-component).
+
 ## [1.0.3] - 2026-09-24
 
 ### Added
@@ -16,6 +56,12 @@ actually submitted/approved on any given store.
   dual-wielded "X & Y"-named items (Ack & Brunt, Argo & Vel, Cobra &
   Crane, Cobra & Crane Prime, Sigma & Octantis, Silva & Aegis, Silva &
   Aegis Prime, Sun & Moon, Tak & Lug, Afuris, Dual Skana).
+- `browser_specific_settings.gecko.id` in `manifest.json`, required by
+  Firefox for signing/updates - see `docs/cross-browser-support.md`.
+  Chrome/Edge confirmed unaffected (silently ignore the unrecognized
+  key). Real-Firefox verification and AMO submission still pending
+  before this counts as full Firefox support - not bumping to 1.1.0
+  until that's actually done.
 
 ### Fixed
 
@@ -26,6 +72,26 @@ actually submitted/approved on any given store.
   miscategorized as a Tenno primary weapon.
 - Corrected `orion_and_sirius`'s ("Sirius & Orion") Wiki link from the
   generated `/w/Orion` to the official `/w/Sirius_&_Orion` page.
+- Crossframe stopped working on warframe.market and overframe.gg after
+  their own client-side navigation changed the URL (e.g. using
+  warframe.market's internal search from its homepage, which lands on
+  `?type=sell` - its own "Orders" tab URL) - both are single-page apps
+  that rewrite content and the address bar via JavaScript without the
+  browser ever loading a new document, and content scripts only run once,
+  at real page-load time, so the buttons simply never reappeared once
+  that happened. The obvious fix - hooking `history.pushState`/
+  `replaceState`, the standard technique for this - turned out not to
+  work on the real site: confirmed via live debugging that warframe.market's
+  own router doesn't go through those instance-level properties at all
+  for its internal search (most likely calling `History.prototype
+  .pushState` directly), so a hook on them was simply never invoked, no
+  matter how early it was installed. Fixed instead by polling
+  `location.href` for changes every 500ms, which doesn't need to know
+  *how* the URL changed - if the address bar shows something different
+  than a moment ago, something navigated, regardless of mechanism. All
+  three content scripts now pick up an in-page navigation this way and
+  re-run the detection pipeline, correctly replacing stale buttons or
+  clearing them if the new URL doesn't resolve to anything.
 
 ### Changed
 
