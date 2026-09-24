@@ -48,10 +48,17 @@ entry - rather than a change to existing site logic. Using a hypothetical
 
    ```ts
    import { overwikiAdapter } from "../adapters/overwiki";
-   import { runAdapter } from "../adapters/run";
+   import { watchAdapter } from "../adapters/run";
 
-   void runAdapter(overwikiAdapter);
+   watchAdapter(overwikiAdapter);
    ```
+
+   Use `watchAdapter`, not `runAdapter` directly - it runs the pipeline
+   immediately and then keeps re-running it if Overwiki ever navigates
+   between items client-side (rewriting content and the address bar via
+   JavaScript, the way warframe.market and overframe.gg both do) rather
+   than with a full page load, which a one-shot `runAdapter` call would
+   silently go dead after - see `docs/architecture.md`.
 
 6. **Wire it into the build and manifest.** Add an entry to
    `entryPoints` in `scripts/build.mjs`, and a `content_scripts` block to

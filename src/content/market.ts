@@ -1,4 +1,4 @@
 import { marketAdapter } from "../adapters/market";
-import { runAdapter } from "../adapters/run";
+import { watchAdapter } from "../adapters/run";
 
-void runAdapter(marketAdapter);
+watchAdapter(marketAdapter);

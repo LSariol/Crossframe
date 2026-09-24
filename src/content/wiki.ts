@@ -1,4 +1,4 @@
 import { wikiAdapter } from "../adapters/wiki";
-import { runAdapter } from "../adapters/run";
+import { watchAdapter } from "../adapters/run";
 
-void runAdapter(wikiAdapter);
+watchAdapter(wikiAdapter);

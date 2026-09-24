@@ -39,7 +39,7 @@ renderNavigation + insertAfter          src/ui/buttons.ts
 
 `src/adapters/run.ts` is the only thing that calls all of these in order
 (see `runAdapter`); every content script (`src/content/*.ts`) is a two-line
-file that just hands its site's adapter to `runAdapter`. This is the "avoid
+file that just hands its site's adapter to `watchAdapter`. This is the "avoid
 tightly coupling site-specific DOM parsing with general item or navigation
 logic" requirement from the design doc, made structural rather than just a
 convention: a `SiteAdapter` (`src/adapters/types.ts`) can _only_ do two
@@ -47,6 +47,33 @@ things - parse a URL, and find a DOM element - so there's no way for
 site-specific code to accidentally reach into item resolution or
 destination rules, and no way for that shared logic to accidentally depend
 on any one site's markup.
+
+`watchAdapter` runs `runAdapter` once immediately, then keeps re-running it
+whenever the URL changes without a full page load - both warframe.market
+and overframe.gg are single-page apps that rewrite content and the
+address bar via JavaScript, which browsers don't treat as a new page
+load, so a content script that only ever ran once would simply go dead
+the first time that happened. `runAdapter` itself is safe to call
+repeatedly: it tags its injected nav with the resolved item's key, so
+re-running for the same item is a no-op, re-running for a different item
+replaces it, and a page whose new URL doesn't resolve to anything gets
+any stale nav cleared rather than left showing the wrong item's buttons.
+A monotonic run-id guards against two overlapping calls (e.g. rapid
+tab-switching) finishing out of order and one clobbering the other's
+correct result.
+
+This is detected by polling `location.href` every 500ms, not by hooking
+`history.pushState`/`replaceState` - that's the more common technique for
+this, and was tried first, but confirmed via live debugging *not* to work
+against warframe.market's own internal search: its router doesn't call
+those instance-level methods at all for that navigation (most likely
+calling `History.prototype.pushState` directly), so a patch on them was
+simply never invoked, no matter how early it was installed. Polling
+doesn't need to know *how* the URL changed, only that it did, which is
+the one thing that's reliably observable regardless of whatever a given
+site's router does internally - see `CLAUDE.md`'s "Pipeline gotchas" for
+the fuller account of that dead end, kept there since it's exactly the
+kind of thing worth not re-attempting from scratch next time.
 
 ## Module responsibilities
 
@@ -59,7 +86,7 @@ on any one site's markup.
 | `src/navigation/url.ts`          | Building one destination's absolute URL from a `CanonicalItem`                                    | deciding whether to show it                             |
 | `src/navigation/destinations.ts` | Combining the two above into the final "what buttons to show, excluding the current site" list    | anything DOM-related                                    |
 | `src/adapters/*.ts`              | Per-site URL parsing and DOM anchor discovery                                                     | item resolution, destination rules, rendering           |
-| `src/adapters/run.ts`            | Wiring the pipeline together, idempotently                                                        | any site-specific behavior                              |
+| `src/adapters/run.ts`            | Wiring the pipeline together, idempotently, and re-running it on SPA-style URL changes             | any site-specific behavior                              |
 | `src/ui/buttons.ts`              | Rendering the button group as plain anchor elements                                               | deciding which buttons to render                        |
 | `src/settings/settings.ts`       | Reading/writing `chrome.storage.sync`, with safe defaults                                         | applying settings to a page (that's `run.ts`'s job)     |
 

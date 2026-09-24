@@ -1,4 +1,4 @@
 import { overframeAdapter } from "../adapters/overframe";
-import { runAdapter } from "../adapters/run";
+import { watchAdapter } from "../adapters/run";
 
-void runAdapter(overframeAdapter);
+watchAdapter(overframeAdapter);
