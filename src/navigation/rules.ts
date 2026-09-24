@@ -27,10 +27,23 @@ const DESTINATION_RELEVANCE: RelevanceTable = {
   mod: { wiki: true, market: true, overframe: false },
   arcane: { wiki: true, market: true, overframe: false },
 
-  // Individual Prime parts and relics don't have their own build pages
-  // either, and don't have their own wiki pages distinct from the parent
-  // item/relic-tier page (the resolver points them at that shared page).
-  primeComponent: { wiki: true, market: true, overframe: false },
+  // Individual Prime parts don't have their own build page on Overframe -
+  // only the finished item does - but Overframe *is* still a relevant
+  // destination for them: someone looking at "Acceltra Prime Receiver" on
+  // warframe.market almost certainly wants the build for the completed
+  // "Acceltra Prime", not nothing. The generator gives each component's
+  // own registry entry the *parent* item's Overframe id/slug directly
+  // (see generate-data.mjs), the same way it already reuses the parent's
+  // wiki path - so this is still "does this item have that destination,"
+  // just resolved via the parent's data rather than the component's own.
+  primeComponent: { wiki: true, market: true, overframe: true },
+  // Relics don't have their own wiki pages distinct from the parent
+  // relic-tier page (the resolver points them at that shared page)
+  // either, but unlike Prime components there's no single "parent build"
+  // an Overframe link would make sense pointing at - a relic can drop
+  // parts for many different, unrelated items, so there's no one
+  // Overframe page that's obviously "the" destination the way a
+  // component's parent item is.
   relic: { wiki: true, market: true, overframe: false },
 
   // Base crafting resources are never individually traded on

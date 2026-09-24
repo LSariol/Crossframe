@@ -74,6 +74,19 @@ bug caught during development - see the "Add Warframe data generator..."
 commit - which is why it's covered by a dedicated regression test in
 `registry.test.ts` rather than just described here.)
 
+The same thing happens for Overframe id/slug, for the same underlying
+reason: Prime components have no Overframe build page of their own
+either, so `generate-data.mjs` gives each one its *parent's* Overframe
+id/slug directly (see `docs/data-sources.md`) - which means the
+Overframe id/slug indices can have the same two-`CanonicalItem`s-one-key
+collision the wiki-path index does, and need the identical "component
+never wins" protection. This was caught for real during development,
+right after the components started picking up an Overframe id at all -
+`findByOverframeId` started resolving to a component instead of the
+actual item. Both indices now share one small helper
+(`setPreferringNonComponent` in `registry.ts`) rather than duplicating
+the same rule three times.
+
 ## The resolver (`src/items/resolver.ts`)
 
 ```ts

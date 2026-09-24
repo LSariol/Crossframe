@@ -110,6 +110,45 @@ describe("bundled registry (real generated data)", () => {
     expect(chassis?.category).toBe("primeComponent");
   });
 
+  it("gives a Prime component's Overframe destination the parent item's page, not its own (it has none)", () => {
+    // Real examples from the user: a component page on warframe.market
+    // (e.g. "Sevagoth Prime Blueprint", "Acceltra Prime Receiver") should
+    // show an Overframe button that goes to the *finished item's* build
+    // page - Overframe has no page for an individual part - matching
+    // generate-data.mjs's parent-wiki-path-based copying (see rules.ts
+    // for why this is still "relevant," just resolved via the parent).
+    const sevagothPrime = registry.findByWikiPath("/w/Sevagoth/Prime");
+    const sevagothBlueprint = registry.findByMarketSlug("sevagoth_prime_blueprint");
+    expect(sevagothPrime?.category).toBe("warframe");
+    expect(sevagothBlueprint?.category).toBe("primeComponent");
+    expect(sevagothBlueprint?.overframe).toEqual(sevagothPrime?.overframe);
+    expect(sevagothBlueprint?.overframe?.slug).toBe("sevagoth-prime");
+    expect(
+      getDestinations(sevagothBlueprint!, "market")
+        .map((d) => d.site)
+        .sort(),
+    ).toEqual(["overframe", "wiki"]);
+
+    const acceltraPrime = registry.findByWikiPath("/w/Acceltra_Prime");
+    const acceltraReceiver = registry.findByMarketSlug("acceltra_prime_receiver");
+    expect(acceltraReceiver?.overframe).toEqual(acceltraPrime?.overframe);
+    expect(acceltraReceiver?.overframe?.slug).toBe("acceltra-prime");
+  });
+
+  it("gives every Prime component an Overframe destination whenever its parent has one (whole-registry check, not just the two examples above)", () => {
+    const components = registry.items.filter((item) => item.category === "primeComponent");
+    expect(components.length).toBeGreaterThan(100); // sanity: this isn't accidentally checking zero items
+    for (const component of components) {
+      if (!component.wiki) continue;
+      const parent = registry.items.find(
+        (item) => item.category !== "primeComponent" && item.wiki?.path === component.wiki?.path,
+      );
+      if (parent?.overframe) {
+        expect(component.overframe).toEqual(parent.overframe);
+      }
+    }
+  });
+
   it("never gives a well-known Founders-exclusive item a Market destination", () => {
     // Excalibur Prime is untradable (Founders-exclusive), so it should
     // never have a market slug - but it's a perfectly normal build
@@ -166,6 +205,7 @@ describe("bundled registry (real generated data)", () => {
     const blueprint = registry.findByMarketSlug("citrine_prime_chassis_blueprint");
     expect(blueprint?.name).toBe("Citrine Prime Chassis Blueprint");
     expect(blueprint?.category).toBe("primeComponent");
+    expect(blueprint?.overframe?.slug).toBe("citrine-prime"); // parent's, not its own
   });
 
   it("has a large, non-trivial registry across all supported categories", () => {

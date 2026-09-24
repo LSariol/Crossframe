@@ -22,13 +22,19 @@ describe("isDestinationRelevant", () => {
     }
   });
 
-  it("excludes Overframe for mods, arcanes, prime components, and relics", () => {
-    const noBuildCategories: ItemCategory[] = ["mod", "arcane", "primeComponent", "relic"];
+  it("excludes Overframe for mods, arcanes, and relics", () => {
+    const noBuildCategories: ItemCategory[] = ["mod", "arcane", "relic"];
     for (const category of noBuildCategories) {
       expect(isDestinationRelevant(category, "wiki")).toBe(true);
       expect(isDestinationRelevant(category, "market")).toBe(true);
       expect(isDestinationRelevant(category, "overframe")).toBe(false);
     }
+  });
+
+  it("makes Overframe relevant for Prime components too - it points at the parent item's page, not the component's own", () => {
+    expect(isDestinationRelevant("primeComponent", "wiki")).toBe(true);
+    expect(isDestinationRelevant("primeComponent", "market")).toBe(true);
+    expect(isDestinationRelevant("primeComponent", "overframe")).toBe(true);
   });
 
   it("only makes Wiki relevant for resources", () => {

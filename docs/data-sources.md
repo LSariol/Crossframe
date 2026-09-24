@@ -54,14 +54,27 @@ here, per the design doc's preference for structured data over scraping).
 `data/overrides/overframe.json` is the **entire** source of Overframe data:
 a hand-maintained `{ "<canonicalId>": { "id": number, "slug": string } }`
 map. Every entry in it was verified by opening that one item's real
-Overframe page - as of this writing that's 835 mappings, covering all 121
-Warframes and the large majority of standard weapons, companions, and
-archwing gear (gathered via `scripts/apply-overframe-urls.mjs`, see
-below). Kitguns, Zaws, and companion Helminth "Claws"/"Talons" variants
-remain uncovered - see "Known limitations" below for why that's a
+Overframe page - as of this writing that's 835 hand-verified mappings,
+covering all 121 Warframes and the large majority of standard weapons,
+companions, and archwing gear (gathered via
+`scripts/apply-overframe-urls.mjs`, see below). Kitguns, Zaws, and
+companion Helminth "Claws"/"Talons" variants remain uncovered - see
+"Known limitations" below for why that's a
 different, bigger problem than the rest of this list. This is
 intentionally built up incrementally by hand rather than guessed. See
 "Adding or fixing an Overframe mapping" below.
+
+Individually tradable Prime components (Blueprints, Chassis, Barrels,
+...) get an Overframe mapping too, without needing their own entry in
+`overframe.json` - Overframe has no build page for a single part, only
+for the finished item, so `generate-data.mjs` copies each component's
+*parent's* Overframe id/slug onto it directly, the same way it already
+reuses the parent's wiki path. This is a generation-time step, not
+something `overframe.json` itself needs any entries for; adding coverage
+for a Warframe or weapon automatically extends to all of its already-generated
+components. As of this writing that brings the registry's total Overframe
+count to 1426 (835 direct mappings + 591 components inheriting one from
+their parent).
 
 ### wiki.warframe.com (never queried directly)
 

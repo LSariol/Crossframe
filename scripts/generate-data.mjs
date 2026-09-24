@@ -145,6 +145,27 @@ function buildRegistry(wfcd, marketItems) {
     item.overframe = overframe;
   }
 
+  // Prime components have no Overframe build page of their own - only the
+  // finished item does - but their Overframe button should still point at
+  // that finished item's page (see rules.ts). A component's wiki path is
+  // always set to its exact parent's wiki path (buildPrimeComponents, and
+  // by hand for manual-items.json's components), which - same as the
+  // wiki-path index elsewhere in this project - makes it a reliable way to
+  // find the parent: whichever non-component item shares that wiki path
+  // is it, and its Overframe mapping (if it has one) is copied onto the
+  // component directly, the same way the wiki path itself already is.
+  const parentsByWikiPath = new Map();
+  for (const item of itemsById.values()) {
+    if (item.category !== "primeComponent" && item.wiki) {
+      parentsByWikiPath.set(item.wiki.path, item);
+    }
+  }
+  for (const item of itemsById.values()) {
+    if (item.category !== "primeComponent" || item.overframe || !item.wiki) continue;
+    const parent = parentsByWikiPath.get(item.wiki.path);
+    if (parent?.overframe) item.overframe = parent.overframe;
+  }
+
   const items = [...itemsById.values()]
     .filter(hasAnyDestination)
     .sort((a, b) => a.id.localeCompare(b.id));

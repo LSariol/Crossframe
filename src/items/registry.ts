@@ -21,6 +21,27 @@ function normalizeWikiPath(path: string): string {
   }
 }
 
+/**
+ * Sets `key -> item` in `map`, except a Prime component is never allowed to
+ * win the slot over a non-component that's already holding it, regardless
+ * of item order. Needed anywhere two items can legitimately share the same
+ * key - so far that's a component's wiki path (it has no wiki page of its
+ * own; see scripts/lib/build-items.mjs) and, since components also reuse
+ * their parent's Overframe id/slug (Overframe has no build page for an
+ * individual part either; see generate-data.mjs and rules.ts), the same
+ * collision now happens for Overframe lookups too. A reverse lookup by any
+ * of these keys should always resolve to the one page a visitor is
+ * actually looking at - the parent - not whichever component happened to
+ * be processed last.
+ */
+function setPreferringNonComponent<K>(map: Map<K, CanonicalItem>, key: K, item: CanonicalItem): void {
+  const existing = map.get(key);
+  const existingIsComponent = existing?.category === "primeComponent";
+  if (!existing || (existingIsComponent && item.category !== "primeComponent")) {
+    map.set(key, item);
+  }
+}
+
 export function createRegistry(items: readonly CanonicalItem[]): ItemRegistry {
   const byWikiPath = new Map<string, CanonicalItem>();
   const byMarketSlug = new Map<string, CanonicalItem>();
@@ -28,23 +49,13 @@ export function createRegistry(items: readonly CanonicalItem[]): ItemRegistry {
   const byOverframeSlug = new Map<string, CanonicalItem>();
 
   for (const item of items) {
-    // Prime components deliberately reuse their parent item's wiki path
-    // (a component has no wiki page of its own - see
-    // scripts/lib/build-items.mjs) but must never win a reverse lookup for
-    // that path: a visitor on that page is looking at the parent, not one
-    // specific component. Regardless of item order, the parent always wins.
     if (item.wiki) {
-      const key = normalizeWikiPath(item.wiki.path);
-      const existing = byWikiPath.get(key);
-      const existingIsComponent = existing?.category === "primeComponent";
-      if (!existing || (existingIsComponent && item.category !== "primeComponent")) {
-        byWikiPath.set(key, item);
-      }
+      setPreferringNonComponent(byWikiPath, normalizeWikiPath(item.wiki.path), item);
     }
-    if (item.market) byMarketSlug.set(item.market.slug, item);
+    if (item.market) byMarketSlug.set(item.market.slug, item); // always unique per item, no collision possible
     if (item.overframe) {
-      byOverframeId.set(item.overframe.id, item);
-      byOverframeSlug.set(item.overframe.slug, item);
+      setPreferringNonComponent(byOverframeId, item.overframe.id, item);
+      setPreferringNonComponent(byOverframeSlug, item.overframe.slug, item);
     }
   }
 

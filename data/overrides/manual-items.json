@@ -33,28 +33,32 @@
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Citrine/Prime" },
-    "market": { "slug": "citrine_prime_blueprint" }
+    "market": { "slug": "citrine_prime_blueprint" },
+    "overframe": { "id": 8052, "slug": "citrine-prime" }
   },
   "citrine_prime_chassis_blueprint": {
     "name": "Citrine Prime Chassis Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Citrine/Prime" },
-    "market": { "slug": "citrine_prime_chassis_blueprint" }
+    "market": { "slug": "citrine_prime_chassis_blueprint" },
+    "overframe": { "id": 8052, "slug": "citrine-prime" }
   },
   "citrine_prime_neuroptics_blueprint": {
     "name": "Citrine Prime Neuroptics Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Citrine/Prime" },
-    "market": { "slug": "citrine_prime_neuroptics_blueprint" }
+    "market": { "slug": "citrine_prime_neuroptics_blueprint" },
+    "overframe": { "id": 8052, "slug": "citrine-prime" }
   },
   "citrine_prime_systems_blueprint": {
     "name": "Citrine Prime Systems Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Citrine/Prime" },
-    "market": { "slug": "citrine_prime_systems_blueprint" }
+    "market": { "slug": "citrine_prime_systems_blueprint" },
+    "overframe": { "id": 8052, "slug": "citrine-prime" }
   },
   "steflos_prime": {
     "name": "Steflos Prime",
@@ -69,28 +73,32 @@
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Steflos_Prime" },
-    "market": { "slug": "steflos_prime_blueprint" }
+    "market": { "slug": "steflos_prime_blueprint" },
+    "overframe": { "id": 8068, "slug": "steflos-prime" }
   },
   "steflos_prime_barrel": {
     "name": "Steflos Prime Barrel",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Steflos_Prime" },
-    "market": { "slug": "steflos_prime_barrel" }
+    "market": { "slug": "steflos_prime_barrel" },
+    "overframe": { "id": 8068, "slug": "steflos-prime" }
   },
   "steflos_prime_receiver": {
     "name": "Steflos Prime Receiver",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Steflos_Prime" },
-    "market": { "slug": "steflos_prime_receiver" }
+    "market": { "slug": "steflos_prime_receiver" },
+    "overframe": { "id": 8068, "slug": "steflos-prime" }
   },
   "steflos_prime_stock": {
     "name": "Steflos Prime Stock",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Steflos_Prime" },
-    "market": { "slug": "steflos_prime_stock" }
+    "market": { "slug": "steflos_prime_stock" },
+    "overframe": { "id": 8068, "slug": "steflos-prime" }
   },
   "corufell_prime": {
     "name": "Corufell Prime",
@@ -105,27 +113,31 @@
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Corufell_Prime" },
-    "market": { "slug": "corufell_prime_blueprint" }
+    "market": { "slug": "corufell_prime_blueprint" },
+    "overframe": { "id": 8069, "slug": "corufell-prime" }
   },
   "corufell_prime_handle": {
     "name": "Corufell Prime Handle",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Corufell_Prime" },
-    "market": { "slug": "corufell_prime_handle" }
+    "market": { "slug": "corufell_prime_handle" },
+    "overframe": { "id": 8069, "slug": "corufell-prime" }
   },
   "corufell_prime_receiver": {
     "name": "Corufell Prime Receiver",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Corufell_Prime" },
-    "market": { "slug": "corufell_prime_receiver" }
+    "market": { "slug": "corufell_prime_receiver" },
+    "overframe": { "id": 8069, "slug": "corufell-prime" }
   },
   "corufell_prime_stock": {
     "name": "Corufell Prime Stock",
     "category": "primeComponent",
     "isPrime": true,
     "wiki": { "path": "/w/Corufell_Prime" },
-    "market": { "slug": "corufell_prime_stock" }
+    "market": { "slug": "corufell_prime_stock" },
+    "overframe": { "id": 8069, "slug": "corufell-prime" }
   }
 }
