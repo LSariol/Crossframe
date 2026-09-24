@@ -98,12 +98,48 @@
     }
   },
   {
+    "id": "acceltra_prime_barrel",
+    "name": "Acceltra Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "acceltra_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Acceltra_Prime"
+    }
+  },
+  {
     "id": "acceltra_prime_blueprint",
     "name": "Acceltra Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "acceltra_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Acceltra_Prime"
+    }
+  },
+  {
+    "id": "acceltra_prime_receiver",
+    "name": "Acceltra Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "acceltra_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Acceltra_Prime"
+    }
+  },
+  {
+    "id": "acceltra_prime_stock",
+    "name": "Acceltra Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "acceltra_prime_stock"
     },
     "wiki": {
       "path": "/w/Acceltra_Prime"
@@ -407,12 +443,48 @@
     }
   },
   {
+    "id": "afentis_prime_barrel",
+    "name": "Afentis Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "afentis_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Afentis_Prime"
+    }
+  },
+  {
+    "id": "afentis_prime_blade",
+    "name": "Afentis Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "afentis_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Afentis_Prime"
+    }
+  },
+  {
     "id": "afentis_prime_blueprint",
     "name": "Afentis Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "afentis_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Afentis_Prime"
+    }
+  },
+  {
+    "id": "afentis_prime_handle",
+    "name": "Afentis Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "afentis_prime_handle"
     },
     "wiki": {
       "path": "/w/Afentis_Prime"
@@ -468,12 +540,48 @@
     }
   },
   {
+    "id": "afuris_prime_barrel",
+    "name": "Afuris Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "afuris_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Afuris_Prime"
+    }
+  },
+  {
     "id": "afuris_prime_blueprint",
     "name": "Afuris Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "afuris_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Afuris_Prime"
+    }
+  },
+  {
+    "id": "afuris_prime_link",
+    "name": "Afuris Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "afuris_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Afuris_Prime"
+    }
+  },
+  {
+    "id": "afuris_prime_receiver",
+    "name": "Afuris Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "afuris_prime_receiver"
     },
     "wiki": {
       "path": "/w/Afuris_Prime"
@@ -612,12 +720,48 @@
     }
   },
   {
+    "id": "akarius_prime_barrel",
+    "name": "Akarius Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akarius_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Akarius_Prime"
+    }
+  },
+  {
     "id": "akarius_prime_blueprint",
     "name": "Akarius Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "akarius_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Akarius_Prime"
+    }
+  },
+  {
+    "id": "akarius_prime_link",
+    "name": "Akarius Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akarius_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Akarius_Prime"
+    }
+  },
+  {
+    "id": "akarius_prime_receiver",
+    "name": "Akarius Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akarius_prime_receiver"
     },
     "wiki": {
       "path": "/w/Akarius_Prime"
@@ -666,12 +810,48 @@
     }
   },
   {
+    "id": "akbolto_prime_barrel",
+    "name": "Akbolto Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akbolto_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Akbolto_Prime"
+    }
+  },
+  {
     "id": "akbolto_prime_blueprint",
     "name": "Akbolto Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "akbolto_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Akbolto_Prime"
+    }
+  },
+  {
+    "id": "akbolto_prime_link",
+    "name": "Akbolto Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akbolto_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Akbolto_Prime"
+    }
+  },
+  {
+    "id": "akbolto_prime_receiver",
+    "name": "Akbolto Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akbolto_prime_receiver"
     },
     "wiki": {
       "path": "/w/Akbolto_Prime"
@@ -719,6 +899,18 @@
     }
   },
   {
+    "id": "akbronco_prime_link",
+    "name": "Akbronco Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akbronco_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Akbronco_Prime"
+    }
+  },
+  {
     "id": "akimbo_slip_shot",
     "name": "Akimbo Slip Shot",
     "category": "arcane",
@@ -760,12 +952,48 @@
     }
   },
   {
+    "id": "akjagara_prime_barrel",
+    "name": "Akjagara Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akjagara_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Akjagara_Prime"
+    }
+  },
+  {
     "id": "akjagara_prime_blueprint",
     "name": "Akjagara Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "akjagara_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Akjagara_Prime"
+    }
+  },
+  {
+    "id": "akjagara_prime_link",
+    "name": "Akjagara Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akjagara_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Akjagara_Prime"
+    }
+  },
+  {
+    "id": "akjagara_prime_receiver",
+    "name": "Akjagara Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akjagara_prime_receiver"
     },
     "wiki": {
       "path": "/w/Akjagara_Prime"
@@ -826,6 +1054,18 @@
     }
   },
   {
+    "id": "aklex_prime_link",
+    "name": "Aklex Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "aklex_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Aklex_Prime"
+    }
+  },
+  {
     "id": "akmagnus",
     "name": "Akmagnus",
     "category": "secondaryWeapon",
@@ -867,6 +1107,18 @@
     }
   },
   {
+    "id": "akmagnus_prime_link",
+    "name": "Akmagnus Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akmagnus_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Akmagnus_Prime"
+    }
+  },
+  {
     "id": "aksomati",
     "name": "Aksomati",
     "category": "secondaryWeapon",
@@ -896,12 +1148,48 @@
     }
   },
   {
+    "id": "aksomati_prime_barrel",
+    "name": "Aksomati Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "aksomati_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Aksomati_Prime"
+    }
+  },
+  {
     "id": "aksomati_prime_blueprint",
     "name": "Aksomati Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "aksomati_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Aksomati_Prime"
+    }
+  },
+  {
+    "id": "aksomati_prime_link",
+    "name": "Aksomati Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "aksomati_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Aksomati_Prime"
+    }
+  },
+  {
+    "id": "aksomati_prime_receiver",
+    "name": "Aksomati Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "aksomati_prime_receiver"
     },
     "wiki": {
       "path": "/w/Aksomati_Prime"
@@ -937,12 +1225,48 @@
     }
   },
   {
+    "id": "akstiletto_prime_barrel",
+    "name": "Akstiletto Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akstiletto_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Akstiletto_Prime"
+    }
+  },
+  {
     "id": "akstiletto_prime_blueprint",
     "name": "Akstiletto Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "akstiletto_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Akstiletto_Prime"
+    }
+  },
+  {
+    "id": "akstiletto_prime_link",
+    "name": "Akstiletto Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akstiletto_prime_link"
+    },
+    "wiki": {
+      "path": "/w/Akstiletto_Prime"
+    }
+  },
+  {
+    "id": "akstiletto_prime_receiver",
+    "name": "Akstiletto Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akstiletto_prime_receiver"
     },
     "wiki": {
       "path": "/w/Akstiletto_Prime"
@@ -984,6 +1308,18 @@
     "isPrime": true,
     "market": {
       "slug": "akvasto_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Akvasto_Prime"
+    }
+  },
+  {
+    "id": "akvasto_prime_link",
+    "name": "Akvasto Prime Link",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "akvasto_prime_link"
     },
     "wiki": {
       "path": "/w/Akvasto_Prime"
@@ -1032,12 +1368,48 @@
     }
   },
   {
+    "id": "alternox_prime_barrel",
+    "name": "Alternox Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "alternox_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Alternox_Prime"
+    }
+  },
+  {
     "id": "alternox_prime_blueprint",
     "name": "Alternox Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "alternox_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Alternox_Prime"
+    }
+  },
+  {
+    "id": "alternox_prime_receiver",
+    "name": "Alternox Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "alternox_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Alternox_Prime"
+    }
+  },
+  {
+    "id": "alternox_prime_stock",
+    "name": "Alternox Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "alternox_prime_stock"
     },
     "wiki": {
       "path": "/w/Alternox_Prime"
@@ -1431,12 +1803,36 @@
     }
   },
   {
+    "id": "ankyros_prime_blade",
+    "name": "Ankyros Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ankyros_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Ankyros_Prime"
+    }
+  },
+  {
     "id": "ankyros_prime_blueprint",
     "name": "Ankyros Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "ankyros_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Ankyros_Prime"
+    }
+  },
+  {
+    "id": "ankyros_prime_gauntlet",
+    "name": "Ankyros Prime Gauntlet",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ankyros_prime_gauntlet"
     },
     "wiki": {
       "path": "/w/Ankyros_Prime"
@@ -2744,12 +3140,48 @@
     }
   },
   {
+    "id": "astilla_prime_barrel",
+    "name": "Astilla Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "astilla_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Astilla_Prime"
+    }
+  },
+  {
     "id": "astilla_prime_blueprint",
     "name": "Astilla Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "astilla_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Astilla_Prime"
+    }
+  },
+  {
+    "id": "astilla_prime_receiver",
+    "name": "Astilla Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "astilla_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Astilla_Prime"
+    }
+  },
+  {
+    "id": "astilla_prime_stock",
+    "name": "Astilla Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "astilla_prime_stock"
     },
     "wiki": {
       "path": "/w/Astilla_Prime"
@@ -2833,12 +3265,36 @@
     }
   },
   {
+    "id": "athodai_prime_barrel",
+    "name": "Athodai Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "athodai_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Athodai_Prime"
+    }
+  },
+  {
     "id": "athodai_prime_blueprint",
     "name": "Athodai Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "athodai_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Athodai_Prime"
+    }
+  },
+  {
+    "id": "athodai_prime_receiver",
+    "name": "Athodai Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "athodai_prime_receiver"
     },
     "wiki": {
       "path": "/w/Athodai_Prime"
@@ -3376,6 +3832,9 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Axi_A23"
+    },
+    "market": {
+      "slug": "axi_a23_relic"
     }
   },
   {
@@ -5705,6 +6164,54 @@
     }
   },
   {
+    "id": "ballistica_prime_lower_limb",
+    "name": "Ballistica Prime Lower Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ballistica_prime_lower_limb"
+    },
+    "wiki": {
+      "path": "/w/Ballistica_Prime"
+    }
+  },
+  {
+    "id": "ballistica_prime_receiver",
+    "name": "Ballistica Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ballistica_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Ballistica_Prime"
+    }
+  },
+  {
+    "id": "ballistica_prime_string",
+    "name": "Ballistica Prime String",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ballistica_prime_string"
+    },
+    "wiki": {
+      "path": "/w/Ballistica_Prime"
+    }
+  },
+  {
+    "id": "ballistica_prime_upper_limb",
+    "name": "Ballistica Prime Upper Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ballistica_prime_upper_limb"
+    },
+    "wiki": {
+      "path": "/w/Ballistica_Prime"
+    }
+  },
+  {
     "id": "bane_of_corpus",
     "name": "Bane Of Corpus",
     "category": "mod",
@@ -6044,12 +6551,48 @@
     }
   },
   {
+    "id": "baza_prime_barrel",
+    "name": "Baza Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "baza_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Baza_Prime"
+    }
+  },
+  {
     "id": "baza_prime_blueprint",
     "name": "Baza Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "baza_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Baza_Prime"
+    }
+  },
+  {
+    "id": "baza_prime_receiver",
+    "name": "Baza Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "baza_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Baza_Prime"
+    }
+  },
+  {
+    "id": "baza_prime_stock",
+    "name": "Baza Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "baza_prime_stock"
     },
     "wiki": {
       "path": "/w/Baza_Prime"
@@ -6494,6 +7037,30 @@
     }
   },
   {
+    "id": "bo_prime_handle",
+    "name": "Bo Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "bo_prime_handle"
+    },
+    "wiki": {
+      "path": "/w/Bo_Prime"
+    }
+  },
+  {
+    "id": "bo_prime_ornament",
+    "name": "Bo Prime Ornament",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "bo_prime_ornament"
+    },
+    "wiki": {
+      "path": "/w/Bo_Prime"
+    }
+  },
+  {
     "id": "boar",
     "name": "Boar",
     "category": "primaryWeapon",
@@ -6523,12 +7090,48 @@
     }
   },
   {
+    "id": "boar_prime_barrel",
+    "name": "Boar Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "boar_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Boar_Prime"
+    }
+  },
+  {
     "id": "boar_prime_blueprint",
     "name": "Boar Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "boar_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Boar_Prime"
+    }
+  },
+  {
+    "id": "boar_prime_receiver",
+    "name": "Boar Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "boar_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Boar_Prime"
+    }
+  },
+  {
+    "id": "boar_prime_stock",
+    "name": "Boar Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "boar_prime_stock"
     },
     "wiki": {
       "path": "/w/Boar_Prime"
@@ -6602,12 +7205,48 @@
     }
   },
   {
+    "id": "boltor_prime_barrel",
+    "name": "Boltor Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "boltor_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Boltor_Prime"
+    }
+  },
+  {
     "id": "boltor_prime_blueprint",
     "name": "Boltor Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "boltor_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Boltor_Prime"
+    }
+  },
+  {
+    "id": "boltor_prime_receiver",
+    "name": "Boltor Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "boltor_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Boltor_Prime"
+    }
+  },
+  {
+    "id": "boltor_prime_stock",
+    "name": "Boltor Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "boltor_prime_stock"
     },
     "wiki": {
       "path": "/w/Boltor_Prime"
@@ -6810,12 +7449,48 @@
     }
   },
   {
+    "id": "braton_prime_barrel",
+    "name": "Braton Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "braton_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Braton_Prime"
+    }
+  },
+  {
     "id": "braton_prime_blueprint",
     "name": "Braton Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "braton_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Braton_Prime"
+    }
+  },
+  {
+    "id": "braton_prime_receiver",
+    "name": "Braton Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "braton_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Braton_Prime"
+    }
+  },
+  {
+    "id": "braton_prime_stock",
+    "name": "Braton Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "braton_prime_stock"
     },
     "wiki": {
       "path": "/w/Braton_Prime"
@@ -6950,12 +7625,36 @@
     }
   },
   {
+    "id": "bronco_prime_barrel",
+    "name": "Bronco Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "bronco_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Bronco_Prime"
+    }
+  },
+  {
     "id": "bronco_prime_blueprint",
     "name": "Bronco Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "bronco_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Bronco_Prime"
+    }
+  },
+  {
+    "id": "bronco_prime_receiver",
+    "name": "Bronco Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "bronco_prime_receiver"
     },
     "wiki": {
       "path": "/w/Bronco_Prime"
@@ -7126,12 +7825,48 @@
     }
   },
   {
+    "id": "burston_prime_barrel",
+    "name": "Burston Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "burston_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Burston_Prime"
+    }
+  },
+  {
     "id": "burston_prime_blueprint",
     "name": "Burston Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "burston_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Burston_Prime"
+    }
+  },
+  {
+    "id": "burston_prime_receiver",
+    "name": "Burston Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "burston_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Burston_Prime"
+    }
+  },
+  {
+    "id": "burston_prime_stock",
+    "name": "Burston Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "burston_prime_stock"
     },
     "wiki": {
       "path": "/w/Burston_Prime"
@@ -7479,6 +8214,42 @@
     }
   },
   {
+    "id": "carrier_prime_carapace",
+    "name": "Carrier Prime Carapace",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "carrier_prime_carapace"
+    },
+    "wiki": {
+      "path": "/w/Carrier/Prime"
+    }
+  },
+  {
+    "id": "carrier_prime_cerebrum",
+    "name": "Carrier Prime Cerebrum",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "carrier_prime_cerebrum"
+    },
+    "wiki": {
+      "path": "/w/Carrier/Prime"
+    }
+  },
+  {
+    "id": "carrier_prime_systems",
+    "name": "Carrier Prime Systems",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "carrier_prime_systems"
+    },
+    "wiki": {
+      "path": "/w/Carrier/Prime"
+    }
+  },
+  {
     "id": "carving_mantis",
     "name": "Carving Mantis",
     "category": "mod",
@@ -7716,12 +8487,48 @@
     }
   },
   {
+    "id": "cedo_prime_barrel",
+    "name": "Cedo Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cedo_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Cedo_Prime"
+    }
+  },
+  {
     "id": "cedo_prime_blueprint",
     "name": "Cedo Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "cedo_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Cedo_Prime"
+    }
+  },
+  {
+    "id": "cedo_prime_receiver",
+    "name": "Cedo Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cedo_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Cedo_Prime"
+    }
+  },
+  {
+    "id": "cedo_prime_stock",
+    "name": "Cedo Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cedo_prime_stock"
     },
     "wiki": {
       "path": "/w/Cedo_Prime"
@@ -7835,6 +8642,54 @@
     "isPrime": true,
     "market": {
       "slug": "cernos_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Cernos_Prime"
+    }
+  },
+  {
+    "id": "cernos_prime_grip",
+    "name": "Cernos Prime Grip",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cernos_prime_grip"
+    },
+    "wiki": {
+      "path": "/w/Cernos_Prime"
+    }
+  },
+  {
+    "id": "cernos_prime_lower_limb",
+    "name": "Cernos Prime Lower Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cernos_prime_lower_limb"
+    },
+    "wiki": {
+      "path": "/w/Cernos_Prime"
+    }
+  },
+  {
+    "id": "cernos_prime_string",
+    "name": "Cernos Prime String",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cernos_prime_string"
+    },
+    "wiki": {
+      "path": "/w/Cernos_Prime"
+    }
+  },
+  {
+    "id": "cernos_prime_upper_limb",
+    "name": "Cernos Prime Upper Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cernos_prime_upper_limb"
     },
     "wiki": {
       "path": "/w/Cernos_Prime"
@@ -8268,12 +9123,48 @@
     }
   },
   {
+    "id": "cobra_and_crane_prime_blade",
+    "name": "Cobra & Crane Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cobra_and_crane_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Cobra_&_Crane_Prime"
+    }
+  },
+  {
     "id": "cobra_and_crane_prime_blueprint",
     "name": "Cobra & Crane Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "cobra_and_crane_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Cobra_&_Crane_Prime"
+    }
+  },
+  {
+    "id": "cobra_and_crane_prime_guard",
+    "name": "Cobra & Crane Prime Guard",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cobra_and_crane_prime_guard"
+    },
+    "wiki": {
+      "path": "/w/Cobra_&_Crane_Prime"
+    }
+  },
+  {
+    "id": "cobra_and_crane_prime_hilt",
+    "name": "Cobra & Crane Prime Hilt",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "cobra_and_crane_prime_hilt"
     },
     "wiki": {
       "path": "/w/Cobra_&_Crane_Prime"
@@ -8968,12 +9859,48 @@
     }
   },
   {
+    "id": "corinth_prime_barrel",
+    "name": "Corinth Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "corinth_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Corinth_Prime"
+    }
+  },
+  {
     "id": "corinth_prime_blueprint",
     "name": "Corinth Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "corinth_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Corinth_Prime"
+    }
+  },
+  {
+    "id": "corinth_prime_receiver",
+    "name": "Corinth Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "corinth_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Corinth_Prime"
+    }
+  },
+  {
+    "id": "corinth_prime_stock",
+    "name": "Corinth Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "corinth_prime_stock"
     },
     "wiki": {
       "path": "/w/Corinth_Prime"
@@ -9113,12 +10040,48 @@
     }
   },
   {
+    "id": "corvas_prime_barrel",
+    "name": "Corvas Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "corvas_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Corvas_Prime_(Atmosphere)"
+    }
+  },
+  {
     "id": "corvas_prime_blueprint",
     "name": "Corvas Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "corvas_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Corvas_Prime_(Atmosphere)"
+    }
+  },
+  {
+    "id": "corvas_prime_receiver",
+    "name": "Corvas Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "corvas_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Corvas_Prime_(Atmosphere)"
+    }
+  },
+  {
+    "id": "corvas_prime_stock",
+    "name": "Corvas Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "corvas_prime_stock"
     },
     "wiki": {
       "path": "/w/Corvas_Prime_(Atmosphere)"
@@ -9784,6 +10747,54 @@
     }
   },
   {
+    "id": "daikyu_prime_grip",
+    "name": "Daikyu Prime Grip",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "daikyu_prime_grip"
+    },
+    "wiki": {
+      "path": "/w/Daikyu_Prime"
+    }
+  },
+  {
+    "id": "daikyu_prime_lower_limb",
+    "name": "Daikyu Prime Lower Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "daikyu_prime_lower_limb"
+    },
+    "wiki": {
+      "path": "/w/Daikyu_Prime"
+    }
+  },
+  {
+    "id": "daikyu_prime_string",
+    "name": "Daikyu Prime String",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "daikyu_prime_string"
+    },
+    "wiki": {
+      "path": "/w/Daikyu_Prime"
+    }
+  },
+  {
+    "id": "daikyu_prime_upper_limb",
+    "name": "Daikyu Prime Upper Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "daikyu_prime_upper_limb"
+    },
+    "wiki": {
+      "path": "/w/Daikyu_Prime"
+    }
+  },
+  {
     "id": "dakra_prime",
     "name": "Dakra Prime",
     "category": "meleeWeapon",
@@ -9800,12 +10811,36 @@
     }
   },
   {
+    "id": "dakra_prime_blade",
+    "name": "Dakra Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dakra_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Dakra_Prime"
+    }
+  },
+  {
     "id": "dakra_prime_blueprint",
     "name": "Dakra Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "dakra_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Dakra_Prime"
+    }
+  },
+  {
+    "id": "dakra_prime_handle",
+    "name": "Dakra Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dakra_prime_handle"
     },
     "wiki": {
       "path": "/w/Dakra_Prime"
@@ -10285,12 +11320,36 @@
     }
   },
   {
+    "id": "destreza_prime_blade",
+    "name": "Destreza Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "destreza_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Destreza_Prime"
+    }
+  },
+  {
     "id": "destreza_prime_blueprint",
     "name": "Destreza Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "destreza_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Destreza_Prime"
+    }
+  },
+  {
+    "id": "destreza_prime_handle",
+    "name": "Destreza Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "destreza_prime_handle"
     },
     "wiki": {
       "path": "/w/Destreza_Prime"
@@ -10370,6 +11429,42 @@
     "isPrime": true,
     "market": {
       "slug": "dethcube_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Dethcube/Prime"
+    }
+  },
+  {
+    "id": "dethcube_prime_carapace",
+    "name": "Dethcube Prime Carapace",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dethcube_prime_carapace"
+    },
+    "wiki": {
+      "path": "/w/Dethcube/Prime"
+    }
+  },
+  {
+    "id": "dethcube_prime_cerebrum",
+    "name": "Dethcube Prime Cerebrum",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dethcube_prime_cerebrum"
+    },
+    "wiki": {
+      "path": "/w/Dethcube/Prime"
+    }
+  },
+  {
+    "id": "dethcube_prime_systems",
+    "name": "Dethcube Prime Systems",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dethcube_prime_systems"
     },
     "wiki": {
       "path": "/w/Dethcube/Prime"
@@ -11047,12 +12142,36 @@
     }
   },
   {
+    "id": "dual_kamas_prime_blade",
+    "name": "Dual Kamas Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dual_kamas_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Dual_Kamas_Prime"
+    }
+  },
+  {
     "id": "dual_kamas_prime_blueprint",
     "name": "Dual Kamas Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "dual_kamas_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Dual_Kamas_Prime"
+    }
+  },
+  {
+    "id": "dual_kamas_prime_handle",
+    "name": "Dual Kamas Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dual_kamas_prime_handle"
     },
     "wiki": {
       "path": "/w/Dual_Kamas_Prime"
@@ -11088,12 +12207,36 @@
     }
   },
   {
+    "id": "dual_keres_prime_blade",
+    "name": "Dual Keres Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dual_keres_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Dual_Keres_Prime"
+    }
+  },
+  {
     "id": "dual_keres_prime_blueprint",
     "name": "Dual Keres Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "dual_keres_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Dual_Keres_Prime"
+    }
+  },
+  {
+    "id": "dual_keres_prime_handle",
+    "name": "Dual Keres Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dual_keres_prime_handle"
     },
     "wiki": {
       "path": "/w/Dual_Keres_Prime"
@@ -11189,12 +12332,36 @@
     }
   },
   {
+    "id": "dual_zoren_prime_blade",
+    "name": "Dual Zoren Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dual_zoren_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Dual_Zoren_Prime"
+    }
+  },
+  {
     "id": "dual_zoren_prime_blueprint",
     "name": "Dual Zoren Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "dual_zoren_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Dual_Zoren_Prime"
+    }
+  },
+  {
+    "id": "dual_zoren_prime_handle",
+    "name": "Dual Zoren Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "dual_zoren_prime_handle"
     },
     "wiki": {
       "path": "/w/Dual_Zoren_Prime"
@@ -12086,12 +13253,36 @@
     }
   },
   {
+    "id": "epitaph_prime_barrel",
+    "name": "Epitaph Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "epitaph_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Epitaph_Prime"
+    }
+  },
+  {
     "id": "epitaph_prime_blueprint",
     "name": "Epitaph Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "epitaph_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Epitaph_Prime"
+    }
+  },
+  {
+    "id": "epitaph_prime_receiver",
+    "name": "Epitaph Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "epitaph_prime_receiver"
     },
     "wiki": {
       "path": "/w/Epitaph_Prime"
@@ -12347,12 +13538,36 @@
     }
   },
   {
+    "id": "euphona_prime_barrel",
+    "name": "Euphona Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "euphona_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Euphona_Prime"
+    }
+  },
+  {
     "id": "euphona_prime_blueprint",
     "name": "Euphona Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "euphona_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Euphona_Prime"
+    }
+  },
+  {
+    "id": "euphona_prime_receiver",
+    "name": "Euphona Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "euphona_prime_receiver"
     },
     "wiki": {
       "path": "/w/Euphona_Prime"
@@ -12829,12 +14044,36 @@
     }
   },
   {
+    "id": "fang_prime_blade",
+    "name": "Fang Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fang_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Fang_Prime"
+    }
+  },
+  {
     "id": "fang_prime_blueprint",
     "name": "Fang Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "fang_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Fang_Prime"
+    }
+  },
+  {
+    "id": "fang_prime_handle",
+    "name": "Fang Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fang_prime_handle"
     },
     "wiki": {
       "path": "/w/Fang_Prime"
@@ -13556,6 +14795,30 @@
     }
   },
   {
+    "id": "fragor_prime_handle",
+    "name": "Fragor Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fragor_prime_handle"
+    },
+    "wiki": {
+      "path": "/w/Fragor_Prime"
+    }
+  },
+  {
+    "id": "fragor_prime_head",
+    "name": "Fragor Prime Head",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fragor_prime_head"
+    },
+    "wiki": {
+      "path": "/w/Fragor_Prime"
+    }
+  },
+  {
     "id": "frail_momentum",
     "name": "Frail Momentum",
     "category": "mod",
@@ -13785,12 +15048,48 @@
     }
   },
   {
+    "id": "fulmin_prime_barrel",
+    "name": "Fulmin Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fulmin_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Fulmin_Prime"
+    }
+  },
+  {
     "id": "fulmin_prime_blueprint",
     "name": "Fulmin Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "fulmin_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Fulmin_Prime"
+    }
+  },
+  {
+    "id": "fulmin_prime_receiver",
+    "name": "Fulmin Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fulmin_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Fulmin_Prime"
+    }
+  },
+  {
+    "id": "fulmin_prime_stock",
+    "name": "Fulmin Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "fulmin_prime_stock"
     },
     "wiki": {
       "path": "/w/Fulmin_Prime"
@@ -13987,12 +15286,36 @@
     }
   },
   {
+    "id": "galatine_prime_blade",
+    "name": "Galatine Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "galatine_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Galatine_Prime"
+    }
+  },
+  {
     "id": "galatine_prime_blueprint",
     "name": "Galatine Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "galatine_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Galatine_Prime"
+    }
+  },
+  {
+    "id": "galatine_prime_handle",
+    "name": "Galatine Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "galatine_prime_handle"
     },
     "wiki": {
       "path": "/w/Galatine_Prime"
@@ -14673,12 +15996,36 @@
     }
   },
   {
+    "id": "glaive_prime_blade",
+    "name": "Glaive Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "glaive_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Glaive_Prime"
+    }
+  },
+  {
     "id": "glaive_prime_blueprint",
     "name": "Glaive Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "glaive_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Glaive_Prime"
+    }
+  },
+  {
+    "id": "glaive_prime_disc",
+    "name": "Glaive Prime Disc",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "glaive_prime_disc"
     },
     "wiki": {
       "path": "/w/Glaive_Prime"
@@ -14889,12 +16236,36 @@
     }
   },
   {
+    "id": "gram_prime_blade",
+    "name": "Gram Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "gram_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Gram_Prime"
+    }
+  },
+  {
     "id": "gram_prime_blueprint",
     "name": "Gram Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "gram_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Gram_Prime"
+    }
+  },
+  {
+    "id": "gram_prime_handle",
+    "name": "Gram Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "gram_prime_handle"
     },
     "wiki": {
       "path": "/w/Gram_Prime"
@@ -15142,12 +16513,36 @@
     }
   },
   {
+    "id": "guandao_prime_blade",
+    "name": "Guandao Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "guandao_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Guandao_Prime"
+    }
+  },
+  {
     "id": "guandao_prime_blueprint",
     "name": "Guandao Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "guandao_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Guandao_Prime"
+    }
+  },
+  {
+    "id": "guandao_prime_handle",
+    "name": "Guandao Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "guandao_prime_handle"
     },
     "wiki": {
       "path": "/w/Guandao_Prime"
@@ -15255,12 +16650,36 @@
     }
   },
   {
+    "id": "gunsen_prime_blade",
+    "name": "Gunsen Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "gunsen_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Gunsen_Prime"
+    }
+  },
+  {
     "id": "gunsen_prime_blueprint",
     "name": "Gunsen Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "gunsen_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Gunsen_Prime"
+    }
+  },
+  {
+    "id": "gunsen_prime_handle",
+    "name": "Gunsen Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "gunsen_prime_handle"
     },
     "wiki": {
       "path": "/w/Gunsen_Prime"
@@ -15947,6 +17366,42 @@
     }
   },
   {
+    "id": "helios_prime_carapace",
+    "name": "Helios Prime Carapace",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "helios_prime_carapace"
+    },
+    "wiki": {
+      "path": "/w/Helios/Prime"
+    }
+  },
+  {
+    "id": "helios_prime_cerebrum",
+    "name": "Helios Prime Cerebrum",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "helios_prime_cerebrum"
+    },
+    "wiki": {
+      "path": "/w/Helios/Prime"
+    }
+  },
+  {
+    "id": "helios_prime_systems",
+    "name": "Helios Prime Systems",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "helios_prime_systems"
+    },
+    "wiki": {
+      "path": "/w/Helios/Prime"
+    }
+  },
+  {
     "id": "hell_s_chamber",
     "name": "Hell's Chamber",
     "category": "mod",
@@ -16146,6 +17601,30 @@
     "isPrime": true,
     "market": {
       "slug": "hikou_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Hikou_Prime"
+    }
+  },
+  {
+    "id": "hikou_prime_pouch",
+    "name": "Hikou Prime Pouch",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "hikou_prime_pouch"
+    },
+    "wiki": {
+      "path": "/w/Hikou_Prime"
+    }
+  },
+  {
+    "id": "hikou_prime_stars",
+    "name": "Hikou Prime Stars",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "hikou_prime_stars"
     },
     "wiki": {
       "path": "/w/Hikou_Prime"
@@ -16725,12 +18204,36 @@
     }
   },
   {
+    "id": "hystrix_prime_barrel",
+    "name": "Hystrix Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "hystrix_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Hystrix_Prime"
+    }
+  },
+  {
     "id": "hystrix_prime_blueprint",
     "name": "Hystrix Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "hystrix_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Hystrix_Prime"
+    }
+  },
+  {
+    "id": "hystrix_prime_receiver",
+    "name": "Hystrix Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "hystrix_prime_receiver"
     },
     "wiki": {
       "path": "/w/Hystrix_Prime"
@@ -17750,12 +19253,36 @@
     }
   },
   {
+    "id": "karyst_prime_blade",
+    "name": "Karyst Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "karyst_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Karyst_Prime"
+    }
+  },
+  {
     "id": "karyst_prime_blueprint",
     "name": "Karyst Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "karyst_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Karyst_Prime"
+    }
+  },
+  {
+    "id": "karyst_prime_handle",
+    "name": "Karyst Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "karyst_prime_handle"
     },
     "wiki": {
       "path": "/w/Karyst_Prime"
@@ -17863,12 +19390,36 @@
     }
   },
   {
+    "id": "kestrel_prime_blade",
+    "name": "Kestrel Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kestrel_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Kestrel_Prime"
+    }
+  },
+  {
     "id": "kestrel_prime_blueprint",
     "name": "Kestrel Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "kestrel_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Kestrel_Prime"
+    }
+  },
+  {
+    "id": "kestrel_prime_grip",
+    "name": "Kestrel Prime Grip",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kestrel_prime_grip"
     },
     "wiki": {
       "path": "/w/Kestrel_Prime"
@@ -18086,12 +19637,36 @@
     }
   },
   {
+    "id": "knell_prime_barrel",
+    "name": "Knell Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "knell_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Knell_Prime"
+    }
+  },
+  {
     "id": "knell_prime_blueprint",
     "name": "Knell Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "knell_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Knell_Prime"
+    }
+  },
+  {
+    "id": "knell_prime_receiver",
+    "name": "Knell Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "knell_prime_receiver"
     },
     "wiki": {
       "path": "/w/Knell_Prime"
@@ -18146,6 +19721,30 @@
     "isPrime": true,
     "market": {
       "slug": "kogake_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Kogake_Prime"
+    }
+  },
+  {
+    "id": "kogake_prime_boot",
+    "name": "Kogake Prime Boot",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kogake_prime_boot"
+    },
+    "wiki": {
+      "path": "/w/Kogake_Prime"
+    }
+  },
+  {
+    "id": "kogake_prime_gauntlet",
+    "name": "Kogake Prime Gauntlet",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kogake_prime_gauntlet"
     },
     "wiki": {
       "path": "/w/Kogake_Prime"
@@ -18229,12 +19828,36 @@
     }
   },
   {
+    "id": "kompressa_prime_barrel",
+    "name": "Kompressa Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kompressa_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Kompressa_Prime"
+    }
+  },
+  {
     "id": "kompressa_prime_blueprint",
     "name": "Kompressa Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "kompressa_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Kompressa_Prime"
+    }
+  },
+  {
+    "id": "kompressa_prime_receiver",
+    "name": "Kompressa Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kompressa_prime_reciever"
     },
     "wiki": {
       "path": "/w/Kompressa_Prime"
@@ -18357,12 +19980,36 @@
     }
   },
   {
+    "id": "kronen_prime_blade",
+    "name": "Kronen Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kronen_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Kronen_Prime"
+    }
+  },
+  {
     "id": "kronen_prime_blueprint",
     "name": "Kronen Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "kronen_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Kronen_Prime"
+    }
+  },
+  {
+    "id": "kronen_prime_handle",
+    "name": "Kronen Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "kronen_prime_handle"
     },
     "wiki": {
       "path": "/w/Kronen_Prime"
@@ -18853,12 +20500,48 @@
     }
   },
   {
+    "id": "larkspur_prime_barrel",
+    "name": "Larkspur Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "larkspur_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Larkspur_Prime"
+    }
+  },
+  {
     "id": "larkspur_prime_blueprint",
     "name": "Larkspur Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "larkspur_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Larkspur_Prime"
+    }
+  },
+  {
+    "id": "larkspur_prime_receiver",
+    "name": "Larkspur Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "larkspur_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Larkspur_Prime"
+    }
+  },
+  {
+    "id": "larkspur_prime_stock",
+    "name": "Larkspur Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "larkspur_prime_stock"
     },
     "wiki": {
       "path": "/w/Larkspur_Prime"
@@ -19042,12 +20725,48 @@
     }
   },
   {
+    "id": "latron_prime_barrel",
+    "name": "Latron Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "latron_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Latron_Prime"
+    }
+  },
+  {
     "id": "latron_prime_blueprint",
     "name": "Latron Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "latron_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Latron_Prime"
+    }
+  },
+  {
+    "id": "latron_prime_receiver",
+    "name": "Latron Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "latron_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Latron_Prime"
+    }
+  },
+  {
+    "id": "latron_prime_stock",
+    "name": "Latron Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "latron_prime_stock"
     },
     "wiki": {
       "path": "/w/Latron_Prime"
@@ -19266,12 +20985,36 @@
     }
   },
   {
+    "id": "lex_prime_barrel",
+    "name": "Lex Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "lex_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Lex_Prime"
+    }
+  },
+  {
     "id": "lex_prime_blueprint",
     "name": "Lex Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "lex_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Lex_Prime"
+    }
+  },
+  {
+    "id": "lex_prime_receiver",
+    "name": "Lex Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "lex_prime_receiver"
     },
     "wiki": {
       "path": "/w/Lex_Prime"
@@ -19658,6 +21401,9 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Lith_B12"
+    },
+    "market": {
+      "slug": "lith_b12_relic"
     }
   },
   {
@@ -22532,12 +24278,36 @@
     }
   },
   {
+    "id": "magnus_prime_barrel",
+    "name": "Magnus Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "magnus_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Magnus_Prime"
+    }
+  },
+  {
     "id": "magnus_prime_blueprint",
     "name": "Magnus Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "magnus_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Magnus_Prime"
+    }
+  },
+  {
+    "id": "magnus_prime_receiver",
+    "name": "Magnus Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "magnus_prime_receiver"
     },
     "wiki": {
       "path": "/w/Magnus_Prime"
@@ -22999,12 +24769,36 @@
     }
   },
   {
+    "id": "masseter_prime_blade",
+    "name": "Masseter Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "masseter_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Masseter_Prime"
+    }
+  },
+  {
     "id": "masseter_prime_blueprint",
     "name": "Masseter Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "masseter_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Masseter_Prime"
+    }
+  },
+  {
+    "id": "masseter_prime_handle",
+    "name": "Masseter Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "masseter_prime_handle"
     },
     "wiki": {
       "path": "/w/Masseter_Prime"
@@ -24407,6 +26201,9 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Meso_I3"
+    },
+    "market": {
+      "slug": "meso_i3_relic"
     }
   },
   {
@@ -25553,6 +27350,9 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Meso_V16"
+    },
+    "market": {
+      "slug": "meso_v16_relic"
     }
   },
   {
@@ -26580,12 +28380,48 @@
     }
   },
   {
+    "id": "nagantaka_prime_barrel",
+    "name": "Nagantaka Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nagantaka_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Nagantaka_Prime"
+    }
+  },
+  {
     "id": "nagantaka_prime_blueprint",
     "name": "Nagantaka Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "nagantaka_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Nagantaka_Prime"
+    }
+  },
+  {
+    "id": "nagantaka_prime_receiver",
+    "name": "Nagantaka Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nagantaka_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Nagantaka_Prime"
+    }
+  },
+  {
+    "id": "nagantaka_prime_stock",
+    "name": "Nagantaka Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nagantaka_prime_stock"
     },
     "wiki": {
       "path": "/w/Nagantaka_Prime"
@@ -26630,12 +28466,36 @@
     }
   },
   {
+    "id": "nami_skyla_prime_blade",
+    "name": "Nami Skyla Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nami_skyla_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Nami_Skyla_Prime"
+    }
+  },
+  {
     "id": "nami_skyla_prime_blueprint",
     "name": "Nami Skyla Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "nami_skyla_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Nami_Skyla_Prime"
+    }
+  },
+  {
+    "id": "nami_skyla_prime_handle",
+    "name": "Nami Skyla Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nami_skyla_prime_handle"
     },
     "wiki": {
       "path": "/w/Nami_Skyla_Prime"
@@ -26775,6 +28635,42 @@
     "isPrime": true,
     "market": {
       "slug": "nautilus_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Nautilus/Prime"
+    }
+  },
+  {
+    "id": "nautilus_prime_carapace",
+    "name": "Nautilus Prime Carapace",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nautilus_prime_carapace"
+    },
+    "wiki": {
+      "path": "/w/Nautilus/Prime"
+    }
+  },
+  {
+    "id": "nautilus_prime_cerebrum",
+    "name": "Nautilus Prime Cerebrum",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nautilus_prime_cerebrum"
+    },
+    "wiki": {
+      "path": "/w/Nautilus/Prime"
+    }
+  },
+  {
+    "id": "nautilus_prime_systems",
+    "name": "Nautilus Prime Systems",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nautilus_prime_systems"
     },
     "wiki": {
       "path": "/w/Nautilus/Prime"
@@ -28622,6 +30518,9 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Neo_O4"
+    },
+    "market": {
+      "slug": "neo_o4_relic"
     }
   },
   {
@@ -28655,6 +30554,9 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Neo_P11"
+    },
+    "market": {
+      "slug": "neo_p11_relic"
     }
   },
   {
@@ -29821,12 +31723,36 @@
     }
   },
   {
+    "id": "nikana_prime_blade",
+    "name": "Nikana Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nikana_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Nikana_Prime"
+    }
+  },
+  {
     "id": "nikana_prime_blueprint",
     "name": "Nikana Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "nikana_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Nikana_Prime"
+    }
+  },
+  {
+    "id": "nikana_prime_hilt",
+    "name": "Nikana Prime Hilt",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "nikana_prime_hilt"
     },
     "wiki": {
       "path": "/w/Nikana_Prime"
@@ -29868,6 +31794,30 @@
     "isPrime": true,
     "market": {
       "slug": "ninkondi_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Ninkondi_Prime"
+    }
+  },
+  {
+    "id": "ninkondi_prime_chain",
+    "name": "Ninkondi Prime Chain",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ninkondi_prime_chain"
+    },
+    "wiki": {
+      "path": "/w/Ninkondi_Prime"
+    }
+  },
+  {
+    "id": "ninkondi_prime_handle",
+    "name": "Ninkondi Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "ninkondi_prime_handle"
     },
     "wiki": {
       "path": "/w/Ninkondi_Prime"
@@ -30560,12 +32510,36 @@
     }
   },
   {
+    "id": "okina_prime_blade",
+    "name": "Okina Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "okina_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Okina_Prime"
+    }
+  },
+  {
     "id": "okina_prime_blueprint",
     "name": "Okina Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "okina_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Okina_Prime"
+    }
+  },
+  {
+    "id": "okina_prime_handle",
+    "name": "Okina Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "okina_prime_handle"
     },
     "wiki": {
       "path": "/w/Okina_Prime"
@@ -30861,12 +32835,36 @@
     }
   },
   {
+    "id": "orthos_prime_blade",
+    "name": "Orthos Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "orthos_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Orthos_Prime"
+    }
+  },
+  {
     "id": "orthos_prime_blueprint",
     "name": "Orthos Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "orthos_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Orthos_Prime"
+    }
+  },
+  {
+    "id": "orthos_prime_handle",
+    "name": "Orthos Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "orthos_prime_handle"
     },
     "wiki": {
       "path": "/w/Orthos_Prime"
@@ -31081,12 +33079,36 @@
     }
   },
   {
+    "id": "pandero_prime_barrel",
+    "name": "Pandero Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "pandero_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Pandero_Prime"
+    }
+  },
+  {
     "id": "pandero_prime_blueprint",
     "name": "Pandero Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "pandero_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Pandero_Prime"
+    }
+  },
+  {
+    "id": "pandero_prime_receiver",
+    "name": "Pandero Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "pandero_prime_receiver"
     },
     "wiki": {
       "path": "/w/Pandero_Prime"
@@ -31109,12 +33131,36 @@
     }
   },
   {
+    "id": "pangolin_prime_blade",
+    "name": "Pangolin Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "pangolin_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Pangolin_Prime"
+    }
+  },
+  {
     "id": "pangolin_prime_blueprint",
     "name": "Pangolin Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "pangolin_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Pangolin_Prime"
+    }
+  },
+  {
+    "id": "pangolin_prime_handle",
+    "name": "Pangolin Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "pangolin_prime_handle"
     },
     "wiki": {
       "path": "/w/Pangolin_Prime"
@@ -31163,12 +33209,48 @@
     }
   },
   {
+    "id": "panthera_prime_barrel",
+    "name": "Panthera Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "panthera_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Panthera_Prime"
+    }
+  },
+  {
     "id": "panthera_prime_blueprint",
     "name": "Panthera Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "panthera_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Panthera_Prime"
+    }
+  },
+  {
+    "id": "panthera_prime_receiver",
+    "name": "Panthera Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "panthera_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Panthera_Prime"
+    }
+  },
+  {
+    "id": "panthera_prime_stock",
+    "name": "Panthera Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "panthera_prime_stock"
     },
     "wiki": {
       "path": "/w/Panthera_Prime"
@@ -31310,6 +33392,54 @@
     "isPrime": true,
     "market": {
       "slug": "paris_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Paris_Prime"
+    }
+  },
+  {
+    "id": "paris_prime_grip",
+    "name": "Paris Prime Grip",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "paris_prime_grip"
+    },
+    "wiki": {
+      "path": "/w/Paris_Prime"
+    }
+  },
+  {
+    "id": "paris_prime_lower_limb",
+    "name": "Paris Prime Lower Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "paris_prime_lower_limb"
+    },
+    "wiki": {
+      "path": "/w/Paris_Prime"
+    }
+  },
+  {
+    "id": "paris_prime_string",
+    "name": "Paris Prime String",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "paris_prime_string"
+    },
+    "wiki": {
+      "path": "/w/Paris_Prime"
+    }
+  },
+  {
+    "id": "paris_prime_upper_limb",
+    "name": "Paris Prime Upper Limb",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "paris_prime_upper_limb"
     },
     "wiki": {
       "path": "/w/Paris_Prime"
@@ -31585,12 +33715,48 @@
     }
   },
   {
+    "id": "perigale_prime_barrel",
+    "name": "Perigale Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "perigale_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Perigale_Prime"
+    }
+  },
+  {
     "id": "perigale_prime_blueprint",
     "name": "Perigale Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "perigale_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Perigale_Prime"
+    }
+  },
+  {
+    "id": "perigale_prime_receiver",
+    "name": "Perigale Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "perigale_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Perigale_Prime"
+    }
+  },
+  {
+    "id": "perigale_prime_stock",
+    "name": "Perigale Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "perigale_prime_stock"
     },
     "wiki": {
       "path": "/w/Perigale_Prime"
@@ -31676,12 +33842,48 @@
     }
   },
   {
+    "id": "phantasma_prime_barrel",
+    "name": "Phantasma Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "phantasma_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Phantasma_Prime"
+    }
+  },
+  {
     "id": "phantasma_prime_blueprint",
     "name": "Phantasma Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "phantasma_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Phantasma_Prime"
+    }
+  },
+  {
+    "id": "phantasma_prime_receiver",
+    "name": "Phantasma Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "phantasma_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Phantasma_Prime"
+    }
+  },
+  {
+    "id": "phantasma_prime_stock",
+    "name": "Phantasma Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "phantasma_prime_stock"
     },
     "wiki": {
       "path": "/w/Phantasma_Prime"
@@ -34052,12 +36254,36 @@
     }
   },
   {
+    "id": "pyrana_prime_barrel",
+    "name": "Pyrana Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "pyrana_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Pyrana_Prime"
+    }
+  },
+  {
     "id": "pyrana_prime_blueprint",
     "name": "Pyrana Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "pyrana_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Pyrana_Prime"
+    }
+  },
+  {
+    "id": "pyrana_prime_receiver",
+    "name": "Pyrana Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "pyrana_prime_receiver"
     },
     "wiki": {
       "path": "/w/Pyrana_Prime"
@@ -34202,12 +36428,36 @@
     }
   },
   {
+    "id": "quassus_prime_blade",
+    "name": "Quassus Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "quassus_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Quassus_Prime"
+    }
+  },
+  {
     "id": "quassus_prime_blueprint",
     "name": "Quassus Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "quassus_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Quassus_Prime"
+    }
+  },
+  {
+    "id": "quassus_prime_handle",
+    "name": "Quassus Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "quassus_prime_handle"
     },
     "wiki": {
       "path": "/w/Quassus_Prime"
@@ -34665,12 +36915,36 @@
     }
   },
   {
+    "id": "reaper_prime_blade",
+    "name": "Reaper Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "reaper_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Reaper_Prime"
+    }
+  },
+  {
     "id": "reaper_prime_blueprint",
     "name": "Reaper Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "reaper_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Reaper_Prime"
+    }
+  },
+  {
+    "id": "reaper_prime_handle",
+    "name": "Reaper Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "reaper_prime_handle"
     },
     "wiki": {
       "path": "/w/Reaper_Prime"
@@ -34815,12 +37089,36 @@
     }
   },
   {
+    "id": "redeemer_prime_blade",
+    "name": "Redeemer Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "redeemer_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Redeemer_Prime"
+    }
+  },
+  {
     "id": "redeemer_prime_blueprint",
     "name": "Redeemer Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "redeemer_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Redeemer_Prime"
+    }
+  },
+  {
+    "id": "redeemer_prime_handle",
+    "name": "Redeemer Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "redeemer_prime_handle"
     },
     "wiki": {
       "path": "/w/Redeemer_Prime"
@@ -35309,9 +37607,6 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Resonating_Quake"
-    },
-    "market": {
-      "slug": "resonating_quake"
     }
   },
   {
@@ -35902,12 +38197,48 @@
     }
   },
   {
+    "id": "rubico_prime_barrel",
+    "name": "Rubico Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "rubico_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Rubico_Prime"
+    }
+  },
+  {
     "id": "rubico_prime_blueprint",
     "name": "Rubico Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "rubico_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Rubico_Prime"
+    }
+  },
+  {
+    "id": "rubico_prime_receiver",
+    "name": "Rubico Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "rubico_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Rubico_Prime"
+    }
+  },
+  {
+    "id": "rubico_prime_stock",
+    "name": "Rubico Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "rubico_prime_stock"
     },
     "wiki": {
       "path": "/w/Rubico_Prime"
@@ -36233,12 +38564,36 @@
     }
   },
   {
+    "id": "sarofang_prime_blade",
+    "name": "Sarofang Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sarofang_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Sarofang_Prime"
+    }
+  },
+  {
     "id": "sarofang_prime_blueprint",
     "name": "Sarofang Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "sarofang_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Sarofang_Prime"
+    }
+  },
+  {
+    "id": "sarofang_prime_handle",
+    "name": "Sarofang Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sarofang_prime_handle"
     },
     "wiki": {
       "path": "/w/Sarofang_Prime"
@@ -36508,12 +38863,36 @@
     }
   },
   {
+    "id": "scindo_prime_blade",
+    "name": "Scindo Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "scindo_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Scindo_Prime"
+    }
+  },
+  {
     "id": "scindo_prime_blueprint",
     "name": "Scindo Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "scindo_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Scindo_Prime"
+    }
+  },
+  {
+    "id": "scindo_prime_handle",
+    "name": "Scindo Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "scindo_prime_handle"
     },
     "wiki": {
       "path": "/w/Scindo_Prime"
@@ -36583,12 +38962,48 @@
     }
   },
   {
+    "id": "scourge_prime_barrel",
+    "name": "Scourge Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "scourge_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Scourge_Prime"
+    }
+  },
+  {
+    "id": "scourge_prime_blade",
+    "name": "Scourge Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "scourge_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Scourge_Prime"
+    }
+  },
+  {
     "id": "scourge_prime_blueprint",
     "name": "Scourge Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "scourge_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Scourge_Prime"
+    }
+  },
+  {
+    "id": "scourge_prime_handle",
+    "name": "Scourge Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "scourge_prime_handle"
     },
     "wiki": {
       "path": "/w/Scourge_Prime"
@@ -37342,6 +39757,42 @@
     }
   },
   {
+    "id": "shade_prime_carapace",
+    "name": "Shade Prime Carapace",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "shade_prime_carapace"
+    },
+    "wiki": {
+      "path": "/w/Shade/Prime"
+    }
+  },
+  {
+    "id": "shade_prime_cerebrum",
+    "name": "Shade Prime Cerebrum",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "shade_prime_cerebrum"
+    },
+    "wiki": {
+      "path": "/w/Shade/Prime"
+    }
+  },
+  {
+    "id": "shade_prime_systems",
+    "name": "Shade Prime Systems",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "shade_prime_systems"
+    },
+    "wiki": {
+      "path": "/w/Shade/Prime"
+    }
+  },
+  {
     "id": "shadow_claws",
     "name": "Shadow Claws",
     "category": "exaltedWeapon",
@@ -38020,12 +40471,36 @@
     }
   },
   {
+    "id": "sicarus_prime_barrel",
+    "name": "Sicarus Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sicarus_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Sicarus_Prime"
+    }
+  },
+  {
     "id": "sicarus_prime_blueprint",
     "name": "Sicarus Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "sicarus_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Sicarus_Prime"
+    }
+  },
+  {
+    "id": "sicarus_prime_receiver",
+    "name": "Sicarus Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sicarus_prime_receiver"
     },
     "wiki": {
       "path": "/w/Sicarus_Prime"
@@ -38107,12 +40582,48 @@
     }
   },
   {
+    "id": "silva_and_aegis_prime_blade",
+    "name": "Silva & Aegis Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "silva_and_aegis_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Silva_&_Aegis_Prime"
+    }
+  },
+  {
     "id": "silva_and_aegis_prime_blueprint",
     "name": "Silva & Aegis Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "silva_and_aegis_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Silva_&_Aegis_Prime"
+    }
+  },
+  {
+    "id": "silva_and_aegis_prime_guard",
+    "name": "Silva & Aegis Prime Guard",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "silva_and_aegis_prime_guard"
+    },
+    "wiki": {
+      "path": "/w/Silva_&_Aegis_Prime"
+    }
+  },
+  {
+    "id": "silva_and_aegis_prime_hilt",
+    "name": "Silva & Aegis Prime Hilt",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "silva_and_aegis_prime_hilt"
     },
     "wiki": {
       "path": "/w/Silva_&_Aegis_Prime"
@@ -38575,12 +41086,48 @@
     }
   },
   {
+    "id": "soma_prime_barrel",
+    "name": "Soma Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "soma_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Soma_Prime"
+    }
+  },
+  {
     "id": "soma_prime_blueprint",
     "name": "Soma Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "soma_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Soma_Prime"
+    }
+  },
+  {
+    "id": "soma_prime_receiver",
+    "name": "Soma Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "soma_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Soma_Prime"
+    }
+  },
+  {
+    "id": "soma_prime_stock",
+    "name": "Soma Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "soma_prime_stock"
     },
     "wiki": {
       "path": "/w/Soma_Prime"
@@ -38614,9 +41161,6 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Sonic_Fracture"
-    },
-    "market": {
-      "slug": "sonic_fracture"
     }
   },
   {
@@ -38821,12 +41365,36 @@
     }
   },
   {
+    "id": "spira_prime_blade",
+    "name": "Spira Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "spira_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Spira_Prime"
+    }
+  },
+  {
     "id": "spira_prime_blueprint",
     "name": "Spira Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "spira_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Spira_Prime"
+    }
+  },
+  {
+    "id": "spira_prime_pouch",
+    "name": "Spira Prime Pouch",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "spira_prime_pouch"
     },
     "wiki": {
       "path": "/w/Spira_Prime"
@@ -39290,12 +41858,48 @@
     }
   },
   {
+    "id": "stradavar_prime_barrel",
+    "name": "Stradavar Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "stradavar_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Stradavar_Prime"
+    }
+  },
+  {
     "id": "stradavar_prime_blueprint",
     "name": "Stradavar Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "stradavar_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Stradavar_Prime"
+    }
+  },
+  {
+    "id": "stradavar_prime_receiver",
+    "name": "Stradavar Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "stradavar_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Stradavar_Prime"
+    }
+  },
+  {
+    "id": "stradavar_prime_stock",
+    "name": "Stradavar Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "stradavar_prime_stock"
     },
     "wiki": {
       "path": "/w/Stradavar_Prime"
@@ -39440,12 +42044,48 @@
     }
   },
   {
+    "id": "strun_prime_barrel",
+    "name": "Strun Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "strun_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Strun_Prime"
+    }
+  },
+  {
     "id": "strun_prime_blueprint",
     "name": "Strun Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "strun_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Strun_Prime"
+    }
+  },
+  {
+    "id": "strun_prime_receiver",
+    "name": "Strun Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "strun_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Strun_Prime"
+    }
+  },
+  {
+    "id": "strun_prime_stock",
+    "name": "Strun Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "strun_prime_stock"
     },
     "wiki": {
       "path": "/w/Strun_Prime"
@@ -39990,12 +42630,48 @@
     }
   },
   {
+    "id": "sybaris_prime_barrel",
+    "name": "Sybaris Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sybaris_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Sybaris_Prime"
+    }
+  },
+  {
     "id": "sybaris_prime_blueprint",
     "name": "Sybaris Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "sybaris_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Sybaris_Prime"
+    }
+  },
+  {
+    "id": "sybaris_prime_receiver",
+    "name": "Sybaris Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sybaris_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Sybaris_Prime"
+    }
+  },
+  {
+    "id": "sybaris_prime_stock",
+    "name": "Sybaris Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "sybaris_prime_stock"
     },
     "wiki": {
       "path": "/w/Sybaris_Prime"
@@ -40385,12 +43061,36 @@
     }
   },
   {
+    "id": "tatsu_prime_blade",
+    "name": "Tatsu Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tatsu_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Tatsu_Prime"
+    }
+  },
+  {
     "id": "tatsu_prime_blueprint",
     "name": "Tatsu Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "tatsu_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Tatsu_Prime"
+    }
+  },
+  {
+    "id": "tatsu_prime_handle",
+    "name": "Tatsu Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tatsu_prime_handle"
     },
     "wiki": {
       "path": "/w/Tatsu_Prime"
@@ -40572,12 +43272,36 @@
     }
   },
   {
+    "id": "tekko_prime_blade",
+    "name": "Tekko Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tekko_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Tekko_Prime"
+    }
+  },
+  {
     "id": "tekko_prime_blueprint",
     "name": "Tekko Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "tekko_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Tekko_Prime"
+    }
+  },
+  {
+    "id": "tekko_prime_gauntlet",
+    "name": "Tekko Prime Gauntlet",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tekko_prime_gauntlet"
     },
     "wiki": {
       "path": "/w/Tekko_Prime"
@@ -40984,12 +43708,48 @@
     }
   },
   {
+    "id": "tenora_prime_barrel",
+    "name": "Tenora Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tenora_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Tenora_Prime"
+    }
+  },
+  {
     "id": "tenora_prime_blueprint",
     "name": "Tenora Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "tenora_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Tenora_Prime"
+    }
+  },
+  {
+    "id": "tenora_prime_receiver",
+    "name": "Tenora Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tenora_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Tenora_Prime"
+    }
+  },
+  {
+    "id": "tenora_prime_stock",
+    "name": "Tenora Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tenora_prime_stock"
     },
     "wiki": {
       "path": "/w/Tenora_Prime"
@@ -41385,12 +44145,48 @@
     }
   },
   {
+    "id": "tiberon_prime_barrel",
+    "name": "Tiberon Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tiberon_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Tiberon_Prime"
+    }
+  },
+  {
     "id": "tiberon_prime_blueprint",
     "name": "Tiberon Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "tiberon_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Tiberon_Prime"
+    }
+  },
+  {
+    "id": "tiberon_prime_receiver",
+    "name": "Tiberon Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tiberon_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Tiberon_Prime"
+    }
+  },
+  {
+    "id": "tiberon_prime_stock",
+    "name": "Tiberon Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tiberon_prime_stock"
     },
     "wiki": {
       "path": "/w/Tiberon_Prime"
@@ -41447,12 +44243,48 @@
     }
   },
   {
+    "id": "tigris_prime_barrel",
+    "name": "Tigris Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tigris_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Tigris_Prime"
+    }
+  },
+  {
     "id": "tigris_prime_blueprint",
     "name": "Tigris Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "tigris_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Tigris_Prime"
+    }
+  },
+  {
+    "id": "tigris_prime_receiver",
+    "name": "Tigris Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tigris_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Tigris_Prime"
+    }
+  },
+  {
+    "id": "tigris_prime_stock",
+    "name": "Tigris Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tigris_prime_stock"
     },
     "wiki": {
       "path": "/w/Tigris_Prime"
@@ -41494,6 +44326,30 @@
     "isPrime": true,
     "market": {
       "slug": "tipedo_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Tipedo_Prime"
+    }
+  },
+  {
+    "id": "tipedo_prime_handle",
+    "name": "Tipedo Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tipedo_prime_handle"
+    },
+    "wiki": {
+      "path": "/w/Tipedo_Prime"
+    }
+  },
+  {
+    "id": "tipedo_prime_ornament",
+    "name": "Tipedo Prime Ornament",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "tipedo_prime_ornament"
     },
     "wiki": {
       "path": "/w/Tipedo_Prime"
@@ -42029,12 +44885,48 @@
     }
   },
   {
+    "id": "trumna_prime_barrel",
+    "name": "Trumna Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "trumna_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Trumna_Prime"
+    }
+  },
+  {
     "id": "trumna_prime_blueprint",
     "name": "Trumna Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "trumna_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Trumna_Prime"
+    }
+  },
+  {
+    "id": "trumna_prime_receiver",
+    "name": "Trumna Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "trumna_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Trumna_Prime"
+    }
+  },
+  {
+    "id": "trumna_prime_stock",
+    "name": "Trumna Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "trumna_prime_stock"
     },
     "wiki": {
       "path": "/w/Trumna_Prime"
@@ -42391,12 +45283,48 @@
     }
   },
   {
+    "id": "vadarya_prime_barrel",
+    "name": "Vadarya Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vadarya_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Vadarya_Prime"
+    }
+  },
+  {
     "id": "vadarya_prime_blueprint",
     "name": "Vadarya Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "vadarya_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Vadarya_Prime"
+    }
+  },
+  {
+    "id": "vadarya_prime_receiver",
+    "name": "Vadarya Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vadarya_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Vadarya_Prime"
+    }
+  },
+  {
+    "id": "vadarya_prime_stock",
+    "name": "Vadarya Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vadarya_prime_stock"
     },
     "wiki": {
       "path": "/w/Vadarya_Prime"
@@ -42684,12 +45612,36 @@
     }
   },
   {
+    "id": "vasto_prime_barrel",
+    "name": "Vasto Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vasto_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Vasto_Prime"
+    }
+  },
+  {
     "id": "vasto_prime_blueprint",
     "name": "Vasto Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "vasto_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Vasto_Prime"
+    }
+  },
+  {
+    "id": "vasto_prime_receiver",
+    "name": "Vasto Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vasto_prime_receiver"
     },
     "wiki": {
       "path": "/w/Vasto_Prime"
@@ -42862,12 +45814,48 @@
     }
   },
   {
+    "id": "vectis_prime_barrel",
+    "name": "Vectis Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vectis_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Vectis_Prime"
+    }
+  },
+  {
     "id": "vectis_prime_blueprint",
     "name": "Vectis Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "vectis_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Vectis_Prime"
+    }
+  },
+  {
+    "id": "vectis_prime_receiver",
+    "name": "Vectis Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vectis_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Vectis_Prime"
+    }
+  },
+  {
+    "id": "vectis_prime_stock",
+    "name": "Vectis Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "vectis_prime_stock"
     },
     "wiki": {
       "path": "/w/Vectis_Prime"
@@ -42950,12 +45938,36 @@
     }
   },
   {
+    "id": "velox_prime_barrel",
+    "name": "Velox Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "velox_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Velox_Prime"
+    }
+  },
+  {
     "id": "velox_prime_blueprint",
     "name": "Velox Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "velox_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Velox_Prime"
+    }
+  },
+  {
+    "id": "velox_prime_receiver",
+    "name": "Velox Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "velox_prime_receiver"
     },
     "wiki": {
       "path": "/w/Velox_Prime"
@@ -43029,12 +46041,36 @@
     }
   },
   {
+    "id": "venato_prime_blade",
+    "name": "Venato Prime Blade",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "venato_prime_blade"
+    },
+    "wiki": {
+      "path": "/w/Venato_Prime"
+    }
+  },
+  {
     "id": "venato_prime_blueprint",
     "name": "Venato Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "venato_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Venato_Prime"
+    }
+  },
+  {
+    "id": "venato_prime_handle",
+    "name": "Venato Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "venato_prime_handle"
     },
     "wiki": {
       "path": "/w/Venato_Prime"
@@ -43112,12 +46148,36 @@
     }
   },
   {
+    "id": "venka_prime_blades",
+    "name": "Venka Prime Blades",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "venka_prime_blades"
+    },
+    "wiki": {
+      "path": "/w/Venka_Prime"
+    }
+  },
+  {
     "id": "venka_prime_blueprint",
     "name": "Venka Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "venka_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Venka_Prime"
+    }
+  },
+  {
+    "id": "venka_prime_gauntlet",
+    "name": "Venka Prime Gauntlet",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "venka_prime_gauntlet"
     },
     "wiki": {
       "path": "/w/Venka_Prime"
@@ -44035,6 +47095,30 @@
     }
   },
   {
+    "id": "volnus_prime_handle",
+    "name": "Volnus Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "volnus_prime_handle"
+    },
+    "wiki": {
+      "path": "/w/Volnus_Prime"
+    }
+  },
+  {
+    "id": "volnus_prime_head",
+    "name": "Volnus Prime Head",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "volnus_prime_head"
+    },
+    "wiki": {
+      "path": "/w/Volnus_Prime"
+    }
+  },
+  {
     "id": "volt",
     "name": "Volt",
     "category": "warframe",
@@ -44829,6 +47913,42 @@
     }
   },
   {
+    "id": "wyrm_prime_carapace",
+    "name": "Wyrm Prime Carapace",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "wyrm_prime_carapace"
+    },
+    "wiki": {
+      "path": "/w/Wyrm/Prime"
+    }
+  },
+  {
+    "id": "wyrm_prime_cerebrum",
+    "name": "Wyrm Prime Cerebrum",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "wyrm_prime_cerebrum"
+    },
+    "wiki": {
+      "path": "/w/Wyrm/Prime"
+    }
+  },
+  {
+    "id": "wyrm_prime_systems",
+    "name": "Wyrm Prime Systems",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "wyrm_prime_systems"
+    },
+    "wiki": {
+      "path": "/w/Wyrm/Prime"
+    }
+  },
+  {
     "id": "xaku",
     "name": "Xaku",
     "category": "warframe",
@@ -45079,12 +48199,36 @@
     }
   },
   {
+    "id": "zakti_prime_barrel",
+    "name": "Zakti Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zakti_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Zakti_Prime"
+    }
+  },
+  {
     "id": "zakti_prime_blueprint",
     "name": "Zakti Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "zakti_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Zakti_Prime"
+    }
+  },
+  {
+    "id": "zakti_prime_receiver",
+    "name": "Zakti Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zakti_prime_receiver"
     },
     "wiki": {
       "path": "/w/Zakti_Prime"
@@ -45275,12 +48419,60 @@
     }
   },
   {
+    "id": "zhuge_prime_barrel",
+    "name": "Zhuge Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zhuge_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Zhuge_Prime"
+    }
+  },
+  {
     "id": "zhuge_prime_blueprint",
     "name": "Zhuge Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "zhuge_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Zhuge_Prime"
+    }
+  },
+  {
+    "id": "zhuge_prime_grip",
+    "name": "Zhuge Prime Grip",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zhuge_prime_grip"
+    },
+    "wiki": {
+      "path": "/w/Zhuge_Prime"
+    }
+  },
+  {
+    "id": "zhuge_prime_receiver",
+    "name": "Zhuge Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zhuge_prime_receiver"
+    },
+    "wiki": {
+      "path": "/w/Zhuge_Prime"
+    }
+  },
+  {
+    "id": "zhuge_prime_string",
+    "name": "Zhuge Prime String",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zhuge_prime_string"
     },
     "wiki": {
       "path": "/w/Zhuge_Prime"
@@ -45340,12 +48532,36 @@
     }
   },
   {
+    "id": "zylok_prime_barrel",
+    "name": "Zylok Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zylok_prime_barrel"
+    },
+    "wiki": {
+      "path": "/w/Zylok_Prime"
+    }
+  },
+  {
     "id": "zylok_prime_blueprint",
     "name": "Zylok Prime Blueprint",
     "category": "primeComponent",
     "isPrime": true,
     "market": {
       "slug": "zylok_prime_blueprint"
+    },
+    "wiki": {
+      "path": "/w/Zylok_Prime"
+    }
+  },
+  {
+    "id": "zylok_prime_receiver",
+    "name": "Zylok Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "market": {
+      "slug": "zylok_prime_receiver"
     },
     "wiki": {
       "path": "/w/Zylok_Prime"

@@ -86,6 +86,30 @@ describe("bundled registry (real generated data)", () => {
     expect(nonPrime?.isPrime).toBe(false);
   });
 
+  it("includes a Prime weapon's individually tradable parts, not just its set and Blueprint (regression: weapon parts were silently dropped because they don't use the \"Blueprint\" suffix Warframe parts do)", () => {
+    // Acceltra Prime's Barrel/Receiver/Stock are real, tradable market
+    // listings named e.g. "Acceltra Prime Barrel" - not "Acceltra Prime
+    // Barrel Blueprint", unlike a Warframe's Chassis/Neuroptics/Systems
+    // parts, which really are suffixed "Blueprint". buildPrimeComponents
+    // used to assume every component followed the Warframe pattern,
+    // which silently excluded every weapon's parts registry-wide (they
+    // never resolved against warframe.market's real listings, so were
+    // dropped rather than added with a wrong slug).
+    const barrel = registry.findByMarketSlug("acceltra_prime_barrel");
+    expect(barrel?.name).toBe("Acceltra Prime Barrel");
+    expect(barrel?.category).toBe("primeComponent");
+    expect(registry.findByMarketSlug("acceltra_prime_receiver")?.name).toBe(
+      "Acceltra Prime Receiver",
+    );
+    expect(registry.findByMarketSlug("acceltra_prime_stock")?.name).toBe("Acceltra Prime Stock");
+  });
+
+  it("still resolves a Warframe's Blueprint-suffixed parts correctly (no regression from the weapon-parts fix above)", () => {
+    const chassis = registry.findByMarketSlug("protea_prime_chassis_blueprint");
+    expect(chassis?.name).toBe("Protea Prime Chassis Blueprint");
+    expect(chassis?.category).toBe("primeComponent");
+  });
+
   it("never gives a well-known Founders-exclusive item a Market destination", () => {
     // Excalibur Prime is untradable (Founders-exclusive), so it should
     // never have a market slug - but it's a perfectly normal build

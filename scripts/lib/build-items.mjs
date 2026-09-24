@@ -82,27 +82,36 @@ export function buildEquipmentItem(raw, category, marketIndex) {
 }
 
 /**
- * Individually tradable Prime parts (e.g. "Protea Prime Chassis"). WFCD
- * nests these under the parent item's `components` array rather than
- * listing them as top-level items. warframe.market lists each as
- * "<Parent> [<Part>] Blueprint" - verified against the live API for
- * Protea Prime's Blueprint/Chassis/Neuroptics/Systems components - so a
- * component only becomes a registry entry when that name actually
- * resolves on the market, rather than being constructed from a guess.
- * They share the parent's wiki page, since components don't have their
- * own wiki pages separate from it.
+ * Individually tradable Prime parts (e.g. "Protea Prime Chassis
+ * Blueprint", "Acceltra Prime Barrel"). WFCD nests these under the
+ * parent item's `components` array rather than listing them as top-level
+ * items, and the market naming convention differs by what kind of part
+ * it is - verified against the live API for both a Warframe's parts
+ * (Blueprint/Chassis/Neuroptics/Systems, all suffixed "Blueprint": e.g.
+ * "Protea Prime Chassis Blueprint") and a weapon's parts (Barrel/
+ * Receiver/Stock/Handle, none suffixed: "Acceltra Prime Barrel", not
+ * "Acceltra Prime Barrel Blueprint"). Rather than hardcoding which
+ * categories use which pattern - or worse, assuming every category
+ * behaves like a Warframe's parts do, which silently dropped every
+ * weapon's Barrel/Receiver/Stock/Handle from the entire registry until
+ * this was caught - both name forms are tried and whichever one actually
+ * resolves on the market wins. A component only becomes a registry entry
+ * when some name for it actually resolves, rather than being constructed
+ * from a guess. They share the parent's wiki page, since components
+ * don't have their own wiki pages separate from it.
  */
 export function buildPrimeComponents(parentItem, rawComponents, marketIndex) {
   if (!parentItem.isPrime || !Array.isArray(rawComponents)) return [];
   const items = [];
   for (const comp of rawComponents) {
     if (!comp.tradable || !comp.name) continue;
-    const displayName =
+    const candidates =
       comp.name === "Blueprint"
-        ? `${parentItem.name} Blueprint`
-        : `${parentItem.name} ${comp.name} Blueprint`;
+        ? [`${parentItem.name} Blueprint`]
+        : [`${parentItem.name} ${comp.name}`, `${parentItem.name} ${comp.name} Blueprint`];
+    const displayName = candidates.find((name) => marketIndex.has(normalizeName(name)));
+    if (!displayName) continue;
     const marketEntry = marketIndex.get(normalizeName(displayName));
-    if (!marketEntry) continue;
     const item = {
       id: slugify(displayName),
       name: displayName,
