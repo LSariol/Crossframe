@@ -8,3 +8,6 @@ coverage/
 
 # Raw data snapshots pulled by the generator; regenerate with `npm run generate-data`.
 data/.cache/
+
+# Local-only agent orientation doc - not part of the public project.
+CLAUDE.md

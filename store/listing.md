@@ -32,7 +32,7 @@ Crossframe is deliberately conservative about what it shows you:
 • Only destinations that actually exist for that specific item. An untradable Warframe never shows a Market button.
 • Nothing at all if Crossframe can't confidently identify the page - it never guesses.
 
-Supported: Warframes and their Prime variants, Primary/Secondary/Melee weapons and their Primes, Archwing/Archgun/Archmelee equipment, companions, Mods, Arcanes, individually tradable Prime components, Relics, and Resources.
+Supported: Warframes and their Prime variants, Primary/Secondary/Melee weapons and their Primes, Archwing/Archgun/Archmelee equipment, companions, Mods, Arcanes, individually tradable Prime components, Relics, and Resources - up to date with Update 44: Iceblade of Narin, including Narin, Nunchasa, Aksondol, Citrine Prime, Steflos Prime, and Corufell Prime.
 
 Crossframe works entirely offline once installed - no account, no login, no analytics, no server, and nothing about your browsing is ever collected or sent anywhere. The data it uses to recognize items is bundled into the extension itself. Full privacy policy: https://github.com/LSariol/Crossframe/blob/main/PRIVACY.md
 
