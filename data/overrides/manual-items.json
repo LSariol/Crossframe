@@ -1,0 +1,131 @@
+{
+  "narin": {
+    "name": "Narin",
+    "category": "warframe",
+    "isPrime": false,
+    "wiki": { "path": "/w/Narin" },
+    "overframe": { "id": 8025, "slug": "narin" }
+  },
+  "nunchasa": {
+    "name": "Nunchasa",
+    "category": "primaryWeapon",
+    "isPrime": false,
+    "wiki": { "path": "/w/Nunchasa" },
+    "overframe": { "id": 8051, "slug": "nunchasa" }
+  },
+  "aksondol": {
+    "name": "Aksondol",
+    "category": "secondaryWeapon",
+    "isPrime": false,
+    "wiki": { "path": "/w/Aksondol" },
+    "overframe": { "id": 8050, "slug": "aksondol" }
+  },
+  "citrine_prime": {
+    "name": "Citrine Prime",
+    "category": "warframe",
+    "isPrime": true,
+    "wiki": { "path": "/w/Citrine/Prime" },
+    "market": { "slug": "citrine_prime_set" },
+    "overframe": { "id": 8052, "slug": "citrine-prime" }
+  },
+  "citrine_prime_blueprint": {
+    "name": "Citrine Prime Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Citrine/Prime" },
+    "market": { "slug": "citrine_prime_blueprint" }
+  },
+  "citrine_prime_chassis_blueprint": {
+    "name": "Citrine Prime Chassis Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Citrine/Prime" },
+    "market": { "slug": "citrine_prime_chassis_blueprint" }
+  },
+  "citrine_prime_neuroptics_blueprint": {
+    "name": "Citrine Prime Neuroptics Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Citrine/Prime" },
+    "market": { "slug": "citrine_prime_neuroptics_blueprint" }
+  },
+  "citrine_prime_systems_blueprint": {
+    "name": "Citrine Prime Systems Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Citrine/Prime" },
+    "market": { "slug": "citrine_prime_systems_blueprint" }
+  },
+  "steflos_prime": {
+    "name": "Steflos Prime",
+    "category": "primaryWeapon",
+    "isPrime": true,
+    "wiki": { "path": "/w/Steflos_Prime" },
+    "market": { "slug": "steflos_prime_set" },
+    "overframe": { "id": 8068, "slug": "steflos-prime" }
+  },
+  "steflos_prime_blueprint": {
+    "name": "Steflos Prime Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Steflos_Prime" },
+    "market": { "slug": "steflos_prime_blueprint" }
+  },
+  "steflos_prime_barrel": {
+    "name": "Steflos Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Steflos_Prime" },
+    "market": { "slug": "steflos_prime_barrel" }
+  },
+  "steflos_prime_receiver": {
+    "name": "Steflos Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Steflos_Prime" },
+    "market": { "slug": "steflos_prime_receiver" }
+  },
+  "steflos_prime_stock": {
+    "name": "Steflos Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Steflos_Prime" },
+    "market": { "slug": "steflos_prime_stock" }
+  },
+  "corufell_prime": {
+    "name": "Corufell Prime",
+    "category": "meleeWeapon",
+    "isPrime": true,
+    "wiki": { "path": "/w/Corufell_Prime" },
+    "market": { "slug": "corufell_prime_set" },
+    "overframe": { "id": 8069, "slug": "corufell-prime" }
+  },
+  "corufell_prime_blueprint": {
+    "name": "Corufell Prime Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Corufell_Prime" },
+    "market": { "slug": "corufell_prime_blueprint" }
+  },
+  "corufell_prime_handle": {
+    "name": "Corufell Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Corufell_Prime" },
+    "market": { "slug": "corufell_prime_handle" }
+  },
+  "corufell_prime_receiver": {
+    "name": "Corufell Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Corufell_Prime" },
+    "market": { "slug": "corufell_prime_receiver" }
+  },
+  "corufell_prime_stock": {
+    "name": "Corufell Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": { "path": "/w/Corufell_Prime" },
+    "market": { "slug": "corufell_prime_stock" }
+  }
+}

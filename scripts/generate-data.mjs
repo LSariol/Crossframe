@@ -5,7 +5,9 @@
  * scripts/lib/sources.mjs and docs/data-sources.md for what each source
  * provides and why). Overframe has no such bulk source - its ids and slugs
  * come entirely from data/overrides/overframe.json, hand-verified one item
- * at a time.
+ * at a time. data/overrides/manual-items.json fills a similar gap for
+ * brand-new Warframe content WFCD hasn't picked up yet - see the comment
+ * where it's merged in below.
  *
  * Usage:
  *   node scripts/generate-data.mjs            Regenerate data/items.json
@@ -32,6 +34,7 @@ const root = process.cwd();
 const OUTPUT_PATH = path.join(root, "data", "items.json");
 const OVERFRAME_OVERRIDES_PATH = path.join(root, "data", "overrides", "overframe.json");
 const CORRECTIONS_PATH = path.join(root, "data", "overrides", "corrections.json");
+const MANUAL_ITEMS_PATH = path.join(root, "data", "overrides", "manual-items.json");
 
 const args = process.argv.slice(2);
 const checkOnly = args.includes("--check");
@@ -59,6 +62,7 @@ function buildRegistry(wfcd, marketItems) {
   const marketIndex = buildMarketIndex(marketItems);
   const overframeOverrides = readJson(OVERFRAME_OVERRIDES_PATH);
   const corrections = readJson(CORRECTIONS_PATH);
+  const manualItems = readJson(MANUAL_ITEMS_PATH);
 
   const itemsById = new Map();
   const warnings = [];
@@ -94,6 +98,23 @@ function buildRegistry(wfcd, marketItems) {
   for (const raw of wfcd.Misc ?? []) {
     if (raw.productCategory !== "SpecialItems") continue;
     addItem(buildExaltedWeaponItem(raw));
+  }
+
+  // Manual items: brand-new Warframe content WFCD hasn't caught up with
+  // yet (see docs/data-sources.md), gathered by hand and entered directly
+  // as complete CanonicalItem records rather than generated. Added only
+  // if WFCD doesn't already have this id - once it catches up, the
+  // generated entry (added above, so already present in itemsById) wins
+  // automatically, and the now-redundant manual entry is flagged rather
+  // than silently masking real data forever.
+  for (const [id, item] of Object.entries(manualItems)) {
+    if (itemsById.has(id)) {
+      warnings.push(
+        `Manual item "${id}" is now also provided by generated source data - remove it from data/overrides/manual-items.json.`,
+      );
+      continue;
+    }
+    itemsById.set(id, { id, ...item });
   }
 
   // Apply corrections (fix or exclude a specific generated entry) before

@@ -69,6 +69,27 @@ queries the wiki directly; it relies entirely on WFCD's already-published
 back to the standard MediaWiki title transform (spaces -> underscores)
 rather than fetching anything to confirm it.
 
+### Manual items (brand-new content, before WFCD catches up)
+
+Warframe updates ship faster than WFCD/warframe-items - a community
+project - can always keep up with. `data/overrides/manual-items.json` is
+a gap-filler for exactly that window: complete `CanonicalItem` records
+entered by hand (name, category, `isPrime`, wiki path, market slug and
+Overframe id/slug where they exist) for items that don't exist in WFCD's
+data at all yet, keyed by id the same way `corrections.json` is. The
+generator adds one only if WFCD doesn't already have that id; once WFCD
+publishes the real entry, its generated version wins automatically (added
+earlier in the pipeline, so already present) and the now-redundant manual
+entry is flagged as a warning rather than silently overriding real data
+forever - clean it up from the file at that point.
+
+Wiki paths for manual items are derived the same way Resources' are (the
+standard MediaWiki title transform), since wiki.warframe.com can't be
+queried to confirm them either - see "Known limitations" below. Market
+slugs and Overframe ids, by contrast, are confirmed directly against
+warframe.market's API and real Overframe URLs respectively before being
+entered, the same bar as generated data.
+
 ## Known limitations
 
 - **Resource wiki paths are derived, not confirmed.** WFCD's `Resources.json`
@@ -84,6 +105,11 @@ rather than fetching anything to confirm it.
   keyed by the base name (e.g. "Axi A1"), and derives both the wiki path
   (`/w/Axi_A1`) and, where warframe.market has a matching `"<Base> Relic"`
   listing, the market slug.
+- **Manual items' wiki paths are derived too, for the same reason.**
+  `data/overrides/manual-items.json` entries (see above) use the standard
+  MediaWiki title transform - unconfirmed against the live wiki, same as
+  Resources and Relics. If one 404s, just fix the `wiki.path` in that
+  file directly.
 - **Overframe coverage is near-complete for Warframes, standard weapons,
   companions, and archwing gear** (gathered via
   `scripts/apply-overframe-urls.mjs`, see below) **but not yet for
@@ -174,6 +200,15 @@ changes over time.
     ```json
     { "some_item_id": { "id": 1234, "slug": "some-item-slug" } }
     ```
+- **A brand-new item that doesn't exist in the registry at all** (a new
+  Warframe update, ahead of WFCD/warframe-items publishing it): add a
+  complete entry to `data/overrides/manual-items.json`, keyed by id -
+  see "Manual items" above for the format and the six entries already
+  there for real examples covering every combination (Warframe/weapon,
+  Prime/non-Prime, with/without a Market destination, with/without
+  individually tradable parts). Once WFCD picks up the item, its
+  generated entry takes over automatically and `--check`/`generate-data`
+  will warn that the manual entry is now redundant - remove it then.
 - Run `npm run generate-data` afterward to apply the change, or
   `npm run check-data` to preview it first.
 

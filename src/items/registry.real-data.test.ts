@@ -137,6 +137,37 @@ describe("bundled registry (real generated data)", () => {
     expect(destinations.map((d) => d.site)).toEqual(["market"]);
   });
 
+  it("includes brand-new content via manual-items.json before WFCD catches up", () => {
+    // Narin (Warframe), Nunchasa (Primary), and Aksondol (Secondary) from
+    // a real Warframe update, added by hand (see
+    // data/overrides/manual-items.json) since WFCD/warframe-items hadn't
+    // published them yet at the time. No Market destination for any of
+    // these - confirmed with the user these aren't tradable.
+    const narin = registry.findByOverframeSlug("narin");
+    expect(narin?.name).toBe("Narin");
+    expect(narin?.category).toBe("warframe");
+    expect(narin?.market).toBeUndefined();
+    expect(getDestinations(narin!, "wiki").map((d) => d.site)).toEqual(["overframe"]);
+
+    expect(registry.findByOverframeSlug("nunchasa")?.category).toBe("primaryWeapon");
+    expect(registry.findByOverframeSlug("aksondol")?.category).toBe("secondaryWeapon");
+  });
+
+  it("gives a manually-added Prime item its full destination set, including tradable parts", () => {
+    const citrinePrime = registry.findByWikiPath("/w/Citrine/Prime");
+    expect(citrinePrime?.market?.slug).toBe("citrine_prime_set");
+    expect(citrinePrime?.overframe?.slug).toBe("citrine-prime");
+    expect(
+      getDestinations(citrinePrime!, "wiki")
+        .map((d) => d.site)
+        .sort(),
+    ).toEqual(["market", "overframe"]);
+
+    const blueprint = registry.findByMarketSlug("citrine_prime_chassis_blueprint");
+    expect(blueprint?.name).toBe("Citrine Prime Chassis Blueprint");
+    expect(blueprint?.category).toBe("primeComponent");
+  });
+
   it("has a large, non-trivial registry across all supported categories", () => {
     expect(registry.items.length).toBeGreaterThan(1000);
     const categories = new Set(registry.items.map((item) => item.category));

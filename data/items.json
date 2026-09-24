@@ -1196,6 +1196,19 @@
     }
   },
   {
+    "id": "aksondol",
+    "name": "Aksondol",
+    "category": "secondaryWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Aksondol"
+    },
+    "overframe": {
+      "id": 8050,
+      "slug": "aksondol"
+    }
+  },
+  {
     "id": "akstiletto",
     "name": "Akstiletto",
     "category": "secondaryWeapon",
@@ -9006,6 +9019,70 @@
     }
   },
   {
+    "id": "citrine_prime",
+    "name": "Citrine Prime",
+    "category": "warframe",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Citrine/Prime"
+    },
+    "market": {
+      "slug": "citrine_prime_set"
+    },
+    "overframe": {
+      "id": 8052,
+      "slug": "citrine-prime"
+    }
+  },
+  {
+    "id": "citrine_prime_blueprint",
+    "name": "Citrine Prime Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Citrine/Prime"
+    },
+    "market": {
+      "slug": "citrine_prime_blueprint"
+    }
+  },
+  {
+    "id": "citrine_prime_chassis_blueprint",
+    "name": "Citrine Prime Chassis Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Citrine/Prime"
+    },
+    "market": {
+      "slug": "citrine_prime_chassis_blueprint"
+    }
+  },
+  {
+    "id": "citrine_prime_neuroptics_blueprint",
+    "name": "Citrine Prime Neuroptics Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Citrine/Prime"
+    },
+    "market": {
+      "slug": "citrine_prime_neuroptics_blueprint"
+    }
+  },
+  {
+    "id": "citrine_prime_systems_blueprint",
+    "name": "Citrine Prime Systems Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Citrine/Prime"
+    },
+    "market": {
+      "slug": "citrine_prime_systems_blueprint"
+    }
+  },
+  {
     "id": "cleanse_corpus",
     "name": "Cleanse Corpus",
     "category": "mod",
@@ -10008,6 +10085,70 @@
     "overframe": {
       "id": 6074,
       "slug": "corufell"
+    }
+  },
+  {
+    "id": "corufell_prime",
+    "name": "Corufell Prime",
+    "category": "meleeWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Corufell_Prime"
+    },
+    "market": {
+      "slug": "corufell_prime_set"
+    },
+    "overframe": {
+      "id": 8069,
+      "slug": "corufell-prime"
+    }
+  },
+  {
+    "id": "corufell_prime_blueprint",
+    "name": "Corufell Prime Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Corufell_Prime"
+    },
+    "market": {
+      "slug": "corufell_prime_blueprint"
+    }
+  },
+  {
+    "id": "corufell_prime_handle",
+    "name": "Corufell Prime Handle",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Corufell_Prime"
+    },
+    "market": {
+      "slug": "corufell_prime_handle"
+    }
+  },
+  {
+    "id": "corufell_prime_receiver",
+    "name": "Corufell Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Corufell_Prime"
+    },
+    "market": {
+      "slug": "corufell_prime_receiver"
+    }
+  },
+  {
+    "id": "corufell_prime_stock",
+    "name": "Corufell Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Corufell_Prime"
+    },
+    "market": {
+      "slug": "corufell_prime_stock"
     }
   },
   {
@@ -28551,6 +28692,19 @@
     }
   },
   {
+    "id": "narin",
+    "name": "Narin",
+    "category": "warframe",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Narin"
+    },
+    "overframe": {
+      "id": 8025,
+      "slug": "narin"
+    }
+  },
+  {
     "id": "narrow_barrel",
     "name": "Narrow Barrel",
     "category": "mod",
@@ -32084,6 +32238,19 @@
     "isPrime": false,
     "wiki": {
       "path": "/w/Nullstones"
+    }
+  },
+  {
+    "id": "nunchasa",
+    "name": "Nunchasa",
+    "category": "primaryWeapon",
+    "isPrime": false,
+    "wiki": {
+      "path": "/w/Nunchasa"
+    },
+    "overframe": {
+      "id": 8051,
+      "slug": "nunchasa"
     }
   },
   {
@@ -41756,6 +41923,70 @@
     "overframe": {
       "id": 6079,
       "slug": "steflos"
+    }
+  },
+  {
+    "id": "steflos_prime",
+    "name": "Steflos Prime",
+    "category": "primaryWeapon",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Steflos_Prime"
+    },
+    "market": {
+      "slug": "steflos_prime_set"
+    },
+    "overframe": {
+      "id": 8068,
+      "slug": "steflos-prime"
+    }
+  },
+  {
+    "id": "steflos_prime_barrel",
+    "name": "Steflos Prime Barrel",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Steflos_Prime"
+    },
+    "market": {
+      "slug": "steflos_prime_barrel"
+    }
+  },
+  {
+    "id": "steflos_prime_blueprint",
+    "name": "Steflos Prime Blueprint",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Steflos_Prime"
+    },
+    "market": {
+      "slug": "steflos_prime_blueprint"
+    }
+  },
+  {
+    "id": "steflos_prime_receiver",
+    "name": "Steflos Prime Receiver",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Steflos_Prime"
+    },
+    "market": {
+      "slug": "steflos_prime_receiver"
+    }
+  },
+  {
+    "id": "steflos_prime_stock",
+    "name": "Steflos Prime Stock",
+    "category": "primeComponent",
+    "isPrime": true,
+    "wiki": {
+      "path": "/w/Steflos_Prime"
+    },
+    "market": {
+      "slug": "steflos_prime_stock"
     }
   },
   {
