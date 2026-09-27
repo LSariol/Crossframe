@@ -1,6 +1,8 @@
 # Crossframe
 
 [![Available in the Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install%20Crossframe-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd)
+[![Available on Firefox Add-ons](https://img.shields.io/badge/Firefox%20Add--ons-Install%20Crossframe-FF7139?logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/crossframe/)
+[![Available on Edge Add-ons](https://img.shields.io/badge/Edge%20Add--ons-Install%20Crossframe-0078D7?logo=microsoftedge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/crossframe/epoenelmeddlikifikinbakgjklhfejp)
 
 A browser extension that links [Warframe Wiki](https://wiki.warframe.com),
 [Warframe.Market](https://warframe.market), and
@@ -67,8 +69,11 @@ npm run typecheck
 
 ### Installing
 
-Easiest option: [install it from the Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd) -
-one click, no developer mode needed.
+Easiest option: install it from your browser's store, one click, no
+developer mode needed -
+[Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd),
+[Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/crossframe/),
+or [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/crossframe/epoenelmeddlikifikinbakgjklhfejp).
 
 To run a local build instead (for development, or to try changes before
 they're published):
@@ -88,11 +93,12 @@ after any change (Chrome doesn't hot-reload unpacked extensions).
 ### Publishing
 
 Live on the
-[Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd).
+[Chrome Web Store](https://chromewebstore.google.com/detail/crossframe/claacejnponkofnfgcdcdcanpkmjpgdd),
+[Firefox Add-ons (AMO)](https://addons.mozilla.org/en-US/firefox/addon/crossframe/),
+and [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/crossframe/epoenelmeddlikifikinbakgjklhfejp).
 See [docs/publishing.md](docs/publishing.md) for the submission
-checklist (useful for future updates, or for publishing to another
-store like Edge Add-ons - see [docs/cross-browser-support.md](docs/cross-browser-support.md)
-for what Edge/Firefox support specifically involves) and
+checklist and [docs/cross-browser-support.md](docs/cross-browser-support.md)
+for what Edge/Firefox support specifically involved, and
 [store/listing.md](store/listing.md) for the listing copy.
 [CHANGELOG.md](CHANGELOG.md) tracks what changed release to release.
 [PRIVACY.md](PRIVACY.md) is Crossframe's privacy policy (short version:
@@ -238,10 +244,6 @@ not do.
   splitting a Prime set's "Set" suffix into a separate span with no
   space in the markup, and layout adjustments driven by real
   screenshots).
-- **Firefox is not yet packaged.** The codebase avoids
-  Chrome-specific APIs beyond `chrome.storage` and Manifest V3's
-  `content_scripts`/`options_ui`, both of which Firefox also supports, but
-  no `manifest.json` variant or WebExtension polyfill has been added yet.
 - **Cosmetics/Skins, Sigils, and Glyphs are not covered.** The design
   doc's "other categories encountered during implementation" - these were
   judged lower-value for navigation (they're cosmetic, not build- or
